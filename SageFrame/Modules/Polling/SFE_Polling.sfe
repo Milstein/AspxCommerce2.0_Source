@@ -1,0 +1,55 @@
+﻿<sageframe version="1.0.0.0" type="Module">
+  <folders>
+    <folder>
+      <name>Polling</name>
+      <friendlyname>Polling</friendlyname>
+      <foldername>Polling</foldername>
+      <modulename>Polling</modulename>
+      <description>This is the voting extension in sageframe</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass>SageFrame.Modules.Polling.EventController, SageFrame.Modules.Polling</businesscontrollerclass>
+      <compatibleversions>^[0]?[4-9]{1}\.[0-9]{1}[7-9]{1}\.[0-9]{1}[0-9]{1}$</compatibleversions>
+      <owner>Sageframe Pvt. Ltd.</owner>
+      <organization>Sageframe Pvt. Ltd</organization>
+      <url>www.sageframe.com</url>
+      <email>info@sageframe.com</email>
+      <releasenotes>This is test release notes for SageFrame Polling Application</releasenotes>
+      <license>This is test license copy for SageFrame Polling Application</license>
+      <modules>
+        <module>
+          <friendlyname>Polling</friendlyname>
+          <cachetime>-1</cachetime>
+          <controls>
+            <control>
+			  <key>Polling</key>
+              <title>Polling</title>
+              <src>Modules/Polling/ViewPolling.ascx</src>
+              <type>View</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>True</supportspartialrendering>
+            </control>  
+               <control>
+			  <key>Polling</key>
+              <title>Polling</title>
+              <src>Modules/Polling/EditsPolling.ascx</src>
+              <type>Edit</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>True</supportspartialrendering>
+            </control> 			
+          </controls>
+        </module>
+      </modules>
+      <files>
+        <file>
+          <name>01.00.00.SqlDataProvider</name>
+        </file>   
+        <file>
+          <name>SageFrame.Polling.dll</name>
+        </file>        
+        <file>
+          <name>Uninstall.SqlDataProvider</name>
+        </file> 
+      </files>
+    </folder>
+  </folders>
+</sageframe>

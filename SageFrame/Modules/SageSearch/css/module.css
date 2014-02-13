@@ -1,0 +1,153 @@
+/* search */
+.sfSearchwrapper { position: relative; float: right;
+	margin:0 0 20px 0;
+}
+
+.sfSearchresult  .sfSearchwrapper { float: none; display: inline-block;  }
+.sfSearchwrapper input.sfBtn, .sfSearchwrapper li a { margin-left: 10px;}
+
+
+.sfSearchwrapper li input[type="image"] {
+ background:none; text-indent:-999em; }
+    
+.sfSearchwrapper li {
+	float:left;
+}
+
+/* search result */
+
+.sfSearchWord { display: block; margin-top: 20px;}
+
+.sfSearchpage table, .sfSearchpage table td {
+	border:none;
+	margin:0;
+	padding:0;
+}
+/* ---*/
+.sfInnerwrapper .sfSearchpage table, .sfInnerwrapper .sfSearchpage table td, .sfInnerwrapper .sfSearchpage table:hover, .sfInnerwrapper .sfSearchpage table td:hover, .sfInnerwrapper .sfSearchpage table tr:hover, .sfInnerwrapper .sfSearchpage table tr {
+	background:none;
+	border:none;
+	border:none;
+}
+.sfSearchpage h1 {
+	font:bold 14px Arial, Helvetica, sans-serif;
+}
+.sfSearchpage h1 span.sfSearchkey {
+	font:normal 12px Arial, Helvetica, sans-serif;
+}
+.sfSearchpage h2 {
+	font:bold 12px Arial, Helvetica, sans-serif;
+}
+/* ---Search Holder-*/
+.sfSearchorder {
+	overflow:hidden;
+	background:#f7f7f7;
+	padding:10px;
+}
+.sfSearchorder ul li {
+	float:left;
+}
+.sfSearchorder ul li.sfRight {
+	float:right;
+}
+.sfSearchorder label {
+	font:normal 11px Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0 7px 0 3px;
+}
+.sfSearchorder input {
+	padding:0;
+	margin:0;
+}
+.sfSearchorder select.sfListmenu {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width:60px;
+	border:1px solid #e5e5e5;
+	background:#fff;
+	padding:3px 5px;
+	margin:0 0 0 5px;
+}
+/* ---Search Only- */
+.sfSearchonly {
+	margin:20px 0;
+	overflow:hidden;
+	background:#f7f7f7;
+	padding:10px;
+}
+.sfSearchonly label {
+	font:normal 11px Arial, Helvetica, sans-serif;
+}
+.sfSearchpage .sfSearchonly td {
+	padding:4px 0;
+}
+/* --Search Result-- */
+.sfSearchpage .sfSearchresult td {
+	padding:20px 10px;
+}
+.sfSearchpage .sfSearchresult td h2, .sfSearchpage .sfSearchresult td h2 a {
+	font:bold 14px Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	color:#3D6EC8;
+}
+.sfSearchpage .sfSearchresult td h3 {
+	font:normal 11px Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+.sfSearchpage .sfSearchresult td span.sfUrlLink {
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#3D6EC8;
+}
+.sfSearchpage .sfSearchresult tr.sfOdd, .sfSearchpage .sfSearchresult tr.sfEven {
+	background:none;
+	background:url(../images/news-seperator.jpg) repeat-x bottom;
+}
+.sfSearchpage .sfSearchresult tr.sfOdd:hover, .sfSearchpage .sfSearchresult tr.sfEven:hover {
+	background:url(../images/news-seperator.jpg) repeat-x bottom #fafafa;
+}
+.sfSearchpage .sfSearchresult td p {
+	margin:10px 0 0 0;
+}
+/* -- Button Wrapper -- */
+.sfSearchpage .sfButtonwrapper label {
+	padding:4px 25px;
+	cursor:pointer;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	display:inline-block;
+	border:1px solid #d5d5d5;
+	color:#555;
+	text-shadow:0 1px 0 #f5f5f5;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #fff;
+	-moz-box-shadow: inset 0px 1px 0px 0px #fff;
+	box-shadow: inset 0px 1px 0px 0px #fff;
+	cursor:pointer;
+}
+.sfSearchpage tr.sfPagination td {
+	padding:8px 8px 0 0;
+	margin:0;
+}
+.sfSearchpage tr.sfPagination td a {
+	background:#f7f7f7;
+	border:1px solid #e5e5e5;
+	padding:2px 6px;
+}
+.sfSearchpage tr.sfPagination td a:hover {
+	background:#f0f0f0;
+}
+.sfSearchList h1		{ font-size:16px; font-weight:bold; color:#3D6EC8; margin:0!important; padding:0; border-bottom:1px solid #3D6EC8; display:inline;}
+.sfResultDetail			{ font-size:13px;}
+.sfResultDate 			{  font-weight: bold;}
+#Pagination .prev		{ background:url(../images/previous-arrow.jpg) 6px 5px no-repeat; padding:5px 10px;}
+#Pagination .next		{ background:url(../images/next-arrow.jpg) 8px 5px no-repeat; padding:5px 10px;}
+.pagination .current 	{ border:1px solid transparent; padding:3px 10px; margin:0 5px ; border-radius:3px; background:#828282; color:#fff; display:inline-block;}
+.pagination a			{ border:1px solid #e0e0e0; padding:5px 10px; margin:0 5px ; border-radius:3px; display:inline-block; }
+.pagination a:hover 	{ border:1px solid #3D6EC8; padding:5px 10px; margin:0 5px ; border-radius:3px; color:#000;} 				
+.pagination a:active 	{}		
+
+.sfSearchList { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #ccc;}

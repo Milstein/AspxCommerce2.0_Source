@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\SageFrame.Pages.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\SageFrame.Pages.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Pages\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Pages\obj\Debug\SageFrame.Pages.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Pages\obj\Debug\SageFrame.Pages.pdb

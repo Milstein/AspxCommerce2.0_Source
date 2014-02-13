@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\SageFrame.Templating.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\SageFrame.Templating.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Templating\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Templating\obj\Debug\SageFrame.Templating.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Templating\obj\Debug\SageFrame.Templating.pdb

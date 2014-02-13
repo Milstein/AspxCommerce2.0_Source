@@ -1,0 +1,17 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.NewsLetter.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.NewsLetter.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Common.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Core.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Scheduler.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\AjaxControlToolkit.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\System.Web.Mvc.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Templating.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\Ionic.Zip.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Scheduler.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Core.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Common.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\bin\Release\SageFrame.Templating.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\obj\Release\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\obj\Release\SageFrame.NewsLetter.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.NewsLetter\obj\Release\SageFrame.NewsLetter.pdb

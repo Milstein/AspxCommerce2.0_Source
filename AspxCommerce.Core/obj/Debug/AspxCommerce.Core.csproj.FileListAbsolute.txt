@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\AspxCommerce.Core.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\AspxCommerce.Core.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.Core\obj\Debug\AspxCommerce.Core.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.Core\obj\Debug\AspxCommerce.Core.pdb

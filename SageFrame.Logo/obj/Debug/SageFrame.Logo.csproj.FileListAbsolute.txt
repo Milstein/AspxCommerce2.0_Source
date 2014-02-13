@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\SageFrame.Logo.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\SageFrame.Logo.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Logo\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Logo\obj\Debug\SageFrame.Logo.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Logo\obj\Debug\SageFrame.Logo.pdb

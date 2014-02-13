@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\AspxCommerce.MegaCategory.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\AspxCommerce.MegaCategory.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.MegaCategory\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.MegaCategory\obj\Debug\AspxCommerce.MegaCategory.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.MegaCategory\obj\Debug\AspxCommerce.MegaCategory.pdb

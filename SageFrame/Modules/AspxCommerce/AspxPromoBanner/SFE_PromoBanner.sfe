@@ -1,0 +1,56 @@
+﻿<sageframe version="1.0.0.0" type="Module">
+  <folders>
+    <folder>
+      <name>SFE_PromoBammer</name>
+      <friendlyname>AspxPromoBanner</friendlyname>
+      <foldername>AspxCommerce/AspxPromoBanner</foldername>
+      <modulename>AspxPromoBanner</modulename>
+      <description>This module is used for AspxPromoBanner.</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass>SageFrame.Modules.AspxCommerce.AspxPromoBanner.EventController, SageFrame.Modules.AspxCommerce.AspxPromoBanner</businesscontrollerclass>
+      <compatibleversions>^[0]?[4-9]{1}\.[0-9]{1}[7-9]{1}\.[0-9]{1}[0-9]{1}$</compatibleversions>
+      <owner>BrainDigit IT Soultion Pvt. Ltd.</owner>
+      <organization>BrainDigit IT Soultion Pvt. Ltd.</organization>
+      <url>www.braindigit.com</url>
+      <email>info@sageframe.com</email>
+      <releasenotes>This is test release notes for v Application</releasenotes>
+      <license>This is test license copy for AspxPromoBanner Application</license>
+      <modules>
+        <module>
+          <friendlyname>AspxPromoBanner</friendlyname>
+          <cachetime>-1</cachetime>
+          <controls>
+            <control>
+			        <key>AspxPromoBannerViewContainer</key>
+              <title>AspxPromoBannerBanner View Container</title>
+              <src>Modules/AspxCommerce/AspxPromoBanner/AspxPromoBannerView.ascx</src>
+              <type>View</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>false</supportspartialrendering>
+            </control>  
+        <control>
+			  <key>AspxPromoBannerSettingContainer</key>
+              <title>AspxPromoBanner Setting Container</title>
+              <src>Modules/AspxCommerce/AspxPromoBanner/AspxPromoBannerSetting.ascx</src>
+              <type>Setting</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>false</supportspartialrendering>
+            </control>     			
+          </controls>
+        </module>
+      </modules>
+      <files>
+        <file>
+          <name>01.00.00.SqlDataProvider</name>
+        </file>   
+<file>
+          <name>AspxCommerce.AspxPromoBanner.dll</name>
+        </file>        
+             
+        <file>
+          <name>Uninstall.SqlDataProvider</name>
+        </file> 
+      </files>
+    </folder>
+  </folders>
+</sageframe>

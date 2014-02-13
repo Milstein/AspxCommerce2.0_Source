@@ -1,0 +1,80 @@
+﻿
+.sfTab li
+{
+    float: left;
+    list-style-type: none;
+    margin-left: 5px;
+}
+.sfTab li label
+{
+    padding: 5px; cursor:pointer;
+}
+
+#divData .sfGridwrapper { float:left; width:40%; margin-right:5%;}
+
+#divData .sfGridwrapper .sfFormlable { font:bold 14px/2 Arial, Helvetica, sans-serif; margin-top:15px; display:block;}
+
+ul.sfTab li {	border:1px solid #0170ab;
+	margin:0;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#fff;
+	padding:4px 10px;
+	cursor:pointer;
+	display:inline-block;
+	-moz-box-shadow:0 1px 0 #45b7e3 inset;
+	-webkit-box-shadow:0 1px 0 #45b7e3 inset;
+	box-shadow:0 1px 0 #45b7e3 inset;
+	background: #16a5db; /* Old browsers */
+	background: -moz-linear-gradient(top, #16a5db 16%, #0170ab 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%, #16a5db), color-stop(100%, #0170ab)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #16a5db 16%, #0170ab 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #16a5db 16%, #0170ab 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #16a5db 16%, #0170ab 100%); /* IE10+ */
+	background: linear-gradient(top, #16a5db 16%, #0170ab 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a5db', endColorstr='#0170ab', GradientType=0 ); /* IE6-9 */}
+
+ul.sfTab li#Chart {-webkit-border-top-left-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-bottomleft: 3px;
+border-top-left-radius: 3px; border-right:1px solid #2b5c76;
+border-bottom-left-radius: 3px;}
+
+ul.sfTab li#Data
+{-webkit-border-top-right-radius: 3px;
+-webkit-border-bottom-right-radius: 3px;
+-moz-border-radius-topright: 3px;
+-moz-border-radius-bottomright: 3px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;}
+
+ul.sfTab li.sfDefault { -moz-box-shadow:0 0px 5px rgba(0,0,0,0.5) inset;
+	-webkit-box-shadow:0 0px 5px #0170ab inset;
+	box-shadow:0 0px 10px rgba(0,0,0,0.5) inset;}
+
+ul.sfTab li .sfFormlabel{ color:#fff; text-shadow:none;}
+
+div.sfPagination span { display:inline-block;
+	float: none;
+	width:20px;
+	margin:10px 5px 5px 0;
+	background:#fff;
+	border: 1px solid #4692C3;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	color:#000; cursor:pointer;
+	text-align:center; }
+	
+div.sfPagination span:hover {
+	background:#6cb5e4;
+	color:#fff;
+	text-shadow:0 1px 0 #069;
+}
+div.sfPagination span.click { 	background:#4692c3;
+	border:1px solid #4692c3;
+	color:#fff;}
+
+.sfGridwrapper .sfListmenu { margin-bottom:10px;}
+
+#MonthlyVisitMeterGaugeChart canvas.jqplot-event-canvas { border:2px solid #AAAAAA;}

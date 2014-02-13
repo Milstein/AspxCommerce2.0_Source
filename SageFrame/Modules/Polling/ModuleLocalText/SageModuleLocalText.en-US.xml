@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ <SageFrameMessage>
+   <PleaseEnterSomeContent>Please enter some content</PleaseEnterSomeContent>
+   <SettingSavedSuccessfully> Saved successfully</SettingSavedSuccessfully>
+   <Error>Sorry! An error occured and we couldnot save the poll. Please try again later.</Error>
+   <UpdatePollSuccess>Your poll has been updated successfully.</UpdatePollSuccess>
+   <AddNewPollMessage>New poll has been created successfully.</AddNewPollMessage>
+   <Polldeletedsuccessfully>Poll deleted successfully</Polldeletedsuccessfully>
+</SageFrameMessage>
+

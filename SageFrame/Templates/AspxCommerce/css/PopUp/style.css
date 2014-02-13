@@ -1,0 +1,165 @@
+/* CSS Document */
+.popupbox {
+	background-color:#FFF;
+	display:none;
+	position: fixed;
+	top:50%;
+	left:50%; width:auto;
+	z-index: 9999;
+border: 10px solid #999999;
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+
+	min-height:160px;
+	min-width:500px; max-width:850px;
+}
+
+#fade {
+	display: none;  
+	background:#000;
+	opacity:0.5;  filter: alpha(opacity=50); 
+	left: 0; position:fixed;top: 0;  
+	z-index:9000;
+	width:100%; height:100%;}
+
+.popupbox  .sfFormwrapper {padding:10px 15px 0; *max-width:800px;}
+
+.popupbox2 {
+background: #6D84B4  !important
+border-color: #3B5998 #3B5998 -moz-use-text-color;
+border-style: solid solid none;
+border-width: 1px 1px medium;
+color: #FFFFFF;
+font-size: 14px;
+font-weight: bold;
+padding: 3px;
+margin: 0;
+}
+.popupbox3 {
+	width:502px;
+	height:302px;
+	background-image:url(../../images/3_03.png);
+	background-repeat:no-repeat;
+	display: none;
+	float: left;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 9999;
+	-webkit-box-shadow: 0px 0px 10px #fff;
+	-moz-box-shadow: 0px 0px 10px #fff;
+	box-shadow: 0px 0px 10px #fff;
+}
+
+#intabdiv {
+	padding:10px;
+}
+#close img {
+	text-decoration:none;
+}
+#close {
+	width:50px;
+	height:50px;
+	position: absolute;
+	float:right;
+}
+#intabdiv2 {
+	padding:70px;
+}
+.popupbox h2 {
+color:#900;
+font-size:14px;
+margin:10px 0 15px 10px !important;
+text-transform:capitalize;
+}
+.popupbox a{ margin:0 10px 0 10px}
+#intabdiv2 p {
+	font-size:12px;
+	color:#696868;
+	font-family:Verdana, Geneva, sans-serif;
+	line-height:20px;
+}
+#intabdiv3 {
+	padding:70px;
+}
+.popupbox .sfButtonwrapper { float:right;}
+
+.popupbox .sfFormwrapper .cssClassLabel { padding:0 10px; color:#333333; font:bold 12px Arial, Helvetica, sans-serif}
+
+.popupbox  .sfFormwrapper input[type="text"], .popupbox  .sfFormwrapper textarea{  border:1px solid #ccc; padding:3px 5px;width:250px;} 
+.popupbox  .sfFormwrapper input:focus, .sfFormwrapper textarea:focus {-moz-box-shadow: 0 0 5px #84B3CB !important;
+	-webkit-box-shadow: 0 0 5px #84B3CB  !important;
+	 box-shadow: 0 0 5px #84B3CB  !important; background:#fff;}
+
+.popupbox .sfFormwrapper .cssClassTextarea {
+	width: 255px; height:110px;
+} 
+.popupbox .sfFormwrapper select { margin:3px 5px;}
+.error {
+	font:11px Arial, Helvetica, sans-serif;
+	color:#F00;
+
+	padding:0 0 0 5px;
+}
+.popupbox .sfFormwrapper td{
+	padding:0 0 10px 0 !important}
+input.error, .textarea.error{	border: 1px dashed #F00!important;
+padding: 3px;}
+.cssClassCloseIcon { 
+}
+.cssClassCloseIcon button {
+	background:url(../../images/Close_Icon.png) no-repeat; text-indent:-9999px; border:none; height:24px; width:24px;  top: -20px !important;
+ right: -17px !important;
+
+}
+
+.cssClassCloseIcon button:hover{	background:url(../../images/Close_Icon-hover.png) no-repeat;}
+button.cssClassClose {
+	line-height:14px;
+right:6px;
+top:3px;
+font:11px Arial, Helvetica, sans-serif;
+position:absolute;
+display:block;
+color:#FFFFFF;
+
+}
+.cssClassReviewInfos {
+	padding:5px;
+	background-color:#bcebff;
+	margin:5px 0 0 0;
+}
+.cssClassReviewInfos a {
+	text-decoration:underline;
+}
+.cssClassPopUpHeading {
+	margin:7px 0;
+}
+span.star-rating-control {
+	float:left;
+	width:90px; padding-bottom:6px;
+}
+.cssClassToolTipInfo span.star-rating-control {float:right;}
+span.cssClassRatingText {float:left;padding:0 0 0 5px;}
+td.cssClassReviewCriteria {width:152px;}
+.cssClassItemCostVariant { width:auto;}
+.cssClassItemCostVariant .ui-corner-all {max-height:390px; margin: 12px 10px 0; overflow: auto;width: 640px;} 
+.cssClassItemCostVariant .ui-tabs .ui-tabs-panel {padding: 20px 0 0;}
+
+.popupbox  .sfFormwrapper input{ margin:5px; padding:4px 5px; }
+#trigger {text-align:center;}
+/*.popupbox .sfButtonwrapper button{margin:2px 6px 6px 5px;
+font-size:13px;
+border:1px solid #039;
+background-color:#5B74A8;
+background-position:0 -28px;
+border-color:#29447E #29447E #1A356E;
+color:#FFFFFF;
+padding:2px 6px
+text-align:center;
+text-decoration:none;
+vertical-align:middle;
+white-space:nowrap;}*/
+.popupbox .sfFormwrapper{ padding:0px 10px 10px 10px}
+.cssClassQuickView .cssClassProductImage{ width:40%}
+.cssClassQuickView .cssClassProductPictureDetails{ width:57%}]

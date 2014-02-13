@@ -1,0 +1,128 @@
+﻿.pageNo
+{
+    float: right;
+    margin-top: 10px;
+}
+.sfError{color:Red;}
+.sfErrorsubscribe{color:Red;display:block!important;}
+.sfSuccesssubscribe{color:Green; display:block!important;}
+.PageSize
+{
+    float: right;
+    margin-top: 10px;
+}
+.pageNo a span
+{
+    color: #333;
+    background: #e8e8e8;
+    margin: 0 5px 0 5px;
+    border: 1px solid #999;
+    padding: 2px 6px 2px 6px;
+}
+.pageNo a span.current
+{
+    border: 1px solid #4692C3;
+    background: #4692C3;
+    color: #fff;
+}
+.sfNoData
+{
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #900;
+}
+.main
+{
+    background: linear-gradient(to bottom, #1092C4 0%, #25A5D6 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px 0 0 6px !important;
+}
+.main a
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    padding: 5px 12px;
+}
+.main a.cssClassActive
+{
+    background: none repeat scroll 0 0 #F5F5F5;
+    color: #555555;
+}
+.sfEmailSend, .sfsmsSend,.sfbtnOk
+{
+     background:#0170AB;
+    border: 1px solid #0170AB;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 #45B7E3 inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    margin-right: 7px;
+    padding: 4px 10px;
+}
+#header h3
+{
+    font: normal 22px Arial;
+    letter-spacing: 2px;
+    color: #666;
+    margin: 5px;
+}
+a.sfSubscribeButton {
+    background: linear-gradient(#EEEEEE, #DDDDDD) repeat scroll 0 0 #DDDDDD;
+    box-shadow: 1px 1px 2px #888888;
+    color: #550604;
+    font-size: 12px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+}
+#divbUnsubscribe {
+    border-top: 1px dotted #DDDDDD;
+    margin-top: 15px;
+    padding: 5px;
+    clear:both;
+}
+
+#btnSubscribe, #btnUnSubscribe {    
+    background: url("../images/black-btn.png") repeat-x scroll 0 0 #000000;
+    border: medium none;
+    box-shadow: none;
+    color: #FFFFFF;
+    float: left;
+    font: 14px Arial,Helvetica,sans-serif;
+    margin: 10px 0 10px 37px!important;
+    padding: 7px 10px;
+    text-transform: uppercase;margin:7px; cursor:pointer;
+}
+#btnSubscribe:hover, #btnUnSubscribe:hover{ background:#000;}
+
+#divSubscribe {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin: 0 0 20px;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sfInputbox, textarea {  
+    width: 168px!important;
+}
+
+#divEmailSubsCribe input {
+    background: none repeat scroll 0 0 #FFFFFF;    
+    color: #686868;   
+    padding: 6px;
+}

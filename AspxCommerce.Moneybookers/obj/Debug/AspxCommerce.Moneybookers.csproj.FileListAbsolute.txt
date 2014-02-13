@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\AspxCommerce.Moneybookers.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame\bin\AspxCommerce.Moneybookers.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.Moneybookers\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.Moneybookers\obj\Debug\AspxCommerce.Moneybookers.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.Moneybookers\obj\Debug\AspxCommerce.Moneybookers.pdb

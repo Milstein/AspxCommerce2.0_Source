@@ -1,0 +1,7 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\bin\Debug\SageFrame.ExtractTemplate.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\bin\Debug\SageFrame.ExtractTemplate.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\bin\Debug\SageFrame.Common.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\bin\Debug\SageFrame.Common.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\obj\Debug\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\obj\Debug\SageFrame.ExtractTemplate.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.ExtractTemplate\obj\Debug\SageFrame.ExtractTemplate.pdb

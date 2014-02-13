@@ -1,0 +1,452 @@
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_GetProductListSetting]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_GetProductListSetting]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_GetProductListSetting]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_ProductListSettingUpdate]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_ProductListSettingUpdate]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_ProductListSettingUpdate]
+GO
+/****** Object:  Table [dbo].[Aspx_ProductListsSetting]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]') AND type in (N'U'))
+DROP TABLE [dbo].[Aspx_ProductListsSetting]
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_ProductListGetByCount]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_ProductListGetByCount]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_ProductListGetByCount]
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_IsActive]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_IsActive]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_IsActive]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] DROP CONSTRAINT [DF_Aspx_ProductListsSetting_IsActive]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_IsDeleted]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_IsDeleted]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_IsDeleted]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] DROP CONSTRAINT [DF_Aspx_ProductListsSetting_IsDeleted]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_IsModified]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_IsModified]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_IsModified]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] DROP CONSTRAINT [DF_Aspx_ProductListsSetting_IsModified]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_AddedOn]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_AddedOn]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_AddedOn]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] DROP CONSTRAINT [DF_Aspx_ProductListsSetting_AddedOn]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_UpdatedOn]    Script Date: 05/25/2012 09:55:59 ******/
+IF  EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_UpdatedOn]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_UpdatedOn]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] DROP CONSTRAINT [DF_Aspx_ProductListsSetting_UpdatedOn]
+END
+
+
+End
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_ProductListGetByCount]    Script Date: 08/28/2012 14:10:27 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+
+--select * from dbo.Aspx_items
+-- =============================================
+--EXEC [usp_Aspx_ProductListGetByCount] 1, 1, '','en-US',5,11
+CREATE PROCEDURE [dbo].[usp_Aspx_ProductListGetByCount]
+(
+	@StoreID int, 
+	@PortalID int,
+	@UserName nvarchar(256),
+	@CultureName nvarchar(256),	
+	@Count int,
+    @Offset int
+
+)
+AS
+BEGIN
+SET NOCOUNT ON;
+DECLARE @tblvariable TABLE
+(
+ItemID int,
+SKU nvarchar(200),
+AttributeSetID int,
+ItemTypeID int,
+ActiveFrom datetime,
+ActiveTo datetime,
+HidePrice bit,
+HideInRSSFeed bit,
+HideToAnonymous bit,
+IsOutOfStock bit,
+AddedOn datetime,
+ImagePath nvarchar(500),
+AlternateText nvarchar(256),
+[Name] nvarchar(200),
+Price decimal(16,2),
+ListPrice decimal(16,2),
+Quantity int,
+RowNumber int
+)
+Declare @tblFinal TABLE 
+(
+RowNum int identity(1,1),
+ItemID int
+)
+DECLARE @RowTotal int,@intialValue int, @counter int
+insert into @tblFinal
+select ItemID from Aspx_items WHERE StoreID = @StoreID AND PortalID = @PortalID AND (IsDeleted = 0 OR IsDeleted IS NULL) AND IsActive = 1 
+       and (ActiveFrom<=convert(varchar(10),getdate(),111) AND ActiveTo>=convert(varchar(10),getdate(),111)) order by AddedOn Desc
+--select * from @tblFinal
+CREATE TABLE #tbltemp (itemID INT, attributeID INT, attributeValue NVARCHAR(MAX))
+
+set @counter=1;
+Select @RowTotal=Count([ItemID]) from @tblFinal
+WHILE(@counter<=@RowTotal)
+BEGIN
+DECLARE @key nvarchar(500)
+SELECT @key=ItemID FROM @tblFinal WHERE RowNum=@counter		
+		INSERT INTO #tbltemp(itemID, attributeID, attributeValue) 
+		SELECT ItemID, AttributeID, AttributeValue FROM [Aspx_ItemAttributesValue_Nvarchar] WHERE AttributeID = 1  and StoreID=@StoreID and PortalID=@PortalID and ItemID=@key 
+		INSERT INTO #tbltemp(itemID, attributeID, attributeValue) 
+		SELECT aios.ItemID, aios.AttributeID, COALESCE(AVA.[Value],avs.[Value]) FROM [Aspx_ItemAttributesValue_Options] aios
+			LEFT JOIN Aspx_AttributeValues avs ON aios.AttributeValue= avs.AttributeValueID
+			LEFT JOIN [dbo].[Aspx_AttributeValuesAlias] AVA ON avs.AttributeValueID=AVA.AttributeValueID AND AVA.CultureName=@CultureName AND AVA.StoreID=@StoreID AND AVA.PortalID=@PortalID			
+		WHERE aios.AttributeID = 14  and aios.StoreID=@StoreID and aios.PortalID=@PortalID and avs.[Value]='Yes' and ItemID=@key
+		INSERT INTO #tbltemp(itemID, attributeID, attributeValue) 
+		SELECT ItemID, AttributeID, dbo.[ufn_CatalogPriceRule](ItemID,@StoreID,@PortalID,@UserName,@CultureName) as AttributeValue FROM [Aspx_ItemAttributesValue_Decimal] WHERE AttributeID = 8 and StoreID=@StoreID and PortalID=@PortalID and ItemID=@key
+		UNION ALL
+		SELECT ItemID, AttributeID, AttributeValue FROM [Aspx_ItemAttributesValue_Decimal] WHERE AttributeID = 13 and StoreID=@StoreID and PortalID=@PortalID and ItemID=@key
+
+		INSERT INTO #tbltemp(itemID, attributeID, attributeValue) 
+		SELECT ItemID, AttributeID, AttributeValue FROM [Aspx_ItemAttributesValue_Int] WHERE AttributeID = 15  and StoreID=@StoreID and PortalID=@PortalID and ItemID=@key;
+     set @counter=@counter+1;
+END;
+--SELECT * FROM #tbltemp;
+
+WITH ItemsContact AS
+(
+SELECT
+ -- @RowTotal AS RowTotal,
+	*
+    , ROW_NUMBER() OVER(ORDER BY [ItemID]) AS RowNumber
+FROM
+(
+	SELECT i.ItemID, i.SKU, i.AttributeSetID, i.ItemTypeID,i.ActiveFrom,i.ActiveTo, i.HidePrice, i.HideInRSSFeed, i.HideToAnonymous,[dbo].[ufn_CheckOutOfStock](i.ItemID,@StoreID,@PortalID) as IsOutOfStock, --it.ItemTypeID , it.ItemTypeName, ias.AttributeSetID, ias.AttributeSetName, 
+			ian.AttributeValue, i.AddedOn, ii.[ImagePath], ii.[AlternateText], --i.IsActive AS Status, 
+	CASE ian.AttributeID
+		WHEN 1 THEN 'Name'
+		--WHEN 4 THEN 'SKU'            
+		--WHEN 14 THEN 'Visibility'
+		WHEN 8 THEN 'Price'
+		WHEN 13 THEN 'ListPrice'
+		WHEN 15 THEN 'Quantity'			  	  
+    END AS [AttributeName]  
+	FROM Aspx_items i
+	JOIN Aspx_ItemType it ON i.ItemTypeID  = it.ItemTypeID
+	JOIN Aspx_AttributeSet ias ON i.AttributeSetID=ias.AttributeSetID
+	LEFT JOIN [dbo].[Aspx_ItemImages] ii ON i.ItemID = ii.ItemID AND ii.ImageTypeID = 1
+	JOIN #tbltemp ian ON i.ItemID = ian.ItemID  
+	inner join [Aspx_ItemAttributesValue_Options] aios on aios.ItemID=i.ItemID and aios.AttributeID=14 AND aios.StoreID=@StoreID and aios.PortalID=@PortalID
+	inner join [dbo].[Aspx_AttributeValues] av on av.AttributeValueID=aios.AttributeValue  and av.[Value]='Yes' 
+
+	WHERE i.StoreID = @StoreID AND i.PortalID = @PortalID AND (i.IsDeleted = 0 OR i.IsDeleted IS NULL) AND i.IsActive = 1 
+       and (i.ActiveFrom<=convert(varchar(10),getdate(),111) AND i.ActiveTo>=convert(varchar(10),getdate(),111))
+         
+			AND ias.IsActive=1 AND (ias.IsDeleted=0 OR ias.IsDeleted iS NULL)
+) DataTable
+PIVOT
+(
+  MAX([AttributeValue])
+  --ian.AttributeValue
+  FOR [AttributeName]
+  IN (
+     [Name], [Price], [ListPrice], [Quantity]--, [Visibility] --, [Status], 
+  )
+) PivotTable
+)
+insert into @tblVariable
+select * from ItemsContact 
+
+
+BEGIN
+DECLARE @initial int,@finalValue int,@RowTotal1 int
+Select @RowTotal1=Count(RowNumber) from @tblVariable
+SET @initial=@Offset
+set @finalValue=(@Offset+@Count)-1;
+if (@finalValue>@RowTotal1)
+Begin
+ set @finalValue=@RowTotal1
+End
+select @RowTotal1 as RowTotal,* from @tblVariable where RowNumber>=@initial and RowNumber<=@finalValue
+End
+DROP TABLE #tbltemp
+END
+
+GO
+/****** Object:  Table [dbo].[Aspx_ProductListsSetting]    Script Date: 05/25/2012 09:55:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[Aspx_ProductListsSetting](
+	[SettingID] [int] IDENTITY(1,1) NOT NULL,
+	[SettingKey] [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[SettingValue] [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[CultureName] [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[StoreID] [int] NULL,
+	[PortalID] [int] NULL,
+	[IsActive] [bit] NULL,
+	[IsDeleted] [bit] NULL,
+	[IsModified] [bit] NULL,
+	[AddedOn] [datetime] NULL,
+	[UpdatedOn] [datetime] NULL,
+	[DeletedOn] [datetime] NULL,
+	[AddedBy] [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[UpdatedBy] [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[DeletedBy] [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+ CONSTRAINT [PK_Aspx_ProductListsSetting] PRIMARY KEY CLUSTERED 
+(
+	[SettingID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON)
+)
+END
+GO
+SET IDENTITY_INSERT [dbo].[Aspx_ProductListsSetting] ON
+INSERT [dbo].[Aspx_ProductListsSetting] ([SettingID], [SettingKey], [SettingValue], [CultureName], [StoreID], [PortalID], [IsActive], [IsDeleted], [IsModified], [AddedOn], [UpdatedOn], [DeletedOn], [AddedBy], [UpdatedBy], [DeletedBy]) VALUES (1, N'ProductHeader', N'Products', N'en-us', 0, 1, 1, 0, 0, CAST(0x0000A03F00C33B2D AS DateTime), CAST(0x0000A03F00C33B2D AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[Aspx_ProductListsSetting] ([SettingID], [SettingKey], [SettingValue], [CultureName], [StoreID], [PortalID], [IsActive], [IsDeleted], [IsModified], [AddedOn], [UpdatedOn], [DeletedOn], [AddedBy], [UpdatedBy], [DeletedBy]) VALUES (2, N'ProductCount', N'5', N'en-us', 0, 1, 1, 0, 0, CAST(0x0000A03F00C37C3D AS DateTime), CAST(0x0000A03F00C37C3D AS DateTime), NULL, NULL, NULL, NULL)
+SET IDENTITY_INSERT [dbo].[Aspx_ProductListsSetting] OFF
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_ProductListSettingUpdate]    Script Date: 05/25/2012 09:55:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_ProductListSettingUpdate]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Rajkumar Gupta>
+-- =============================================
+--[dbo].[usp_Aspx_ProductListSettingUpdate]1,1,''en-US''
+
+CREATE PROCEDURE [dbo].[usp_Aspx_ProductListSettingUpdate] 
+	-- Add the parameters for the stored procedure here
+@StoreID int,
+@PortalID int,
+@SettingKeys nvarchar(max),
+@SettingValues nvarchar(max),
+@CultureName nvarchar(256)
+	
+AS
+BEGIN
+SET NOCOUNT ON;
+	declare @tblKey table
+(
+RowNum int identity(1,1),
+SettingKey nvarchar(500)
+)
+declare @tblValue table
+(
+RowNum int identity(1,1),
+SettingValue nvarchar(500)
+)
+
+insert into @tblKey 
+select rtrim(ltrim(items)) from split(@SettingKeys,''*'')
+insert into @tblValue 
+select rtrim(ltrim(items)) from split(@SettingValues,''*'')
+declare @counter int,@RowCount int
+select @RowCount=count(RowNum) from @tblKey
+set @counter=1
+while(@counter<=@RowCount or @counter=1)
+	begin	
+  declare @key nvarchar(2000),@value nvarchar(2000)
+select @key=SettingKey from @tblKey where RowNum=@counter
+select @value=SettingValue from @tblValue where RowNum=@counter
+Update dbo.Aspx_ProductListsSetting  set
+SettingValue=@value where SettingKey=@key and StoreID=@StoreID and PortalID=@PortalID and CultureName=@CultureName
+set @counter=@counter+1
+	end
+
+END
+
+
+' 
+END
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_GetProductListSetting]    Script Date: 05/25/2012 09:55:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_GetProductListSetting]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Rajkumar Gupta>
+
+-- =============================================
+--select * from Aspx_storesettings
+--[usp_Aspx_GetProductListSetting] 1,1,''en-US''
+CREATE PROCEDURE [dbo].[usp_Aspx_GetProductListSetting]
+	-- Add the parameters for the stored procedure here
+	@StoreID int,
+	@PortalID int,
+	@CultureName nvarchar(256)
+AS
+BEGIN
+SET NOCOUNT ON;
+	If(not exists(select  * from dbo.Aspx_ProductListsSetting where StoreID=@StoreID and PortalID=@PortalID and CultureName=@CultureName ))
+	
+		BEGIN
+			If(exists(select * from dbo.Aspx_ProductListsSetting where PortalID=@PortalID))
+				BEGIN
+					insert into dbo.Aspx_ProductListsSetting
+					(
+					SettingKey,
+					SettingValue,					
+					StoreID,
+					PortalID,
+					CultureName
+					)
+					select SettingKey,SettingValue,@StoreID,@PortalID,@CultureName from dbo.Aspx_ProductListsSetting where PortalID=@PortalID
+					
+
+				END
+	ELSE
+		 BEGIN
+					insert into dbo.Aspx_ProductListsSetting
+					(
+					SettingKey,
+					SettingValue,					
+					StoreID,
+					PortalID,
+					CultureName
+					)
+					select SettingKey,SettingValue,@StoreID,@PortalID,@CultureName from dbo.Aspx_ProductListsSetting
+					where PortalID=1 AND StoreID=0
+
+		END
+	
+		END
+declare @tbltemp table
+(
+SettingKey nvarchar(2000),
+SettingValue nvarchar(2000)
+)
+insert into @tbltemp
+select SettingKey,SettingValue from dbo.Aspx_ProductListsSetting  where StoreID=@StoreID
+and PortalID=@PortalID and CultureName=@CultureName;
+with ProductListsSetting 
+as
+(
+select * from
+(
+select 
+--SettingTypeID,
+--SettingType,
+SettingValue,
+case [SettingKey]
+when ''ProductHeader'' then ''ProductHeader''
+when ''ProductCount'' then ''ProductCount''
+
+end as SKey
+from @tbltemp
+)DataTable
+pivot
+(
+
+max(SettingValue)
+for Skey 
+in (
+ProductHeader,ProductCount
+)
+)PivotTable
+)
+select  * from ProductListsSetting
+END
+
+
+' 
+END
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_IsActive]    Script Date: 05/25/2012 09:55:59 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_IsActive]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_IsActive]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] ADD  CONSTRAINT [DF_Aspx_ProductListsSetting_IsActive]  DEFAULT ((1)) FOR [IsActive]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_IsDeleted]    Script Date: 05/25/2012 09:55:59 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_IsDeleted]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_IsDeleted]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] ADD  CONSTRAINT [DF_Aspx_ProductListsSetting_IsDeleted]  DEFAULT ((0)) FOR [IsDeleted]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_IsModified]    Script Date: 05/25/2012 09:55:59 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_IsModified]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_IsModified]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] ADD  CONSTRAINT [DF_Aspx_ProductListsSetting_IsModified]  DEFAULT ((0)) FOR [IsModified]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_AddedOn]    Script Date: 05/25/2012 09:55:59 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_AddedOn]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_AddedOn]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] ADD  CONSTRAINT [DF_Aspx_ProductListsSetting_AddedOn]  DEFAULT (getdate()) FOR [AddedOn]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_Aspx_ProductListsSetting_UpdatedOn]    Script Date: 05/25/2012 09:55:59 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_Aspx_ProductListsSetting_UpdatedOn]') AND parent_object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]'))
+Begin
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_Aspx_ProductListsSetting_UpdatedOn]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[Aspx_ProductListsSetting] ADD  CONSTRAINT [DF_Aspx_ProductListsSetting_UpdatedOn]  DEFAULT (getdate()) FOR [UpdatedOn]
+END
+
+
+End
+GO

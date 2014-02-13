@@ -1,0 +1,3167 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---Clearfix CSS---*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clear {
+	clear: both;
+	height: 0;
+}
+input:focus {
+	outline: none;
+}
+/*---Alignment CSS---*/
+.sfVtop {
+	vertical-align: top !important;
+}
+.sfVmiddle {
+	vertical-align: middle !important;
+}
+.sfVbottom {
+	vertical-align: bottom !important;
+}
+.sfAleft {
+	text-align: left !important;
+}
+.sfAcenter {
+	text-align: center !important;
+}
+.sfAright {
+	text-align: right !important;
+}
+.sfLeft {
+	float: left !important;
+}
+.sfRight {
+	float: right !important;
+}
+.sfMargintop {
+	margin-top:10px !important;
+}
+.sfMarginbtn {
+	margin-bottom:10px !important;
+}
+.sfBackgroundnone {
+	background:none !important;
+}
+.sfPaddinglr {
+	padding:0 10px !important;
+}
+.sfMarginnone {
+	margin:0 !important;
+}
+.sfMargintopnone {
+	margin-top:0 !important;
+}
+.sfMarginlrnone {
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+.sfMargintb {
+	margin:10px 0;
+}
+td.sfMiddle {
+	vertical-align:middle !important;
+}
+td.sfMiddle label {
+	vertical-align:middle;
+}
+body {
+	background:#f2f2f2;
+	font:12px/18px Arial, Helvetica, sans-serif;
+	color:#555;
+}
+.sfSagewrapper {
+	min-width: 1212px;
+}
+/*---Normal link---*/
+a {
+	color: #034D68;
+	text-decoration: none;
+	outline:none;
+}
+a:hover, a:active, a:focus {
+	color: #034D68;
+	text-decoration: underline;
+}
+/*---Heading---*/
+h1 {
+	color:#00476D;
+	padding-bottom:10px;
+	background: url(../images/lines.png) repeat-x left bottom;
+	margin-bottom: 15px;
+	font:bold 18px Arial, Helvetica, sans-serif;
+}
+h2 {
+	margin: 0 0 15px 0;
+	font:bold 14px Arial, Helvetica, sans-serif;
+}
+.sfFormwrapper h2 {
+	border-bottom:1px solid #ccc;
+	-webkit-box-shadow:0 1px 0 #fff;
+	box-shadow:0 1px 0 #fff;
+	padding:0 0 5px 0;
+}
+h3 {
+	color:#0084b7;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	border-bottom:1px solid #ccc;
+	padding:0 0 6px 0;
+}
+h4 {
+	color:#0e83b0;
+	font:bold 12px Arial, Helvetica, sans-serif;
+}
+h5 {
+	color:#0e83b0;
+	font:bold 1em Arial, Helvetica, sans-serif;
+}
+h6 {
+	margin: 0 0 2.33em 0;
+	color:#0e83b0;
+	font:bold 0.90em Arial, Helvetica, sans-serif;
+}
+/*---Form Elements---*/
+fieldset {
+	padding:15px;
+	border:1px solid #CACACA;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background:#fff;
+	position:relative;
+	min-width:230px;
+}
+legend {
+	position:relative;
+	top:0em;
+	left:0.3em;
+	font:bold 13px Arial, Helvetica, sans-serif !important;
+	padding:0 3px;
+}
+fieldset fieldset {
+	margin:10px 0 0 0;
+}
+input, select, textarea, .inputbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	outline:none;
+	margin:0;
+}
+input [type="radio"] {
+	margin-right:10px;
+	vertical-align:top;
+	margin-bottom:5px;
+}
+.button {
+	padding: 3px 5px;
+	border: 1px solid #333;
+	color: #ccc;
+	font-size: 85%;
+	text-transform: uppercase;
+}
+.button:hover, .button:focus {
+	border: 1px solid #999;
+	background: #333;
+	color: #fff;
+}
+* html .button, *+html .button {
+	padding: 2px 0 !important; /*IE 6 & 7*/
+}
+input[type="radio"], input[type="checkbox"] {
+	margin-right:5px;
+}
+.inputbox {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.inputbox:hover, .inputbox:focus {
+	background: #FFFFCC;
+}
+.sfCurve, .Curve {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.Shadow {
+	-moz-box-shadow: 5px 5px 5px #ccc;
+	-webkit-box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+}
+html, body {
+	height: 100%;
+}
+#sfOuterwrapper {
+	width:100%;
+	min-height:100%;
+	min-width:900px;
+}
+.sfSagewrapper {
+	overflow:hidden;
+}
+.sfAuto {
+	width:auto !important;
+	min-width:70px;
+}
+.sfFullwidth {
+	width:98% !important;
+}
+html, body {
+	height: 100%;
+}
+body > #sfOuterwrapper {
+	height: auto;
+	min-height: 100%;
+	overflow:hidden;
+}
+/*---Top Bar---*/
+
+.sfTopbar ul {
+	float:right;
+}
+.sfTopbar ul li {
+	float:left;
+	margin:0 10px;
+}
+.sfTopbar ul li a {
+	font:11px Arial, Helvetica, sans-serif;
+	color:#e6f1f5;
+	text-decoration:none;
+}
+.sfTopbar ul li a:hover {
+	text-decoration:underline;
+}
+.sfTopbar ul.left {
+	float:left;
+}
+.sfTopbar ul.left li img, .sfTopbar ul.left li a {
+	float:left;
+}
+.sfTopbar ul.left li img {
+	margin:0 5px 0 0;
+}
+.sfTopbar ul.right li {
+	margin:0 10px 0 0;
+}
+.sfTopbar ul.right li.preview {
+	margin:0 20px 0 0;
+}
+.sfTopbar ul.right li a {
+	padding:0 0 0 15px;
+}
+.sfTopbar ul.right li.preview {
+	background:url(../images/preview.png) no-repeat 0 50%;
+}
+.sfTopbar ul.right li.myaccount {
+	background:url(../images/my-account.png) no-repeat 0 50%;
+}
+.sfTopbar ul.right li.logout {
+	background:url(../images/logout.png) no-repeat 0 50%;
+}
+.sfTopbar ul.left li.sfUpgrade {
+	background:url(../images/upgrade.png) no-repeat 0 50%;
+	padding:0 0 0 15px;
+}
+.sfTopwrapper {
+	background:#fff;
+	padding:10px 15px;
+	-webkit-box-shadow:0 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow:0 2px 2px rgba(0, 0, 0, 0.1);
+	margin:30px 0 0 0;
+}
+.sfLogo img {
+	float:left;
+	margin-top:4px;
+}
+.sfLogo span {
+	float:left;
+	color:#555;
+	padding:25px 0 0 6px;
+	font-weight:bold;
+}
+/* sfNavigation */
+.sfNavigation {
+	margin:1px 0 0 0;
+}
+/*---Body Content---*/
+.sfContentwrapper {
+	padding:10px 0 0 0;
+	min-width:900px;
+}
+.sfSidebar {
+	float:left;
+	width:150px;
+	background:#006296;
+	padding:0 0 15px;
+}
+.sfSidebar ul {
+	background:#00476d;
+}
+.sfSidebar ul li {
+	border-bottom:1px solid #004060;
+	-webkit-box-shadow:0 1px 0 #00557e;
+	box-shadow:0 1px 0 #00557e;
+}
+.sfSidebar ul li ul li {
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.sfSidebar ul li:hover {
+	background:rgba(0, 0, 0, 0.1);
+}
+.sfSidebar ul li a {
+	font:bold 11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	padding:10px;
+	overflow:hidden;
+	display:block;
+}
+.sfSidebar ul li a span {
+	display: inline-block;
+	margin:2px 0 0 6px;
+}
+.sfSidebar ul li a img {
+	float:left;
+	max-height:24px
+}
+.sfHidepanel {
+	background:#1b3f52;
+	padding:6px 10px;
+	overflow:hidden;
+}
+.sfHidepanel a {
+	text-decoration:none;
+}
+.sfHidepanel a span {
+	font:11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	float:left;
+	padding:3px 0 0 5px;
+}
+.sfHidepanel a img {
+	float:left;
+}
+.sfSidebar ul li.parent a {
+	background:url(../images/down.png) no-repeat right 50%;
+}
+.sfSidebar ul li.parent a.active {
+	background:#007cbf url(../images/up.png) no-repeat right 50%;
+}
+/*---Child---*/
+.sfSidebar ul li.parent ul {
+	background:#006296;
+	z-index:999;
+}
+.sfSidebar ul li.parent ul li a {
+	font:normal 11px Arial, Helvetica, sans-serif;
+	padding-left:30px;
+	background:url(../images/arrow.png) no-repeat 15px 14px;
+}
+.sfSidebar ul li.parent ul li a:hover {
+	background-color:rgba(0, 0, 0, 0.05);
+}
+.sfSidebar ul li ul li {
+	background:none;
+}
+/*---Hide Side Bar---*/
+.sfSidebarhide ul li.parent a {
+	background:url(../images/right.png) no-repeat right 50%;
+}
+.sfSidebarhide ul li.parent ul li a {
+	padding-left:15px;
+	background:url(../images/arrow.png) no-repeat 5px center;
+}
+.sfSidebarhide ul li.parent ul li a:hover {
+	background:rgba(0, 0, 0, 0.1) url(../images/arrow.png) no-repeat 5px center;
+}
+/*---Body Right Content---*/
+.sfMaincontent {
+	padding:0 15px 15px 20px;
+	overflow:hidden;
+}
+/*---Dashboard---*/
+.sfDashboard {
+	margin-bottom:40px;
+}
+.sfDashboard ul li {
+	margin:0 5px 5px;
+	float:left;
+}
+.sfDashboard ul li a {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	color:#00719C;
+	text-align:center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background:#fff;
+	border:1px solid #dcdfe0;
+	text-decoration:none;
+	display:inline-block;
+	height:85px;
+	width:120px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	overflow:hidden;
+	cursor:pointer;
+}
+.sfDashboard ul li a span {
+	display:block;
+	width: 115px;
+}
+.sfDashboard ul li a span.sfModuleicon {
+	padding:10px 0;
+	height:32px;
+	overflow:hidden;
+}
+.sfDashboard ul li a span.sfModulename {
+}
+/*---Accordion---*/
+.sfAccordian {
+	width:100%;
+}
+.sfAccordianholder {
+	margin:0 0 1px 0;
+}
+.sfAccordianheader.Curve {
+	-webkit-border-radius:0px !important;
+	border-radius:0px !important;
+}
+.sfAccordianheader {
+	background-color: #e6e6e6;
+	border:1px solid #ccc;
+	border-bottom:none;
+	margin-bottom:-1px;
+	background-image: -webkit-linear-gradient(bottom, #e6e6e6, #fff);
+	background-image: -moz-linear-gradient(bottom, #e6e6e6, #fff);
+	background-image: -o-linear-gradient(bottom, #e6e6e6, #fff);
+	background-image: -ms-linear-gradient(bottom, #e6e6e6, #fff);
+	background-image: linear-gradient(to top, #e6e6e6, #fff);
+	padding:5px 10px;
+}
+.sfAccordianheader h2 {
+	background:url(../images/down-arrow.png) no-repeat right 50%;
+	font:bold 12px Arial, Helvetica, sans-serif !important;
+	color:#3c3c3c !important;
+	margin:0;
+	padding:5px 0;
+	box-shadow:none !important;
+	border:none;
+}
+.sfAccordianheader:hover {
+	background:#f2f2f2;
+	cursor:pointer;
+}
+.sfAccordianholder.Active h2 {
+	background:url(../images/up-arrow.png) no-repeat right 50%;
+	border:none;
+}
+.sfAccordian .Active .sfAccordianheader {
+	background-color: #bababa;
+	background-image: -webkit-linear-gradient(bottom, #bababa, #fff);
+	background-image: -moz-linear-gradient(bottom, #bababa, #fff);
+	background-image: -o-linear-gradient(bottom, #bababa, #fff);
+	background-image: -ms-linear-gradient(bottom, #bababa, #fff);
+	background-image: linear-gradient(to top, #bababa, #fff);
+}
+.sfAccordiancontent {
+	display:none;
+	background:#fff;
+	border:1px solid #d9d9d9;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding:10px;
+}
+.sfAccordiancontent p {
+	font:11px/16px Arial, Helvetica, sans-serif;
+	color:#6c6c6c;
+	text-align:justify;
+}
+.sfAccordiancontent a {
+	color:#028cc1;
+}
+/*---Footer---*/
+.sfFooterwrapper {
+	display:none;
+}
+/*---Main Content Holder---*/
+.sfMaincontentHolder {
+	background:#f6f6f6;
+	border:1px solid #e9e8e8;
+	padding:10px;
+	margin:0 10px 0 0;
+}
+/*---Tab Panel---*/
+.sfTabpenel {
+	margin:0 10px 0 0;
+}
+.sfTabpenelHeader {
+	z-index:2px;
+}
+.sfTabpenelHeader ul li {
+	float:left;
+	margin:0 5px 0 0;
+}
+.sfTabpenelHeader ul li a {
+	background:url(../images/tab-default.gif) repeat-x;
+	padding:0 15px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	display:inline-block;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	line-height:30px;
+}
+.sfTabpenelHeader ul li a:hover, .sfTabpenelHeader ul li.active a {
+	background:url(../images/tab-hover.gif) repeat-x;
+	color:#333;
+	position:relative;
+	margin:0 0 -1px 0;
+	z-index:2;
+	line-height:30px;
+}
+.sfTabpenelContent {
+	background:#f6f6f6;
+	min-height:500px;
+	border:1px solid #f0efef;
+	padding:10px;
+	position:relative;
+	z-index:1;
+}
+/*---Grid Wrapper---*/
+.sfGridwrapper table th:first-child, .cssClassHeading td:first-child, .sfGridwrapper .cssClassHeading td:first-child {
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	border-top-left-radius: 3px;
+}
+.sfGridwrapper table th:last-child, .cssClassHeading td:last-child, .sfGridwrapper .cssClassHeading td:last-child {
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-right-radius: 3px;
+}
+.sfGridwrapper th, .classTableWrapper .cssClassHeading td, .sfGridwrapper .cssClassHeading td, #tblQuantityDiscount .cssClassHeading td {
+	color:#3c3c3c;
+	/*	background-color: #d9d9d9;
+	background:-webkit-linear-gradient(bottom, #d9d9d9, #fff);
+	background: -moz-linear-gradient(bottom, #d9d9d9, #fff);
+	background:-o-linear-gradient(bottom, #d9d9d9, #fff);
+	background: -ms-linear-gradient(bottom, #d9d9d9, #fff);
+	background: linear-gradient(to top, #d9d9d9, #fff);
+*/	font:bold 12px Arial, Helvetica, sans-serif;
+	text-shadow:none;
+	text-align:left;
+	padding:10px;
+}
+.sfGridwrapper .cssClassHeading, .cssClassCommonBox .cssClassHeading, .classTableWrapper .cssClassHeading {
+	color:#3c3c3c;
+	background-color: #d9d9d9 !important;
+	background:-webkit-linear-gradient(bottom, #d9d9d9, #fff )!important;
+	background: -moz-linear-gradient(bottom, #d9d9d9, #fff) !important;
+	background:-o-linear-gradient(bottom, #d9d9d9, #fff)!important;
+	background: -ms-linear-gradient(bottom, #d9d9d9, #fff)!important;
+	background: linear-gradient(to top, #d9d9d9, #fff)!important;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	text-shadow:none;
+	text-align:left;
+}
+.sfGridwrapper .cssClassHeading th, .cssClassCommonBox .cssClassHeading td {
+	font:bold 12px Arial, Helvetica, sans-seri !important
+}
+.sfGridwrapper .cssClassHeading th, .sfGridwrapper .cssClassHeading td {
+	padding:13px 9px;
+}
+th.header {
+/*white-space: nowrap;*/
+}
+.sfGridwrapper table td {
+	text-shadow:0 1px 0px #fff;
+	vertical-align:top !important;
+}
+.sfGridwrapper tr td {
+	padding:10px;
+}
+.sfGridwrapper table, .sfGridwrapper td, .ajax__tab_xp .ajax__tab_body, .cssClassCommonBox table.classTableWrapper, .classTableWrapper table, .classTableWrapper, .cssClssRoundedBoxTable {
+	vertical-align:middle;
+	border:1px solid #e6e6e6;
+	border-width:1px !important;
+	font:normal 12px/18px Arial, Helvetica, sans-serif !important;
+}
+.cssClssRoundedBoxTable, #divInventoryDetails {
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0;
+}
+.cssClssRoundedBoxTable .cssClassCommonBox, #divInventoryDetails .cssClassCommonBox {
+	margin:0
+}
+ .sfGridwrapper table tr:nth-child(2n) td {
+background:#f8f8f8;
+}
+.sfGridwrapper table tr {
+	border-bottom:1px solid #dbdbdb;
+}
+.sfGridwrapper table tr td, table.classTableWrapper tr td {
+	background:#ededed;
+	color:#3e3e3e;
+	border:none !important;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	text-align:left !important;
+}
+.sfGridwrapper table tr:hover td, .cssClassCommonBox .classTableWrapper tr:hover td {
+	background:#dbf2fc;
+}
+.cssClassCommonBox .classTableWrapper tr.cssClassHeading:hover td {
+	background-color: #d9d9d9;
+	background-image: -webkit-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -moz-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -o-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -ms-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: linear-gradient(to top, #d9d9d9, #fff);
+}
+.sfGridwrapper a.sfFormlabel {
+	color:#034D68;
+}
+/*gridview test style*/
+.cssClassCommonBox {
+	margin: 5px;
+}
+.sfGridwrapperContent {
+	padding: 10px;
+}
+.sfGroupBox fieldset {
+	border:1px solid #c0c0c0;
+	width:45%;
+	float:left;
+	min-height:400px;
+	margin-left:20px;
+}
+.sfGroupBox fieldset legend {
+	color:#525252;
+	font-weight:bold;
+}
+/*---Breadcrumb ---*/
+.sfBreadcrumb {
+	line-height:20px;
+	margin:0 0 10px 0;
+}
+.sfBreadcrumb ul li {
+	float:left;
+	background:url(../images/breadcrumb-seperator.png) no-repeat left center;
+}
+.sfBreadcrumb ul li a {
+	display:inline-block;
+	padding:0 8px 0 12px;
+	color:#858585;
+	text-decoration:none;
+}
+.sfBreadcrumb ul li.sfFirst {
+	background:none;
+}
+.sfBreadcrumb ul li.sfFirst a, .sfBreadcrumb ul li.sfFirst {
+	padding-left:0;
+}
+.sfBreadcrumb ul li a:hover {
+	text-decoration:underline;
+	color:#48a2c5;
+}
+.sfBreadcrumb ul li span {
+	color:#858585;
+	padding-left:12px;
+}
+/*---Form Wrapper---*/
+.sfFormwrapper {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	padding:10px;/*	margin-bottom:10px;*/
+}
+.ajax__tab_xp .ajax__tab_body {
+	font-family:Arial, Helvetica, sans-serif !important;
+}
+.sfFormwrapper .sfFormwrapper, .sfFormwrapper .ajax__tab_panel { /*padding:0;*/
+}
+/*.cssClassCommonBox .sfFormwrapper {
+	background:#f5f5f5;
+}*/
+.sfFormwrapper span.sfFormlabel, .sfFormwrapper label.sfFormlabel, .sfGridwrapper .sfFormlabel, td span.cssClassLabel, .cssClassLabel, #divAddBranch td.label, td.cssClassLabel {
+	font:bold 12px Arial, Helvetica, sans-serif !important;
+	white-space: nowrap;
+}
+h1 span.cssClassLabel {
+	font:18px Arial, Helvetica, sans-serif
+}
+.sfFormwrapper input.sfInputbox, input[type="text"], .sfFormwrapper textarea.sfTextarea, .sfFormwrapper select, .sfFormwrapper select.sfListmenusmall, .sfFormwrapper select.sfListmenubig, textarea.sfTextareabig1, select.sfListmenusmall, textarea.sfInputbox, .sfTextBoxSmall, .cssClassSearchPanel select, .cssClassViewPerPage select, .cssClassVariantValueName, .cssClassIsActive, .cssClassTextArea, .cssClassElement select, .popupbox select, .cssClassTableRightCol textarea {
+	font:12px Arial, Helvetica, sans-serif;
+	padding:8px;
+	width:200px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	border:1px solid #ccc;
+	background:#fff;
+	color:#737373;
+}
+.cssClassSearchPanel label {
+	display:block;
+}
+.cssClassElement select {
+	width:auto
+}
+.cssClassElement select {
+	margin-bottom:5px
+}
+.cssClassViewPerPage select {
+	width:auto
+}
+.sfTextBoxSmall {
+	width:130px !important
+}
+.sfListmenubig option {
+	margin-bottom:1px;
+	padding:2px 5px;
+}
+textarea.sfTextarea {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	padding: 3px;
+	color: #555;
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+	border-bottom: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	outline: 0;
+}
+textarea.sfEditor {
+	width:98% !important;
+	min-height:350px;
+	color:#525252 !important;
+}
+input.sfDisable, select.sfDisable {
+	border:1px solid #bbb !important;
+	background:#e9e9e9 !important;
+}
+.sfFormwrapper .cssClassFormLinkButton a img {
+	float:left;
+	margin-right:5px;
+}
+/* FOCUS STYLES*/
+.sfFormwrapper input.sfInputbox:focus, input[type="text"]:focus, .sfFormwrapper textarea.sfTextarea:focus, .sfFormwrapper select.sfListmenu:focus, textarea.sfTextareabig1:focus, select.sfListmenusmall:focus, textarea.sfInputbox:focus {
+	-webkit-box-shadow:0 0 5px rgba(0, 114, 159, 0.75);
+	box-shadow:0 0 5px rgba(0, 114, 159, 0.75);
+	border: 1px solid #00B4FF;
+	outline:none;
+	outline:none;
+}
+.sfFormwrapper select.sfListmenu {
+	width:218px;
+}
+.sfButtonwrapper p {
+	float:left;
+}
+.sfFormwrapper select.sfListmenusmall {
+	width:auto;
+}
+.sfFormwrapper select.sfListmenubig {
+	width:207px;
+	height:130px;
+}
+.sfFormwrapper select.sfAutoheight {
+	height:auto;
+}
+.sfFormwrapper textarea.sfTextareabig {
+	width:300px;
+}
+.sfFormwrapper textarea.sfTextareabig1 {
+	width:98%;
+}
+.sfFormwrapper textarea.sfTextarea {
+	width:202px;
+	height:90px;
+	background:#fff;
+}
+.sfFormwrapper input.inputbox:focus, .sfFormwrapper textarea.textarea:focus, .sfFormwrapper select.listmenu:focus {
+	border:1px solid #fff;
+	-moz-box-shadow: 0px 0px 3px #ccc;
+	-webkit-box-shadow: 0px 0px 3px #ccc;
+	box-shadow: 0px 0px 3px #ccc;
+}
+.sfFormwrapper .sfRadio input {
+	float:left;
+	margin:0;
+	padding:0;
+}
+.sfFormwrapper .sfRadio label {
+	float:left;
+	padding:0 9px 0 3px;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	margin:0;
+}
+.sfFormHolder {
+	overflow:hidden;
+	padding:10px 0;
+}
+.sfFormHolder .sfLabelholder {
+	float:left;
+	width:200px;
+	padding:5px 0 0 0;
+}
+.sfFormHolder .sfInputholder {
+}
+.sfRadiobuttonList label {
+	margin:0 10px 0 5px;
+	vertical-align:bottom;
+}
+.sfCheckbox td {
+	padding:0 !important;
+}
+.sfCheckbox input, .sfCheckbox label {
+	float:left;
+}
+.sfCheckbox label {
+	margin:0 15px 0 5px;
+	vertical-align:bottom;
+}
+.sfCheckbox input {
+	padding:0 2px;
+	margin-left:2px;
+}
+.sfAvailableModules, .sfSelectleftright, .sfSelectedModules {
+	float:left;
+}
+.sfSelectleftright {
+	margin:0 10px;
+	display: table;
+	overflow: hidden;
+}
+.sfSelectleftright1 {
+	display: table-cell;
+	vertical-align: middle;
+	height:170px;
+}
+td.sfSelectleftright {
+	margin-top:8px;
+}
+.sfSelectleftright input {
+	height:18px;
+	width:18px;
+	display:block;
+	text-indent:-999px;
+	cursor:pointer;
+	margin:10px 0 0;
+	border:none;
+}
+.sfSelectallright {
+	background:url(../images/left-right.png) no-repeat 0 0;
+}
+.sfSelectallright:hover {
+	background:url(../images/left-right.png) no-repeat -19px 0;
+}
+.sfSelectoneright {
+	background:url(../images/left-right.png) no-repeat 0 -19px;
+}
+.sfSelectoneright:hover {
+	background:url(../images/left-right.png) no-repeat -19px -19px;
+}
+.sfSelectallleft {
+	background:url(../images/left-right.png) no-repeat 0 -38px;
+}
+.sfSelectallleft:hover {
+	background:url(../images/left-right.png) no-repeat -19px -38px;
+}
+.sfSelectoneleft {
+	background:url(../images/left-right.png) no-repeat 0 -57px;
+}
+.sfSelectoneleft:hover {
+	background:url(../images/left-right.png) no-repeat -19px -57px;
+}
+.sfFormwrapper table td {
+	padding:10px !important;
+	vertical-align:middle;
+}
+.sfSpacer {
+	display:block;
+	height:10px;
+}
+.sfRequired, .sfError {
+	color:red;
+	font-size:11px;
+}
+.sfRadiobutton {
+	overflow:hidden;
+	line-height:25px;
+}
+.sfRadiobutton input {
+	margin:0 5px 0 0;
+}
+.sfRadiobutton label {
+	margin:0 10px 0 0;
+}
+/*button*/
+.sfFormwrapper input.sfRadiobutton {
+	padding:0 2px;
+	margin:0 0 0 2px;
+}
+.sfFormwrapper .Error {
+	color:red;
+}
+.cssDeleteSelectedProvider {
+	float:left;
+}
+.cssProviderAddDelete {
+	margin:10px 0px;
+}
+.sfBtn, .sfEdit a, input.cssClassButtonSubmit, #templateList .sfButtonwrapper ul li a, .sfModuleinfo .sfLinks a, .sfButtonwrapper button, button.cssClassButtonSubmit, .cssClassView, .cssClassEdit, #alert-Buttons input, .classAddImages, .cssclassAddCVariants, .qq-upload-button, .cssProviderAddDelete .cssDeleteSelectedProvider, .cssProviderAddDelete .cssAddServiceProvider {
+	margin:0 5px 5px 0;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#005980;
+	padding:4px 10px;
+	cursor:pointer;
+	display:inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ededed;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ededed));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ededed 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #ededed 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #ededed 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #ededed 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	border:1px solid #ccc !important;
+}
+.sfBtn:hover, .sfEdit a:hover, input.cssClassButtonSubmit:hover, #templateList .sfButtonwrapper ul li a:hover, .sfModuleinfo .sfLinks a:hover, .sfButtonwrapper button:hover, button.cssClassButtonSubmit:hover, .cssClassView:hover, .cssClassEdit:hover, #alert-Buttons input:hover, .classAddImages:hover, .cssclassAddCVariants:hover {
+	background: #f0f0f0;
+	text-decoration:none;
+}
+.cssClassSearchPanel select.sfListmenu {
+	width:130px !important;
+}
+.sfEdit a {
+	background:url(../images/edit-icon.png) no-repeat 0 50%;
+	font:bold 11px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	padding:0 0 20px;
+	color:#136686;
+}
+/*---Button Wrapper ---*/
+.sfButtonwrapper input, .sfButtonwrapper label {
+	float:left;
+}
+.sfButtonwrapper label {
+	margin:0 20px 0 5px;
+	font:bold 12px/16px Arial, Helvetica, sans-serif;
+	color:#0073a0;
+	cursor:pointer;
+	float:left;
+}
+/* don not remove fload left */
+.sfButtonwrapper {
+	overflow:hidden;
+	margin:20px 0;
+}
+.ui-widget-content .sfButtonwrapper {
+	margin:10px;
+	padding:10px 0 0;
+}
+.sftype1 {
+	overflow:hidden;
+}
+.sftype1 label {
+	padding:2px 0 0 22px;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:bold;
+}
+.sftype1 label:hover, .sfButtonwrapper label:hover, .ui-tree li span.ui-tree-title:hover, #divFileTreeOuter li a:hover {
+	color:#0094de;
+	text-decoration:none;
+}
+.ajax__tab_panel .sftype1.sfMargintop label {
+	padding-left:0;
+}
+.sftype1 label.sfAdd {
+	background:url(../images/add.png) no-repeat 0 50%;
+}
+.sftype1 label.sfAdduser {
+	background:url(../images/adduser.png) no-repeat 0 50%;
+}
+.sftype1 label.sfDelete {
+	background:url(../images/delete.png) no-repeat 0 50%;
+}
+.sftype1 label.sfUpdate {
+	background:url(../images/update.png) no-repeat 0 50%;
+}
+.sftype1 label.sfSave {
+	background:url(../images/save.png) no-repeat 0 50%;
+}
+.sftype1 label.sfRefresh {
+	background:url(../images/refresh.png) no-repeat 0 50%;
+}
+.sftype1 label.sfClearlog {
+	background:url(../images/clearlog.png) no-repeat 0 50%;
+}
+.sftype1 label.sfInstall {
+	background:url(../images/install-module.png) no-repeat 0 50%;
+}
+.sftype1 label.sfSearch {
+	background:url(../images/search.png) no-repeat 0 50%;
+	display:inline-block;
+}
+.sftype1 label.sfRestart {
+	background:url(../images/restart.png) no-repeat 0 50%;
+}
+.sftype1 label.sfExecute {
+	background:url(../images/execute.png) no-repeat 0 50%;
+}
+.sftype1 label.sfCancel {
+	background:url(../images/delete.png) no-repeat 0 50%;
+}
+/*alignments*/
+.align-right {
+	text-align:right;
+}
+.align-left {
+	text-align:left;
+}
+.float-right {
+	float:right;
+}
+/*- col width -*/
+th.sfIsactive {
+	width:80px;
+}
+th.sfIsactive span {
+	padding:0 0 0 5px;
+}
+th.sfIssecure {
+	width:70px;
+}
+th.sfAddedon {
+	width:70px;
+}
+th.sfUpdate {
+	width:70px;
+}
+th.sfVersion {
+	width:70px;
+}
+th.sfInuse {
+	width:40px;
+}
+th.sfType {
+	width:90px;
+}
+th.sfPreview {
+	width:70px;
+}
+th.sfEnable {
+	width:70px;
+}
+th.sfIndex {
+	width:30px;
+}
+th.sfCheckbox, th.sfDelete, th.sfEdit, td.sfEdit, th.sfOrder {
+	width:20px;
+}
+th.sfKey, td.sfKey {
+	width:150px;
+	text-align:center
+}
+th.sfColName {
+	width:140px;
+}
+th.sfColType {
+	width:80px;
+}
+.sfMarginBtm {
+	margin-bottom: 20px;
+}
+/*- listing holder -*/
+.sfListingholder ul {
+	float:left;
+}
+.sfListingholder ul li {
+	float:left;
+	margin:0 10px 0 0;
+}
+.sfListingholder ul li span {
+	padding:5px 0 0 0;
+	float:left;
+}
+.sfListingholder ul li.sfSearch input {
+	margin:6px 5px 0;
+}
+/*- accordian menu -*/
+.sfCollapsewrapper {
+	overflow:hidden;
+}
+.sfCollapsecontent {
+	padding:15px;
+	border:1px solid #ccc;
+	border-top-width:0;
+}
+.sfCollapsewrapper .sfInformation {
+	float:none;
+	width:auto;
+}
+.sfCollapsewrapper .sfInformation .sfInformationholder .Curve h2 {
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.sfCollapsewrapper .sfInformation .sfInformationholder .Curve h2.Curve {
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+/*- pagination -*/
+.pagination {
+	float:left;
+}
+.sfPagination table {
+	width:auto!important;
+}
+.sfGridwrapper table tr.sfPagination table, .sfGridwrapper table tr.sfPagination table tr {
+	border-width:0px !important;
+}
+.sfPagination table td {
+	padding:0 3px;
+}
+.sfPagination ul li {
+	float:left;
+	margin:0 5px 0 0;
+}
+.sfPagination ul li a, .sfPagination td a, .sfPagination td span, .Pagination a, .Pagination span, .pagination span, .pagination a {
+	color:#000;
+	height:18px;
+	width:20px;
+	text-align:center;
+	display:inline-block;
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	border:1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	background:#fff;
+	text-shadow:none;
+}
+.cssClassPaginationActive {
+	background:#6CB5E4!important;
+	color:#fff!important;
+	border:1px solid #6CB5E4!Important;
+}
+.Pagination a, .pagination a, .pagination span, .Pagination span {
+	margin-left:5px;
+}
+.sfPagination ul li a.active, .sfPagination td a.active, .sfPagination td span, .Pagination span {
+	background:#069;
+	border:1px solid #069;
+	color:#fff;
+}
+.sfPagination ul li a:hover, .sfPagination td a:hover, .Pagination a:hover, .pagination a:hover {
+	background:#6cb5e4;
+	border:1px solid #6cb5e4;
+	color:#fff;
+}
+.sfPagination ul li a.previous_link, .sfPagination ul li a.next_link {
+	margin:0 8px;
+}
+.sfPagination ul li.prev a, .sfPagination ul li.next a {
+	margin:0 8px;
+	padding:0 8px;
+}
+.sfPagination ul li.MoreNav a {
+	border:none;
+	font-weight:bold;
+	margin:0 8px;
+}
+.sfPagination ul li a.last_link, .sfPagination ul li a.last_link:hover, .sfPagination ul li a.first_link, .sfPagination ul li a.first_link:hover, .sfPagination ul li a.next_link, .sfPagination ul li a.next_link:hover, .sfPagination ul li a.previous_link, .sfPagination ul li a.previous_link:hover {
+	background:none;
+	border:none;
+	text-decoration:underline;
+	color:#000;
+	text-shadow:none;
+}
+.sfPagination a {
+	text-decoration:none;
+	border:solid 1px #AAE;
+	color:#15B;
+}
+.sfPagination a, .sfPagination span {
+	display:inline-block;
+	float:none;
+	width:20px;
+	background:#fff;
+	border:1px solid #4692C3;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	color:#000;
+	text-align:center;
+	margin:5px;
+}
+.sfPagination a:hover {
+	background:#6cb5e4;
+	color:#fff;
+	text-shadow:0 1px 0 #069;
+}
+.sfPagination .current {
+	background:#4692c3;
+	border:1px solid #4692c3;
+	color:#fff;
+}
+.pagination span.current {
+	background:#4692c3;
+	border:1px solid #4692c3;
+	color:#fff;
+}
+.sfPagination .current.prev, div.sfPagination .current.next {
+	background:#fff;
+	border-color: #999999;
+	color: #999999;
+}
+.sfGridwrapper table tr.sfPagination td {
+	background:none;
+	padding:5px 0;
+	margin:0;
+	border:none;
+}
+table.simplePagerNav, table.simplePagerNav tr {
+	border: none;
+}
+table.simplePagerNav td {
+	padding:0;
+	margin:0;
+}
+table.simplePagerNav td {
+	display: list-item;
+	list-style: none;
+	float: left;
+}
+#divPagerNav ul li {
+	margin:0;
+	padding:0;
+}
+#divPagerNav ul li a {
+	margin:0 5px 0 0;
+}
+#divPagerNav ul li.active a {
+	background:#4692c3;
+	border:1px solid #4692c3;
+	color:#fff;
+}
+.cssClassPages {
+	float:left;
+	margin-right:10px
+}
+.cssClassPageNumber {
+	overflow:hidden;
+	margin:10px 0 0 0;
+}
+#Pagination {
+	float:left;
+}
+.cssClassPages input {
+	width:20px;
+	text-align:center;
+	margin:0 5px 0 5px
+}
+.cssClassViewPerPage {
+	float:right;
+	line-height:31px;
+}
+.Pagination {
+	float:left
+}
+/* Not Found Message */
+tr.sfNotfound td, tr.sfEmptyrow td, div.sfEmptyrow {
+	font:bold 30px/4 Arial, Helvetica, sans-serif;
+	color:#666;
+	text-align:center;
+}
+/*---PopUp---*/
+.sfPopup, .popupbox, #alert-Box {
+	background:#fff;
+	border: 1px solid fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 17px 40px rgba(0, 0, 0, 0.35);
+	-webkit--shadow:0 17px 40px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 17px 40px rgba(0, 0, 0, 0.35);
+	left: 50%;
+	padding:15px;
+	position: fixed;
+	top: 50%;
+	z-index: 9000;
+	min-width:100px;
+}
+.popupbox .cssClassCommonBox {
+	margin:0px;
+}
+.sfPopupinner {
+	background:#fff;
+	min-height:150px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	z-index:410;
+}
+#fade {
+	display: none;
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .40;
+	z-index:5000;
+ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+}
+.sfPopupclose, .cssClassClose {
+	position:absolute;
+	top:-13px;
+	right:-13px;
+	cursor:pointer;
+	width:28px;
+	border:none;
+	text-indent:-9999px;
+	height:28px;
+	overflow:hidden;
+	background:url(../images/close.png) no-repeat;
+	z-index:450;
+}
+.sfPopupclose img {
+	display:none;
+}
+.sfPopup .ui-tabs .ui-tabs-panel {
+	padding:5px 0 !important;
+}
+.sfPopup sfButtonwrapper {
+	background:url(../images/lines.png) repeat-x;
+	padding-top:10px;
+	margin:10px;
+}
+/* module information */
+.sfModuleinfo .sfInfo, .sfModuleinfo .sfWarning, .sfHtmlview {
+	padding:10px 10px 10px 40px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background:url("../images/info.png") no-repeat scroll 10px center #FFFFFF;
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	border: solid 3px #f2f2f2;
+	position:relative;
+	font:12px/18px Arial, Helvetica, sans-serif;
+	color:#383838;
+	margin-bottom:20px;
+}
+.sfModuleinfo .sfWarning {
+	background: url("../images/alert.png") no-repeat 10px center #E2A000;
+}
+}
+.sfModuleinfo p {
+	overflow:hidden;
+	padding:0 10px 0 0;
+}
+.sfModuleinfo .sfLinks {
+	float:right;
+	margin-top:-3px;
+}
+/*
+.sfLinks a.sfClose { background:url(../images/close.png) no-repeat; opacity:0.8; display:inline-block; width:28px; height:28px; border:none; text-indent:-9999px; }
+.sfLinks a.sfClose:hover { opacity:1; border:none;}*/
+
+/* context menu  (Page Manager)*/
+.sfContextmenu {
+	background:#ededed;
+	border:1px solid #c9c9c9;
+	padding:10px 0;
+	-moz-box-shadow:2px 2px 5px #666;
+	-webkit-box-shadow:2px 2px 5px #666;
+	box-shadow:2px 2px 5px #666;
+}
+.sfContextmenu li {
+	border-bottom:1px solid #cccccc;
+	border-top:1px solid #fff;
+	padding:2px 10px;
+	cursor:pointer
+}
+.sfContextmenu li:first-child {
+	border-top:none;
+}
+.sfContextmenu li:last-child {
+	border-bottom:none;
+}
+.sfContextmenu li, .sfContextmenu li b {
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#707070;
+	text-shadow:1px 1px 0 #fff;
+}
+.sfContextmenu li:hover, .sfContextmenu li:hover b {
+	background:#c9c9c9;
+	color:#000;
+}
+/* -- list manager --*/
+.sfTreeviewholder {
+	float:left;
+	width:30%;
+}
+.sfTreeview {
+	border: 1px solid #a6c9e2;
+	padding:5px 0;
+	background:#e8f5ff;
+	min-height:300px;
+}
+.sfTreeview a {
+	font:bold 11px Arial, Helvetica, sans-serif;
+	padding:5px 0;
+	display:block;
+}
+.sfListright {
+	float:right;
+	width:68%;
+}
+.sfTreeviewholder .sfTreeview table td {
+	padding:2px 6px;
+}
+div.sfCpanel {
+	width:100%;
+}
+.sfSnapshotTabDiv td {
+	padding:6px 5px;
+}
+/* event viewer */
+.sfEventview td {
+	cursor:pointer;
+}
+.sfEventview .sfEventinfo {
+	cursor:auto;
+	background:#fff;
+	padding:10px;
+}
+.sfEventinfo p {
+	padding:3px 0;
+}
+.sfEventview table tr.sfActive, .sfEventview table tr.sfActive:hover {
+	background:#a4dff6;
+	position:relative;
+}
+.sfEventview tr.sfPagination td {
+	cursor:auto;
+}
+/* listing page */
+.sfListright table {
+	width:100%;
+}
+/*Portal Management*/
+.sfTemplate {
+	margin:20px 0 0 0;
+	overflow:hidden;
+}
+.sfTemplate ul li {
+	float:left;
+	width:150px;
+	list-style:none;
+	background:#fff;
+	border:1px solid #CCC;
+	margin:0 10px 0 0;
+	text-align:center;
+	padding:5px;
+}
+.sfTemplate ul li img, .sfTemplate ul li .sfTemplateimage {
+	height: 126px;
+	width: 149px;
+}
+.sfTemplate ul li span {
+	font:normal 11px Arial, Helvetica, sans-serif;
+}
+.sfTemplate ul li p {
+	padding:5px 0 0 0;
+}
+/* Validation Message */
+label.error {
+	color:Red;
+	font-weight:normal;
+}
+.sfActive {
+	background-color:#53c7ff
+}
+/*Tooltip*/
+.sfTooltip {
+	cursor:pointer;
+}
+/* loading */
+#ajaxBusy, .sfLoadingdiv {
+	bottom: 0;
+	display: block;
+	font:bold 15px/30px Arial, Helvetica, sans-serif;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index:9999;
+	color:#fff;
+	padding:5px 0;
+	letter-spacing:1px;
+	background:rgba(0, 0, 0, 0.8);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8000000, endColorstr=#80000000);
+	zoom: 1;
+}
+#ajaxBusy img {
+	margin-right:5px;
+	vertical-align:middle;
+}
+/*----*/
+.sfPasswordstorage input, .sfPasswordstorage input {
+	float:left;
+	margin:0 10px 0 0;
+}
+/* message template */
+.sfToken {
+	overflow:hidden;
+}
+.sfToken a, .sfToken label {
+	float:left;
+	margin:0 10px 0 0;
+}
+.sfToken label {
+	padding:2px 0 0 0;
+}
+/* sql page */
+.sfSql {
+	margin:0;
+}
+.sfSql .uploader, .sfSql input, .sfSql label {
+	float:left;
+}
+.sfSql input, .sfSql label {
+	margin:5px 0 0 10px;
+}
+/*- */
+.sfAuditbar span {
+	font:12px Arial, Helvetica, sans-serif;
+	font-style:italic;
+}
+/* Modules Managemen*/
+.sfUploadfile {
+	margin:10px 0 0 0;
+}
+.sfUploadfile .uploader, .sfUploadfile p {
+	float:left;
+	margin:0 10px 0 0;
+}
+.sfUploadfile p {
+	padding:5px 0 0 0;
+}
+/* Note Message */
+p.sfNote {
+	padding:3px 5px;
+	overflow:hidden;
+}
+p.sfNote, p.sfNote span {
+	font:italic 12px Arial, Helvetica, sans-serif;
+	color:#4C4C4C;
+}
+.sfNote p {
+	font:12px/18px Arial, Helvetica, sans-serif !important;
+}
+/* */
+.sfAdduser input, .sfAdduser .sftype1 {
+	float:left;
+}
+.sfAdduser .sftype1 {
+	margin:4px 0 0 5px;
+}
+/* */
+#ctl15_divFileUploader span, #ctl15_divFileUploader input {
+	float:left;
+	margin:0 10px 0 0;
+}
+/* float */
+ul.sfFormtag li span.sfFormlabel {
+	float:left;
+	width:15%;
+	padding:7px 0 0 0;
+}
+ul.sfFormtag li input, .sfFormtag li select {
+	overflow:hidden;
+}
+/* seo */
+#divRobots td input {
+	margin:0 5px 0 0;
+}
+body ul.sfCollapsed {
+	z-index:9999;
+}
+#divFloat {
+	z-index:5;
+}
+/*user profile*/
+.sfUserprofile .sfViewprofile {
+	float:left;
+	width:82%;
+}
+.sfProfileimage {
+	float:right;
+	text-align:center;
+	padding:10px;
+	margin:45px 0 0 0;
+}
+.sfViewprofile td {
+	padding:5px 5px;
+}
+/* password strength */
+.sfPassword {
+	width:auto;
+	float:left;
+}
+.sfPassword .pstrength-bar {
+	width:100px;
+}
+.sfPassword input {
+	display:block;
+	margin:0 0 5px 0;
+}
+.sfPassword .pstrength-info {
+	float:left;
+	margin:0 0 0 5px;
+}
+.sfPassword .pstrength-bar {
+	float:left;
+	clear:both;
+}
+.sfPwdstrength {
+	display:block;
+}
+.sfPassword .pstrength-minchar {
+	display:block;
+	clear:both;
+}
+.sfPassword input.sfInputbox {
+	float:left;
+}
+.sfPassword span.sfRequired {
+	float:left;
+	margin:2px 0 0 3px;
+}
+/* list manager */
+.sfListing {
+	margin:0 0 10px 0;
+}
+#ctl16_tvList td {
+	margin:0;
+	padding:0 5px;
+}
+/* ck editor */
+.sfCkeditor {
+	border:1px solid #ccc;
+}
+/* permission + add user */
+#divSearchedUsers {
+	background:#fff;
+	padding:4px;
+	height:200px;
+	display:none;
+	overflow:auto;
+	overflow-x:hidden;
+}
+#divSearchedUsers ul li {
+	font:bold 12px Arial, Helvetica, sans-serif;
+	text-shadow:1px 1px 0 #fff;
+	color:#1193c5;
+	border-bottom:1px dotted #d4d4d4;
+	display:block;
+	padding:5px 10px;
+	cursor:pointer;
+}
+#divSearchedUsers ul li.sfActive {
+	background:#b5e3f5;
+	border:none;
+	border-bottom:1px solid #fff;
+	color:#333;
+}
+/* help text */
+h3 {
+	overflow:hidden;
+}
+h3 span {
+	float:left;
+}
+h3 img {
+	float:left;
+}
+img.sfTooltip {
+	margin:0 0 0 5px;
+}
+/* dashboard */
+.sfMasterleft {
+	float:left;
+	width:49%;
+}
+.sfMasterright {
+	float:right;
+	width:49%;
+}
+/* user management */
+.sfUsersearch input.sfInputbox, .sfUsersearch select.sfListmenu {
+	width:150px;
+}
+.sfUsersearch input.sfInputdate {
+	width:100px;
+}
+/* smtp test */
+td.sfSmtptest {
+	padding:0;
+	margin:0;
+	height:30px;
+}
+/*Carousel-Quicklinks*/
+.sfquicklinks {
+	float:right;
+	width:526px;
+	height:50px;
+	overflow:hidden;
+	padding:0 45px;
+}
+.sfquicklinks ul li {
+	float:left;
+}
+.sfquicklinks ul li a {
+	font:12px Arial, Helvetica, sans-serif;
+	color:#464545;
+	text-shadow:0 1px 1px #fff;
+	text-align:center;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	background:#f5f5f5;
+	border:1px solid #d1d1d1;
+	text-decoration:none;
+	display:inline-block;
+	width:50px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+-moz-transition:all .3s ease-out;
+-o-transition:all .3s ease-out;
+-webkit-transition:all .3s ease-out;
+-ms-transition:all .3s ease-out;
+transition:all .3s ease-out;
+	margin:5px 9px 0 0;
+}
+.sfquicklinks ul li a img {
+	padding:7px 0;
+}
+.sfquicklinks ul li a span {
+	display:none;
+	padding:0 0 10px 0
+}
+.sfquicklinks .jcarousel-container-horizontal {
+	width: 245px;
+	padding: 20px 40px;
+}
+.jcarousel-list {
+	padding-top:4px;
+}
+.sfquicklinks .jcarousel-item {
+	width: auto !important;
+}
+.sfquicklinks .jcarousel-item-placeholder {
+	background: #fff;
+	color: #000;
+}
+.sfquicklinks .jcarousel-next-horizontal {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(../images/next-horizontal.png) no-repeat 0 0;
+}
+.sfquicklinks .jcarousel-next-horizontal:hover {
+	background: transparent url(../images/next-horizontal-hover.png) no-repeat 0 0;
+}
+.sfquicklinks .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+}
+.sfquicklinks .jcarousel-prev-horizontal:hover {
+	background: transparent url(../images/prev-horizontal-hover.png) no-repeat 0 0;
+}
+.sfquicklinks .jcarousel-prev-disabled-horizontal, .sfquicklinks .jcarousel-prev-disabled-horizontal:hover {
+	background: transparent url(../images/prev-horizontal-disable.png) no-repeat 0 0;
+	cursor:default;
+}
+.sfquicklinks .jcarousel-next-disabled-horizontal, .sfquicklinks .jcarousel-next-disabled-horizontal:hover {
+	background: transparent url(../images/next-horizontal-disable.png) no-repeat 0 0;
+	cursor:default;
+}
+/* Tooltip*/
+.sf-vertical, .sf-vertical li {
+	width:	100%;
+	position:relative;
+	z-index:1000;
+}
+.sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
+	left:	100%;
+	top:	0;
+}
+.sf-vertical .sf-sub-indicator {
+	background-position: -10px 0;
+}
+.sf-vertical a > .sf-sub-indicator {
+	background-position: 0 0;
+}
+.sf-vertical a:focus > .sf-sub-indicator, .sf-vertical a:hover > .sf-sub-indicator, .sf-vertical a:active > .sf-sub-indicator, .sf-vertical li:hover > a > .sf-sub-indicator, .sf-vertical li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0;
+}
+/*** ESSENTIAL STYLES ***/
+.menu ul {
+	top:-999em;
+}
+.menu li {
+	position:		relative;
+}
+.sfCollapsed {
+	width:150px !important;
+	position:absolute;
+}
+.fullwidth {
+	width:100%;
+	position:static;
+}
+.sf-sub-indicator {
+	display:none !important;
+}
+/* Uniform File Upload Css*/
+div.uploader, div.uploader {
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+}
+.uploader *, .uploader * {
+	margin: 0;
+	padding: 0;
+}
+/* Uploader */
+div.uploader {
+	background-position: 0px -297px;
+	height: 28px;
+}
+div.uploader span.action {
+	background-position: right -409px;
+	height: 24px;
+	line-height: 24px;
+}
+div.uploader span.filename {
+	height: 24px;
+	margin: 2px 0px 2px 2px;
+	line-height: 24px;
+}
+div.uploader.focus, div.uploader.hover, div.uploader:hover {
+	background-position: 0px -353px;
+}
+div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hover span.action {
+	background-position: right -437px;
+}
+div.uploader.active span.action, div.uploader:active span.action {
+	background-position: right -465px;
+}
+div.uploader.focus.active span.action, div.uploader:focus.active span.action, div.uploader.focus:active span.action, div.uploader:focus:active span.action {
+	background-position: right -493px;
+}
+div.uploader.disabled {
+	background-position: 0px -325px;
+}
+div.uploader.disabled span.action {
+	background-position: right -381px;
+}
+div.button {
+	background-position: 0px -523px;
+}
+div.button span {
+	background-position: right -643px;
+}
+div.uploader {
+	width: 190px;
+	cursor: pointer;
+}
+div.uploader span.action {
+	width: 85px;
+	text-align: center;
+	text-shadow: #fff 0px 1px 0px;
+	background-color: #f2f2f2;
+	font-size: 11px;
+	font-weight: bold;
+}
+.cssClassTabPanelTable div.uploader span.action {
+	background-color:#fff
+}
+div.uploader span.filename {
+	color: #777;
+	width: 82px;
+	border-right: solid 1px #bbb;
+	font-size: 11px;
+}
+div.uploader input {
+	width: 190px;
+}
+div.uploader.disabled span.action {
+	color: #aaa;
+}
+div.uploader.disabled span.filename {
+	border-color: #ddd;
+	color: #aaa;
+}
+div.uploader {
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+div.uploader span.action {
+	float: left;
+	display: inline;
+	padding: 2px 0px;
+	overflow: hidden;
+	cursor: pointer;
+}
+div.uploader span.filename {
+	padding: 0px 10px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+cursor;
+default;
+}
+div.uploader input {
+	opacity: 0;
+filter: alpha(opacity:0);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	float: right;
+	height: 25px;
+	border: none;
+	cursor: default;
+}
+#divCenterContent {
+	overflow:hidden;
+}
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+}
+.selector, .radio, .checker, .uploader, .button, .selector *, .radio *, .checker *, .uploader *, .button * {
+	margin: 0;
+	padding: 0;
+}
+/*Action section*/
+p.cssClassActionImg a {
+	background: url(../images/action.png) no-repeat;
+	text-indent: -99999px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	outline: none;
+	margin: 0 0 0 15px;
+}
+.cssClassActionOnClickShowInfo {
+	background-color: #ddd;
+	margin: 0 20px 0 0;
+	padding: 5px 0 0 0;
+}
+.cssClassActionOnClickShow {
+	padding: 0 0 0 0;
+	position: absolute;
+	z-index: 10;
+	left: -40px;
+	top: 0;
+	background: url(../images/onclickarrow2.png) no-repeat 85% top;
+}
+.cssClassActionOnClick {
+	position: relative;
+}
+.cssClassActionOnClickShowInfo a {
+	display: block;
+	height: 22px
+}
+.cssClassActionOnClickShowInfo p a {
+	font: bold 12px/18px Arial, Helvetica, sans-serif;
+	color: #000;
+	padding: 0 10px 0 10px;
+}
+.cssClassActionOnClickShowInfo p a {
+	text-shadow: 0 0 0 white;
+	white-space: nowrap;
+}
+/*popups*/
+.popupbox {
+	background-color:#FFF;
+	display:none;
+	top:49.5%;
+	left:50%;
+	z-index: 9999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	min-height:160px;
+	min-width:500px;
+	max-width:800px;
+}
+/*.popupbox .sfButtonwrapper{ margin:0 !important}
+*/.popupbox .sfFormwrapper {
+	background:none;
+}
+.cssClassSideBox {
+	border: 1px solid #A6C9E2;
+	padding:10px;
+	background: #E8F5FF;
+	width: 85%;
+}
+.cssClassStoreDetail {
+	float:left;
+	font:12px/24px Arial, Helvetica, sans-serif;
+	margin-right:2%;
+}
+.cssClassStoreDetail span {
+	font:12px/24px Arial, Helvetica, sans-serif;
+	float:left;
+	width:190px;
+}
+.cssClassAccordionWrapper .ui-accordion .ui-widget-content {
+	border:1px solid #ccc
+}
+.cssClassAccordionWrapper .ui-accordion .ui-accordion-header {
+	background: #0084B7
+}
+.cssClassAccordionWrapper .ui-accordion .ui-accordion-header:hover {
+	background:#039DD9;
+	color:#fff;
+}
+.cssClassAccordionWrapper .ui-accordion .ui-state-active {
+	background:#055E7F
+}
+.ui-accordion .ui-state-active .ui-icon {
+	background: url(../images/up-arrow.png) no-repeat !important;
+}
+.ui-accordion .ui-state-default .ui-icon {
+	background: url(../images/down-arrow.png) no-repeat !important;
+}
+.cssClassAccordionWrapper .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color:#fff
+}
+.cssClassAccordionWrapper .ui-accordion .ui-accordion-header a {
+	color: #fff;
+	display: block;
+	font: bold 12px/22px Arial, Helvetica, sans-serif !important;
+}
+.cssClassTabPanelTable .ui-widget-content {
+}
+.iferror {
+	display:none;
+	margin: 0;
+	color:#F00
+}
+.cssClassRatingTitleName {
+	width:57px;
+}
+.popupbox .sfFormwrapper table td {
+	font:12px Arial, Helvetica, sans-serif;
+	padding:5px !important
+}
+#divBrandImage img {
+	border:3px solid #fff;
+	background:#fff;
+	padding:3px;
+	width: 125px;
+	-moz-box-shadow:  0px 0px 3px 2px #ccc;
+	-webkit-box-shadow: 0px 0px 3px 2px #CCC;
+	box-shadow:  0px 0px 3px 2px #CCC;
+}
+#divBrandManage .cssImage img {
+	border:3px solid #fff;
+	background:#fff;
+	padding:3px;
+	width: 125px;
+	-moz-box-shadow:  0px 0px 3px 2px #ccc;
+	-webkit-box-shadow: 0px 0px 3px 2px #CCC;
+	box-shadow:0px 0px 3px 2px #CCC;
+}
+.cssClassSearchPanel .sfSelect {
+	width:auto;
+}
+.field input {
+	margin-right:5px !important;
+}
+/*Service module*/
+.cssClassUlDate {
+	overflow:hidden;
+	clear:both;
+	margin:10px 0 0 0;
+}
+.servicerow {
+	background:#ebebeb;
+	padding:10px
+}
+.servicerow td {
+	padding:5px;
+	border-bottom:1px solid #CFCFCF !important;
+	border-left:1px solid #CFCFCF !important
+}
+.cssClassServceProvider {
+	float:left;
+	overflow:hidden;
+	text-align:left
+}
+.cssClassServceProvider .sfButtonwrapper {
+	float:left !important
+}
+.servicerow .sfButtonwrapper {
+	float:right;
+	margin:0 !important;
+	padding:0 !important
+}
+.cssClassDdlServiceProviders {
+	float:left
+}
+.cssClassSpanTime input {
+	width:70px !important;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.cssClassLiDate {
+	margin-bottom:10px;
+}
+.sfFormwrapper input.hasDatepicker {
+	width: 70px !important;
+}
+.sfFormwrapper input.hasDatepicker.sfBirthDate {
+	width: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.cssClassServceProvider {
+	margin:0 0 10px 0
+}
+.popupbox input {
+	width:auto
+}
+.popupbox input.coor {
+	width: 50px;
+	margin-right: 10px;
+}
+.cssClassSpanTime {
+	clear: both;
+	float: left;
+	margin-top:5px;
+	margin-bottom:10px;
+	margin-left:70px;/*	padding:10px
+*/}
+input.cssClassDisplayOrder {
+	width:10px;
+	height:10px
+}
+.cssClassProviderParentDiv {
+	float:left
+}
+.cssAssignServiceProvider {
+	float:left
+}
+.cssClassDeleteServiceDate, .cssClassAddDateBtn {
+	float:right
+}
+.cssClassAddDateBtn {
+	float:left
+}
+.cssServiceData {
+	float:right;
+	margin: 10px 10px 10px 5px;
+}
+.cssClassDeleteAssingProvider, .cssAssignServiceProvider {
+	float:left;
+	margin-left:10px
+}
+.cssClassDeleteAssingProvider:hover, .cssAssignServiceProvider:hover, .cssClassDeleteServiceDate:hover, .cssClassAddDateBtn:hover, .cssClassAddStoreBtn:hover, .cssClassDeleteStoreBtn:hover, .cssClassSpanTime .cssServiceData:hover {
+	cursor:pointer !important
+}
+.cssClassSpanTime .cssServiceData {
+	float:right
+}
+.cssServiceData img {
+	margin-right:10px
+}
+.cssClassUlDate img, .cssClassProviderParentDiv img {
+	margin-right:5px
+}
+/*.cssServiceProviderTime {
+	float:left
+}*/
+.cssServiceProvidersSpan, .cssClassDeleteAssingProvider {
+	float:left !important
+}
+.cssClassAccordionWrapper input.hasDatepicker {
+	margin-left:0
+}
+.sfGridwrapper table tr.sfEven td.cssOrderItemQuantity {
+	padding-left: 20px;
+}
+.diverror input.error {
+	border:1px solid #930!important
+}
+/*active states */ 
+ #templateList .sfActivetemplate, .sfDashboard ul li a:hover, .sfquicklinks ul li a:hover, .sfFormwrapper input.sfInputbox:focus, .sfFormwrapper textarea.sfTextarea:focus, .sfFormwrapper select.sfListmenu:focus, .sfFormwrapper select.sfListmenusmall:focus, .sfFormwrapper select.sfListmenubig:focus, textarea.sfTextareabig1:focus, select.sfListmenusmall:focus, textarea.sfInputbox:focus, .sfTextBoxSmall:focus, .cssClassSearchPanel select:focus, .cssClassViewPerPage select:focus, .cssClassVariantValueName:focus, .cssClassIsActive:focus, .cssClassTextArea:focus, .cssClassElement select:focus, .popupbox select:focus {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 114, 159, .75);
+	-moz-box-shadow: 0 0 5px rgba(0, 114, 159, .75);
+	box-shadow: 0 0 5px rgba(0, 114, 159, .75);
+	border: solid 1px #00b4ff;
+}
+#templateList .sfTemplateholder.sfActivetemplate {
+	border:1px solid #00B4FF;
+}
+.ui-dialog .ui-dialog-titlebar-maximize, .ui-dialog .ui-dialog-titlebar-minimize, .ui-dialog .ui-dialog-titlebar-restore {
+}
+.sfClear {
+	background:url(../images/clear.png) no-repeat left center;
+	padding-left:20px;
+}
+.sfCache {
+	background:url(../images/cache.png) no-repeat left center;
+	padding-left:20px;
+}
+.sfPadding {
+	padding:0px;
+}
+.sfGridwrapper.sfListing table {
+	border:none !important;
+	margin:20px 0;
+}
+.sfGridwrapper.sfListing table tr.sfOdd td {
+	background:none;
+	border:none;
+}
+.sfLeftdiv {
+	margin-bottom:20px;
+}
+.sfNormalTable td, .cssClassFormWrapper table td {
+	padding:10px;
+}
+.ModalPopupBG {
+	background:#000;
+	opacity: 0.2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+.cssClassPopTitle {
+	font-weight: bold;
+	font-size:16px;
+}
+.sfMessageTable td a {
+	margin-left: 15px;
+}
+.sfShortSelectbox {
+	width: 80px !important;
+}
+.sfFooterwrapper {
+	background: #3F3F3F;
+	color: #aaa;
+	font: 12px Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: 5px 0;
+	text-align: center;
+	width: 100%;
+}
+#divEditMode.popupbox fieldset {
+	margin: 15px;
+}
+/*For ASPXcommerce*/
+.sfGridWrapperContent .cssClassSearchPanel {
+	background:none;
+	padding:0;
+	margin:0 0 10px 0
+}
+.sfGridWrapperContent .cssClassSearchPanel .sfButtonwrapper {
+	padding: 30px 0 0;
+	margin: 0 !important;
+}
+.sfGridWrapperContent .cssClassSearchPanel label.cssClassLabel, .sfGridWrapperContent .cssClassSearchPanel span.cssClassLabel {
+	display:block;
+	margin-right: 10px;
+	padding:5px 0 5px 0;
+}
+.cropBox .sfGridWrapperContent .cssClassCommonBox {
+	float:left;
+}
+.cssClassCommonBox .cssClassHeader h2 {
+	-webkit-box-shadow:0 1px 0 #fff;
+	box-shadow:0 1px 0 #fff;
+	border-bottom: 1px solid #ccc;
+	padding:0 0 5px 0;
+}
+.cssClassCommonBox .sfFormwrapper {
+	padding:0
+}
+input.required {
+	margin-right:5px
+}
+span.cssClassRequired {
+	color:#F00
+}
+.cssClassTableLeftCol {
+	width:19%
+}
+#divAttribSetEditForm td {
+	vertical-align:text-top
+}
+.sfWrapperContainer .cssClassTabPanelTable {
+	width:60%;
+	float:right
+}
+.sfTopSearchTab .cssClassTabPanelTable {
+	width:38%;
+	float:left;
+}
+.sfWrapperContainer {
+	width:100%;
+	overflow:hidden;
+}
+.sfWrapperContainer .ui-tabs {
+	position:relative !important;
+}
+.classTableWrapper, .classTableWrapper table, .cssClassDashBoardBottom table {
+	width:auto;
+	margin:0 10px 10px 10px
+}
+.cssClassRateReview table {
+	margin:0;
+	padding:0
+}
+.cssClassDashBoardBottom {
+	background: #fff;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0
+}
+.sfWrapperContainer .cssClassCommonBox .cssClassHeader h2, .cssClassDashBoardBottom .cssClassHeader h2 {
+	background-color: #d9d9d9;
+	background-image: -webkit-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -moz-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -o-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -ms-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: linear-gradient(to top, #d9d9d9, #fff);
+	text-shadow: none;
+	text-align: left;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 10px;
+}
+.sfWrapperContainer .cssClassCommonBox .cssClassHeader h2 span, .cssClassDashBoardBottom .cssClassHeader h2 span {
+	font:bold 13px Arial, Helvetica, sans-serif !important;
+	text-transform:capitalize;
+}
+.sfInventoryDetail, .sfLatestFiveOrder {
+	float:left;
+	width:38%;
+}
+.sfMostViewItems, .sfTopCustomer {
+	float:right;
+	width:60%
+}
+.cssClassOrderOverViewTab .sfLabel {
+	margin:0 0 0 10px
+}
+.cssClassDashBoardBottom .cssClassCommonBox {
+	margin:0
+}
+.cssClassTabPanelTable, .sfInventoryDetail, .sfTopCustomer, .sfMostViewItems {
+	margin:0 0 30px 0
+}
+.sfStatusTable {
+	float:left;
+	width:39%
+}
+.chart-wrapper .jqplot-title {
+	margin:0 !important
+}
+.sfHighlight {
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#005980;
+	margin:10px 0 0 0;
+	float:left;
+	width:225px;
+}
+.sfHighlight label {
+	float:left
+}
+.sfClassNote {
+	float: left;
+}
+.sfClassBold {
+	font-weight:bold;
+}
+.cssClassCommonBox .sfFormwrapper {
+	overflow:hidden;
+}
+.cssClassRateReview {
+	padding:0 10px 10px 10px
+}
+.cssClassRateReview .cssClassNoReview {
+	font-weight:bold;
+	padding:5px;
+}
+.cssClassRateReview td {
+	border-bottom:1px solid #fff;
+}
+.cssClassRateReview tr.cssClassAlternativeOdd {
+	background-color:#fff8ee !important;
+}
+.cssClassRateReview tr.cssClassAlternativeOdd:hover {
+	background-color:#ebe1d3 !important;
+}
+.cssClassRateReview tr.cssClassAlternativeEven {
+	background-color:#fffcf8 !important;
+}
+.cssClassRateReview tr.cssClassAlternativeEven:hover {
+	background-color:#faefe1 !important;
+}
+.cssClassTabPanelTable .cssClassRatingStar {
+	float:none;
+}
+.cssClassTabPanelTable .cssClassRatingStar .cssClassToolTip {
+	width:auto;
+}
+.cssClassTabPanelTable .cssClassToolTipDetailInfo {
+	width:707px;
+	z-index:888;
+}
+.cssClassRateReviewWrapper {
+	position:relative;
+	padding-left:10px;
+}
+.cssClassToolTip {
+	position:relative;
+}
+.cssClassToolTip .cssClassRatingTitle {
+}
+.cssClassToolTip span.cssClassRatingTitle {
+	padding:0 0 0 10px;
+	font:bold 11px/20px Arial, Helvetica, sans-serif;
+}
+.cssClassToolTip img {
+	cursor:pointer;
+}
+.cssClassToolTip .cssClassToolTipInfo {
+	display:none;
+	background-color:#fff;
+	position:absolute;
+	left:0;
+	top:17px;
+	z-index:888;
+	border:1px solid #968266;
+	width:160px;
+}
+.cssClassToolTip:hover .cssClassToolTipInfo {
+	display:block;
+}
+.cssClassToolTip:hover .cssClassToolTipInfo img {
+	cursor:default;
+}
+.cssClassToolTipDetailInfo {
+	display:block;
+	border-bottom:1px solid #fff;
+	overflow:hidden;
+	padding:2px 10px;
+}
+.cssClassToolTipDetailInfo span.cssClassCriteriaTitle {
+	float:left;
+	padding:0 30px 0 0;
+	font:normal 11px/20px Arial, Helvetica, sans-serif;
+	max-width:21px;
+}
+.cssClassToolTipDetailInfo span.star-rating-control {
+	float:left;
+}
+span.cssClassTotalReviews {
+	font:bold 11px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+}
+span.cssClassSeparator {
+	padding:0 8px;
+}
+span.cssClassAddYourReview {
+	font:bold 11px Arial, Helvetica, sans-serif;
+}
+.cssClassRatingReviewDate p {
+	font-style:italic;
+}
+.cssClassRatingInfo p, .cssClassRatingReviewDate {
+	padding:0;
+	font:12px Arial, Helvetica, sans-serif;
+	text-shadow: 0 1px 0px #fff;
+}
+.cssClassRatingInfo {
+	float:none !important;
+}
+table.cssClassRateReview td {
+	border-bottom:1px solid #fff;
+}
+table.cssClassRateReview td .cssClassRateReview {
+	padding:8px;
+}
+td.cssClassNoReview {
+	padding:5px;
+	font-weight:bold;
+}
+td.cssClassRatingTitleName {
+	width:100px;
+}
+.cssClassRateReview .cssClassButtonWrapper {
+	float:left;
+	clear:both;
+}
+.cssClassPages input {
+	height: 18px;
+	width: 20px;
+	padding:0
+}
+.cssClassPagination {
+	margin:0px 10px 10px 10px;
+	overflow:hidden
+}
+.cssClassNotFound {
+	color:#900;
+	float:left;
+	width:100%;
+	margin:10px 0 10px 10px
+}
+.cssClassPagination .cssClassPageNumber {
+	float:left
+}
+/*Tabs manage item*/
+div.st_vertical {
+	width:100% !important;
+}
+div.st_vertical div.st_view_container {
+	width:80% !important;
+}
+.cssClassTabPanelTable .sfFormwrapper {
+	overflow:hidden;
+	padding:0
+}
+.sfStatusTable .sfErrormsg, .sfStatusTable .errorMsg {
+	background:none !important;
+	color: #900;
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+.cssClassRateReview .sfButtonwrapper {
+	margin-bottom:0
+}
+.ui-tabs {
+	padding:0 !important
+}
+.cssClassPadding {
+	margin:10px 0 0 0
+}
+.cssClassBillingAddress {
+	float:left!important;
+}
+.cssClassBillingAddress, .cssClassWareAddress, .cssClassToAddress {
+	float:right;
+	width:31%;
+	margin:0 25px 0 0
+}
+.cssClassBillingAddress h2, .cssClassWareAddress h2 {
+	padding-right:20px
+}
+.sfGridwrapperContent {
+	padding: 10px;
+	overflow: hidden;
+}
+/*---------------PRICE RULE START HERE---------------*/
+.cssClassFieldSet {
+	margin:10px 0 0 0;
+}
+.cssClassFieldSetContent ul {
+	border-left:1px dotted #888888;
+	padding-left:16px !important;
+	margin:12px 0 0 0;/* height:1%;*/
+}
+.cssClassFieldSetContent ul li, .cssClassOnClick, .cssClassFieldSetLabel {
+	margin-bottom:10px;
+}
+.cssClassFieldSetContent a {
+	font:bold 11px Arial, Helvetica, sans-serif;
+	color:#005980;
+	text-decoration:underline;
+}
+.cssClassFieldSetContent a:hover {
+	text-decoration:none;
+	color:#000;
+}
+.cssClassFieldSetLabel {
+	font:bold 11px Arial, Helvetica, sans-serif;
+}
+.cssClassElement {
+	display:none;
+}
+.cssClassOnClickEdit .cssClassElement {
+	display:inline;
+}
+.cssClassOnClickEdit .cssClassFieldSetLabel {
+	display:none;
+}
+.cssClassOnClickNewChildren {
+}
+.cssClassOnClickRemove {
+}
+.cssClassOnClickRemove {
+}
+.cssClassOnClickApply {
+	font-weight:normal;
+	color:green;
+	text-decoration:none;
+}
+.cssClassOnClickApply:hover {
+	font-weight:normal;
+	color:blue;
+	text-decoration:none;
+}
+.cssClassMultiSelect {
+	vertical-align:top;
+	height:100px;
+	width:200px;
+}
+.rule-tree ul {
+	padding-left:16px !important;
+	border-left:dotted 1px #888;
+}
+.rule-tree .x-tree ul {
+	padding-left:0 !important;
+	border-left:none !important;
+}
+.rule-param .label {
+	font-weight:bold;
+	color:black;
+}
+.rule-param .label:hover {
+	font-weight:bold;
+	color:blue;
+}
+.rule-param .element {
+	display:none;
+}
+.rule-param input, .rule-param select {
+	width:auto !important;
+	min-width:170px;
+}
+.rule-param select.multiselect {
+	vertical-align:top;
+}
+.rule-param-edit .label {
+	display:none;
+}
+.rule-param-edit .element {
+	display:inline;
+}
+.rule-param-add {
+	font-weight:normal;
+	color:green;
+	text-decoration:none;
+}
+.rule-param-add:hover {
+	font-weight:normal;
+	color:blue;
+	text-decoration:none;
+}
+.rule-param-apply {
+	font-weight:normal;
+	color:green;
+	text-decoration:none;
+}
+.rule-param-apply:hover {
+	font-weight:normal;
+	color:blue;
+	text-decoration:none;
+}
+.rule-param-remove {
+	font-weight:normal;
+	color:red;
+	text-decoration:none;
+}
+.rule-param-remove:hover {
+	font-weight:normal;
+	color:blue;
+	text-decoration:none;
+}
+.rule-chooser {
+	border:solid 1px #CCC;
+	margin:5px;
+	padding:5px;
+	display:none;
+}
+.rule-param-wait {
+	padding-left:20px;
+	background-image:url(images/rule-ajax-loader.gif);
+	background-repeat:no-repeat;
+	background-position:0 50%;
+}
+.cssClassThumImage img {
+	margin:10px;
+	border:1px solid #999;
+	padding:2px;
+	height:150px;
+	width:100px;
+	overflow:hidden;
+}
+.cssClassDelete {
+	margin:5px 0 0 5px;
+}
+.pricingRuleCategoryList {
+	background-color:#ededed;
+	width:250px;
+	margin:5px 0 0 0;
+}
+.cssClassFieldSetContent ul.cssClassOnClickChildren ul.MultipleSelectBox {
+	padding:0 !important;
+	border-left:none;
+}
+.MultipleSelectBox {
+	min-height:200px;
+	list-style-type: none;
+	margin: 0;
+	overflow: auto;
+}
+.MultipleSelectBox.selecting {
+}
+.MultipleSelectBox li {
+	cursor:pointer;
+	font:normal 12px/22px Arial, Helvetica, sans-serif;
+	color:#005980;
+	border-bottom:1px solid #fff;
+	text-shadow:1px 1px 0 #fff;
+	padding-left:5px !important;
+}
+.MultipleSelectBox li:hover {
+	background-color:#ccc;
+}
+.MultipleSelectBox li.disabled {
+	color: gray;
+	font-style: italic;
+}
+.MultipleSelectBox li.selected {
+	background-color:#fff;
+}
+.MultipleSelectBox li.selecting {
+	border: 1px dotted #ddd;
+}
+.cssClassFieldSet span.cssClassList {
+	background:url(../images/list.png) no-repeat 0 3px;
+	height:18px;
+	width:15px;
+	cursor:pointer;
+	display:inline-block;
+}
+.cssClassFieldSet span.cssClassClose {
+	background:url(../images/close.png) no-repeat 0 3px;
+	height:18px;
+	width:15px;
+	cursor:pointer;
+	display:inline-block;
+}
+.cssClassFieldSet span.cssClassRightGreen {
+	background:url(../images/right.jpg) no-repeat 0 3px;
+	height:18px;
+	width:15px;
+	cursor:pointer;
+	display:inline-block;
+}
+.cssClassFieldSet span.cssClassRight {
+	background:url(../images/right.png) no-repeat 0 3px;
+	height:18px;
+	width:15px;
+	cursor:pointer;
+	position:absolute;
+	zoom:1;
+	display:block;
+}
+.cssClassFieldSet span.cssClassDelete {
+	background:url(../images/delete.png) no-repeat 0 0;
+	height:18px;
+	width:15px;
+	cursor:pointer;
+	display:inline-block;
+}
+.cssClassFieldSet span.cssClassAdd {
+	background:url(../images/add.png) no-repeat 0 3px;
+	height:20px;
+	width:20px;
+	cursor:pointer;
+	display:inline-block;
+	z-index:9999;
+}
+.cssClassFieldSet span.cssClassCalendar {
+	background:url(../images/calendar.png) no-repeat 0 3px;
+	height:18px;
+	width:15px;
+	cursor:pointer;
+	display:inline-block;
+}
+.cssClassPackage table, .cssClassBillingAddress table, .cssClassWareAddress table, .cssClassToAddress table {
+	width:100%
+}
+.sfButtonWrapper {
+	margin-top:10px
+}
+.cssClassAccordionWrapper h3 {
+	margin:0 0 10px 0
+}
+.cssClassTableCostVariant thead tr td, .cssClassTableCostVariant tr:hover td {
+	color: #3c3c3c;
+	background-color: #d9d9d9;
+	background-image: -webkit-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -moz-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -o-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -ms-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: linear-gradient(to top, #d9d9d9, #fff);
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-shadow: none;
+	text-align: left;
+	padding: 10px;
+}
+.cssClassIsActive {
+	width: auto !important
+}
+.sfGridwrapper .sfFormwrapper table td {
+	vertical-align:top !important
+}
+.cssclassItemCostVariant input.cssclassCostVariantItemQuantity {
+	width:20px
+}
+.ddlCostVariantsCollection, .ddlCostVariantValues, .cssClassPriceModifier, .cssClassPriceModifierType, .cssClassWeightModifierType, .cssClassWeightModifier {
+	width:auto !important;
+	margin:0 10px 10px 0
+}
+.cssClassCvAddMore {
+	font:12px Arial, Helvetica, sans-serif !important;
+}
+.qq-upload-button {
+	background:#ddd !important;
+	color: #005980 !important;
+	border: 1px solid #ccc !important;
+}
+.classPriceHistoryList, #tblQuantityDiscount {
+	width:500px !important;
+	vertical-align: middle;
+	border: 1px solid #e6e6e6;
+	border-width: 1px !important;
+	font: normal 12px/18px Arial, Helvetica, sans-serif;
+}
+#tblQuantityDiscount {
+	width:100% !important
+}
+#tblQuantityDiscount {
+	width:auto
+}
+.cssClassPrice, .cssClassQuantity {
+	width:80px !important
+}
+.classPriceHistoryList td {
+	text-align:left
+}
+.classPriceHistoryList th, .sfGridwrapper table tr.cssClassHeading td, table.classTableWrapper tr.cssClassHeading td {
+	background-color: #d9d9d9;
+	background-image: -webkit-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -moz-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -o-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: -ms-linear-gradient(bottom, #d9d9d9, #fff);
+	background-image: linear-gradient(to top, #d9d9d9, #fff);
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-shadow: none;
+	text-align: left;
+	padding: 10px;
+}
+.tzSelect {
+	background:#ddd url(../images/down-arrow.png) no-repeat 97% 10px;
+	border:1px solid #fff;
+}
+.dropDown {
+	background: #fff;
+	overflow-y: scroll;
+	height: 118px;
+}
+.dropDown li {
+	padding:5px !important;
+}
+.selectBox {
+	padding:5px
+}
+.dropDown span, .tzSelect span {
+	margin-left:5px
+}
+.cssClassRateReview tr.sfOdd, .cssClassRateReview tr.sfEven {
+	background:#ededed
+}
+.cssClassHeaderRight, .cssClassRssDiv {
+	float:left
+}
+.cssClassHeader {
+	overflow:hidden
+}
+.cssClassHeaderRight .sfButtonwrapper {
+	margin:0 5px 20px 5px
+}
+.sfGridwrapper table tr td.cssClassAlignRight {
+	text-align:left !important;
+	width:100px
+}
+.st_view td {
+	vertical-align:top !important
+}
+.sfGridwrapper table tr td label.cssClassLabel, table.classTableWrapper tr td label.cssClassLabel, .sfOdd td label.cssClassLabel, .sfEven td label.cssClassLabel {
+	font:normal 12px Arial, Helvetica, sans-serif !important;
+	text-shadow: 0 1px 0px #fff;
+	vertical-align: top !important;
+}
+#divOrderDetailHead {
+	overflow:hidden
+}
+.cropBox .cssClassHeader {
+	float:left;
+}
+.cropBox .sfButtonwrapper button {
+	margin-left:140px;
+}
+.sfWrapperContainer .cssClassOrderOverViewTab {
+	width:38% !important;
+	float:left
+}
+.cssClassTabPanelTable .cssClassCommonBox {
+	border:none
+}
+.classTableWrapper table {
+	border:none;
+	width:auto
+}
+.sfTimeSelection {
+	margin:0 0 10px 0
+}
+.sfTimeSelection select {
+	width:170px !important
+}
+.chart-wrapper {
+	position:relative;
+	float: right;
+	top:-9px;
+}
+.cssClassTableRightCol table {
+	width:100%;
+	margin:0
+}
+.cssClassTableRightCol table td {
+	width:20%
+}
+.sfHighlight strong {
+	color:#900;
+	font:30px Arial, Helvetica, sans-serif;
+	float:left;
+	margin: 20px 0 0 45px;
+}
+#tblVisitorOrder {
+	margin:0 !important
+}
+#divSeasonalSetGrid h3 {
+	margin: 0 0 15px 0;
+}
+.cssClassClear {
+	clear:both;
+}
+span.cssClassNote {
+	margin-top:5px;
+}
+.cssAddServiceProvider {
+	margin:10px 0
+}
+.cssClassBranch td {
+	width:111px;
+}
+.cssClassBranch select {
+	width:216px;
+}
+.sfGridWrapperContent .sfButtonwrapper {
+	margin-top:5px!important;
+}
+.cssClassLiDate {
+	margin-left:20px;
+}
+.cssClassItemRatingBox {
+	width:20%
+}
+.sfGridWrapperContent .cssClassOrderPrice {
+	font: bold 14px Arial, Helvetica, sans-serif !important
+}
+.star-rating-control {
+	height:22px;
+	height: 22px;
+	float: left;
+}
+.star-rating-control span {
+	font:10px Arial, Helvetica, sans-serif !important;
+}
+.jcarousel-skin-tango .jcarousel-item {
+	width:90px !important;
+	padding:5px !important;
+	height:auto !important
+}
+.cssClassDelImg {
+	top:-3px !important
+}
+.jcarousel-skin-tango .jcarousel-container {
+	border:1px solid #ccc !important;
+	background:#fff !important
+}
+.popupbox tr td, .cssClassGiftCatTd {
+	padding:5px !important
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	float:left
+}
+#imgDelete:hover, #btnImageClose:hover {
+	cursor:pointer;
+}
+.cssCropValueWrapper input{ width:auto !important;box-shadow:none; margin-left:5px}
+.cssCropValueWrapper{ margin:10px 0 0 0}
+.cropBox .cssClassCommonBox { width:513px !important}
+/* Store Locator*/
+.cssClassStoreSideBar{ margin:10px  20px; 0 0}
+.cssClassStore{  padding:10px; background:#fff; margin:10px 0 0 0; border:1px solid #ccc}
+.cssClassStore:hover, .cssClassStore.selected{  cursor:pointer;
+	-webkit-box-shadow: 0 0 5px rgba(0, 114, 159, .75);
+	-moz-box-shadow: 0 0 5px rgba(0, 114, 159, .75);
+	box-shadow: 0 0 5px rgba(0, 114, 159, .75);
+	border: solid 1px #00b4ff;}
+		.cssClassImgwrapper{ float:left; margin-right:20px;}
+	.cssClassImgwrapper img{ width:200px; height:150px;}
+#shippingIcon{ margin-right:50px;}
+	
+/*--------------excel mapping--------------*/
+.sfBold{ font-weight:bold;}
+#fileUploader label{ float:left; margin:6px 10px 0 0}
+#fileUploader div.uploader{ float:left;}
+.cssClassImportLeft{ float:left; width:30%}
+.cssClassImportRight{ float:left;width:70%}
+.cssClassImportLeft ul li, .cssClassImportRight ul li{ margin-bottom:10px;}
+.cssClassImportRight ul li span{   display: inline-block; width: 115px !important;}
+#divInfo .sfButtonwrapper{ overflow:visible;}
+
+/*--------------excel mapping--------------*/
+
+
+/* reward point */
+tr.noBg, tr.noBg h2 { border-bottom:none !important;}
+tr.noBg td { background:#F8F8F8 !important;}
+.sfFormwrapper input.sfShortInputbox { width:50px;}
+.ui-tabs .ui-tabs-nav li a{ padding:11px 18px!important}

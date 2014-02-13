@@ -1,0 +1,7 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\bin\Release\SageFrame.Dashboard.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\bin\Release\SageFrame.Dashboard.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\bin\Release\SageFrame.Common.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\bin\Release\SageFrame.Common.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\obj\Release\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\obj\Release\SageFrame.Dashboard.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.Dashboard\obj\Release\SageFrame.Dashboard.pdb

@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.IPAddressToCountryResolver\bin\Release\SageFrame.IPAddressToCountryResolver.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.IPAddressToCountryResolver\bin\Release\SageFrame.IPAddressToCountryResolver.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.IPAddressToCountryResolver\obj\Release\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.IPAddressToCountryResolver\obj\Release\SageFrame.IPAddressToCountryResolver.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\SageFrame.IPAddressToCountryResolver\obj\Release\SageFrame.IPAddressToCountryResolver.pdb

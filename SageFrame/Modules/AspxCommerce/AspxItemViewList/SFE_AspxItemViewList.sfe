@@ -1,0 +1,47 @@
+﻿<sageframe version="1.0.0.0" type="Module">
+  <folders>
+    <folder>
+      <name>SFE_AspxItemViewList</name>
+      <friendlyname>AspxItemViewList</friendlyname>
+      <foldername>AspxCommerce/AspxItemViewList</foldername>
+      <modulename>AspxItemViewList</modulename>
+      <description>This module is used to view different item list.</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass>SageFrame.Modules.AspxItemViewList.EventController, SageFrame.Modules.AspxItemViewList</businesscontrollerclass>
+      <compatibleversions>^[0]?[4-9]{1}\.[0-9]{1}[7-9]{1}\.[0-9]{1}[0-9]{1}$</compatibleversions>
+      <owner>BrainDigit IT Soultion Pvt. Ltd.</owner>
+      <organization>BrainDigit IT Soultion Pvt. Ltd.</organization>
+      <url>www.braindigit.com</url>
+      <email>info@sageframe.com</email>
+      <releasenotes>This is test release notes for AspxItemViewList Application</releasenotes>
+      <license>This is test license copy for AspxItemViewList Application</license>
+      <modules>
+        <module>
+          <friendlyname>AspxItemViewList</friendlyname>
+          <cachetime>-1</cachetime>
+          <controls>
+            <control>
+			        <key>ItemViewListContainer</key>
+              <title>AspxItemViewList Container</title>
+              <src>Modules/AspxCommerce/AspxItemViewList/AspxViewDetails.ascx</src>
+              <type>View</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>true</supportspartialrendering>
+            </control>	
+          </controls>
+        </module>
+      </modules>
+	        <files>
+        <file>
+          <name>01.00.00.SqlDataProvider</name>
+        </file> 
+		<file>
+          <name>AspxCommerce.ItemViewList.dll</name>
+        </file>    
+        <file>
+          <name>Uninstall.SqlDataProvider</name>
+        </file> 
+      </files>
+    </folder>
+  </folders>
+</sageframe>

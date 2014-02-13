@@ -1,0 +1,126 @@
+/* RESET CSS
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.clear {clear: both;}
+
+
+/* =Main Holders
+-------------------------------------------------------------- */
+.sfOuterwrapper {
+	width:100%; min-width: 980px;
+}
+.sfInnerwrapper {
+	width:980px;
+	margin:0px auto;
+	position:relative;
+}
+#sfMainWrapper {
+	float:left;
+}
+#sfLeft {
+	float:left;
+}
+#sfRight {
+	float:right;
+}
+.sfModule {
+	margin:0 30px 30px 30px;
+}
+#sfMainWrapper .sfModule {
+	margin-left:0;
+	margin-right:0;
+}
+#sfLeft .sfModule {
+	margin-left:0;
+}
+#sfRight .sfModule {
+	margin-right:0;
+}
+
+
+/* =Form Elements
+-------------------------------------------------------------- */
+fieldset {
+	margin: 1em 0;
+	border:1px solid #2E6E9E;
+	padding: 1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+legend {
+	color:#2E6E9E;
+	font-size:13px;
+	padding:0 5px;
+	font-weight:bold;
+}
+input [type="radio"] {
+	margin-right:5px;
+	vertical-align:top;
+}
+.sfInputbox, textarea, .sfInputbox {
+	border:1px solid #ccc;
+	padding:5px 8px;
+	background:#fff;
+	width: 194px;
+}
+.sfInputbox:focus, textarea:focus { border-color: #aaa;}
+
+

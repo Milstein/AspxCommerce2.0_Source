@@ -1,0 +1,91 @@
+﻿<sageframe version="1.0.0.0" type="paymentgateway">
+	<folders>
+		<folder>
+			<name>SFE_MoneybookersGateWay</name>
+			<paymentgatewayname>Moneybookers</paymentgatewayname>
+			<friendlyname>Moneybookers</friendlyname>
+			<foldername>AspxCommerce/Moneybookers</foldername>
+			<description>Moneybookers</description>
+			<culturename>en-US</culturename>
+			<version>01.00.00</version>
+			<settings>
+
+				<setting>
+					<key>MoneybookersMerchantAccount</key>
+					<value>jainul.braindigit@gmail.com</value>
+				</setting>
+				<setting>
+					<key>MoneybookersSecretWord</key>
+					<value>brain</value>
+				</setting>
+				<setting>
+					<key>MoneybookersStatusUrl</key>
+					<value>http://windowsphone.aspxcommerce.com/Modules/AspxCommerce/Moneybookers/MoneybookersHandler.aspx</value>
+				</setting>
+				<setting>
+					<key>MoneybookersSuccessUrl</key>
+					<value>http://windowsphone.aspxcommerce.com/Moneybookers-Success.aspx</value>
+				</setting>
+				<setting>
+					<key>MoneybookersCancelUrl</key>
+					<value>http://www.aspxcommerce.com</value>
+				</setting>
+				<setting>
+					<key>MoneybookersLogoUrl</key>
+					<value>http://www.aspxcommerce/Upload/image/logo.png</value>
+				</setting>
+				<setting>
+					<key>MoneybookersCurrencyCode</key>
+					<value>USD</value>
+				</setting>
+				<setting>
+					<key>IsTestMoneybookers</key>
+					<value>True</value>
+				</setting>
+
+
+			</settings>
+			<modules>
+				<module>
+					<controls>
+						<control>
+							<key>MoneybookersView</key>
+							<title>AspxCommerce Pay through Moneybookers</title>
+							<src>Modules/AspxCommerce/Moneybookers/Moneybookers.ascx</src>
+							<type>View</type>
+							<helpurl>http://www.aspxcommerce.com/default.aspx</helpurl>
+							<supportspartialrendering>false</supportspartialrendering>
+						</control>
+						<control>
+							<key>MoneybookersSetting</key>
+							<title>Moneybookers Setting</title>
+							<src>Modules/AspxCommerce/Moneybookers/MoneybookersSetting.ascx</src>
+							<type>Setting</type>
+							<helpurl>http://www.aspxcommerce.com/default.aspx</helpurl>
+							<supportspartialrendering>false</supportspartialrendering>
+						</control>
+						<control type="Page">
+							<key>Moneybookers-Success</key>
+							<title>Moneybookers Success</title>
+							<src>Modules/AspxCommerce/Moneybookers/Moneybookers-Success.ascx</src>
+							<type>View</type>
+							<helpurl>http://www.aspxcommerce.com/default.aspx</helpurl>
+							<supportspartialrendering>false</supportspartialrendering>
+						</control>
+					</controls>
+				</module>
+			</modules>
+			<files>
+				<file>
+					<name>01.00.00.SqlDataProvider</name>
+				</file>
+				<file>
+					<name>AspxCommerce.Moneybookers.dll</name>
+				</file>
+				<file>
+					<name>Uninstall.SqlDataProvider</name>
+				</file>
+			</files>
+		</folder>
+	</folders>
+</sageframe>

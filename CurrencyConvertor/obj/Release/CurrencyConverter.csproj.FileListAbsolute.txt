@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\CurrencyConvertor\bin\Release\CurrencyConverter.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\CurrencyConvertor\bin\Release\CurrencyConverter.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\CurrencyConvertor\obj\Release\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\CurrencyConvertor\obj\Release\CurrencyConverter.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\CurrencyConvertor\obj\Release\CurrencyConverter.pdb

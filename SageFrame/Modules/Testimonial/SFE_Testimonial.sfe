@@ -1,0 +1,64 @@
+﻿<sageframe version="1.0.0.0" type="Module">
+  <folders>
+    <folder>
+      <name>Testimonial</name>
+      <friendlyname>Testimonial</friendlyname>
+      <foldername>Testimonial</foldername>
+      <modulename>Testimonial</modulename>
+      <description>This module is used for Testimonial.</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass>SageFrame.Modules.Testimonial.TestimonialController, SageFrame.Modules.Testimonial</businesscontrollerclass>
+      <compatibleversions>^[0]?[4-9]{1}\.[0-9]{1}[7-9]{1}\.[0-9]{1}[0-9]{1}$</compatibleversions>
+      <owner>BrainDigit IT Soultion Pvt. Ltd.</owner>
+      <organization>BrainDigit IT Soultion Pvt. Ltd.</organization>
+      <url>www.braindigit.com</url>
+      <email>info@sageframe.com</email>
+      <releasenotes>This is test release notes for Testimonial Application</releasenotes>
+      <license>This is test license copy for Testimonial Application</license>
+      <modules>
+        <module>
+          <friendlyname>Testimonial</friendlyname>
+          <cachetime>-1</cachetime>
+          <controls>
+            <control>
+			  <key>TestimonialContainer</key>
+              <title>Testimonial Container</title>
+              <src>Modules/Testimonial/TestimonialView.ascx</src>
+              <type>View</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>true</supportspartialrendering>
+            </control>
+			<control>
+			  <key>TestimonialEdit</key>
+              <title>Testimonial Edit</title>
+              <src>Modules/Testimonial/TestimonialEdit.ascx</src>
+              <type>Edit</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>true</supportspartialrendering>
+            </control>
+            <control>
+              <key>TestimonialSetting</key>
+              <title>Testimonial Setting</title>
+              <src>Modules/Testimonial/TestimonialSetting.ascx</src>
+              <type>Setting</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl> 
+              <supportspartialrendering>true</supportspartialrendering>
+            </control>            
+          </controls>
+        </module>
+      </modules>
+      <files>
+        <file>
+          <name>01.00.00.SqlDataProvider</name>
+        </file>   
+<file>
+          <name>SageFrame.Testimonial.dll</name>
+        </file>        
+             
+        <file>
+          <name>Uninstall.SqlDataProvider</name>
+        </file> 
+      </files>
+    </folder>
+  </folders>
+</sageframe>

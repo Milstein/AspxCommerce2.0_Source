@@ -1,0 +1,42 @@
+﻿.cssClassContactWrapper { padding:20px 0 0 20px;}
+.feedback-panel  h1{ font:normal 16px Arial, Helvetica, sans-serif; text-transform:uppercase}
+.feedback-panel {
+    padding:20px 20px 20px 20px;
+    width: 402px;
+    background: #DEDEDE;
+    border:  #fff 1px solid;
+    position:fixed;
+    top:35%;
+    left:-444px;
+    z-index:9999
+}
+ 
+.feedback-panel a.feedback-tab {
+    background:transparent url(../images/feedback.png) no-repeat scroll 0 0;
+    border-width: 1px 1px 1px 0;
+    display:block;
+    height:142px;
+    left:55px;
+    bottom:6px;
+    position:relative;
+    float:right;
+    text-indent:-9999px;
+    width:44px;
+    outline:none;
+}
+.feedback-panel input.sfInputbox, .feedback-panel textarea {box-shadow:none; width:94%;margin: 5px 10px 10px;}
+.sfFormwrapper td {
+padding: 0 10px 10px 5px;
+}
+
+.sfAllrequired {
+    color: #BF6B6B !important;
+    display: inline-block;
+    font: bold 11px/18px Arial,Helvetica,sans-serif;
+    margin-top: 5px;
+}
+.feedback-panel span.sfFormLabel
+{font:bold 13px Arial, Helvetica, sans-serif;  color:#333;}
+.feedback-panel table{ width:87%; vertical-align:top}
+.sfBn{font: 14px Arial, Helvetica, sans-serif;color: #fff;background: url(../images/black-btn.png) repeat-x #1D1C1C;text-transform: uppercase;padding: 7px 10px;box-shadow:none;margin: 10px 0px 10px 8px;float: right;}
+.sfBn:hover{ background:#000; cursor:pointer}

@@ -1,0 +1,57 @@
+.test .bx-wrapper {
+width:900px !important;
+
+}
+#divlatestItemsNew li {
+	float: left;
+	width: 217px !important;
+}
+#divlatestItemsNew .cssClassProductsBox {
+	width:auto !important;
+	height:230px;
+	overflow:hidden;
+	margin:0px 0 20px 0 !important;
+	padding:0
+}
+#divlatestItemsNew {
+}
+.cssClassLatestItemList .bx-window ul {
+	height:260px !important;
+	margin:0px 0 20px 0 !important;
+}
+#divlatestItemsNew .bx-window{ width:865px !important;margin-left: 18px !important;}
+#divLatestItemTemp {
+	height:260px !important;
+}
+.test {
+	padding:10px 17px 0px 45px;
+}
+.test .bx-wrapper .bx-prev {
+	left:-5% !important;
+}
+.test .bx-wrapper .bx-next {
+	right:-3% !important;
+}
+.cssClassLatestItemList h2 {
+	background:none !important;
+	color:  #202020 !important
+}
+.cssClassLatestItemList .cssClassDiscountPrice, .cssClassLatestItemList .cssClassProductPriceBox {
+	text-align:center;
+}
+.cssClassLatestItemList .cssClassProductPicture {
+	width:200px !important;
+	margin-top:10px;
+	clear:both;
+}
+
+#divlatestItemsNew h2{
+	padding:0 0 0 10px;}
+	
+	/*New arrival slider*/
+#divlatestItemsNew h2{ padding:0}
+.cssClassLatestItemList .cssClassProductsBox{ box-shadow:none  !important}
+.cssClassLatestItemList .cssClassProductPicture img{height:100px;}
+.cssClassLatestItemList .cssClassDiscountPrice{   color: #920101;font: bold 14px Arial, Helvetica, sans-serif; margin:5px 0 10px 0; float:left; }
+.cssClassLatestItemList h2{font: 16px Arial, Helvetica, sans-serif;
+color: #101010;}

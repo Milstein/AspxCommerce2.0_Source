@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.CashOnDelivery\bin\AspxCommerce.CashOnDelivery.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.CashOnDelivery\bin\AspxCommerce.CashOnDelivery.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.CashOnDelivery\obj\Release\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.CashOnDelivery\obj\Release\AspxCommerce.CashOnDelivery.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\AspxCommerce.CashOnDelivery\obj\Release\AspxCommerce.CashOnDelivery.pdb

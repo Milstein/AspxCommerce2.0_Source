@@ -1,0 +1,20 @@
+GO
+/****** Object:  Table [dbo].[Aspx_ProductListsSetting]    Script Date: 05/25/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Aspx_ProductListsSetting]') AND type in (N'U'))
+DROP TABLE [dbo].[Aspx_ProductListsSetting]
+
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_GetProductListSetting]    Script Date: 05/25/2012 09:59:35 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_GetProductListSetting]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_GetProductListSetting]
+
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_ProductListGetByCount]    Script Date: 05/25/2012 09:59:58 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_ProductListGetByCount]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_ProductListGetByCount]
+
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_ProductListSettingUpdate]    Script Date: 05/25/2012 10:00:19 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_ProductListSettingUpdate]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_ProductListSettingUpdate]
+

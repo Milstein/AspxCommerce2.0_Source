@@ -1,0 +1,1330 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {	margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display:block;}
+h1, h2, h3, h4, h5, h6 {	font-size:100%;}
+table {	border-collapse:collapse;	border-spacing:0;}
+strong, b, mark {	font-weight:bold;	font-style:inherit;}
+em, i, cite, q, address, dfn, var {	font-style:italic;	font-weight:inherit;}
+abbr[title], dfn[title] {	cursor:help;	border-bottom:1px dotted;}
+ins {	border-bottom:1px solid;}
+a, u, ins {	text-decoration:none;}
+del, s {text-decoration:line-through;}
+pre, code, samp, kbd {	font-family:monospace;}
+small {	font-size:0.75em;}
+.clear{ clear:both}
+img {	border:none;	font-style:italic;}
+button:hover{ cursor:pointer}
+input, select, textarea {font:inherit;}
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {background:#dadada;font: 12px Arial, Helvetica, sans-serif;color: #757575;}
+html, body, form {height:100%;}
+:focus {outline:none;}
+textarea{ border:1px solid #ddd}
+input[type=submit], input[type=reset], input[type=button] {}
+input[type=checkbox], input[type=radio]{ border:none !important; box-shadow:none !important; background:none !important; padding:0 !important}
+/*a:focus, *:focus {noFocusLine: expression(this.onFocus=this.blur());}
+*/
+h1 {font: bold 18px/26px Arial, Helvetica, sans-serif ; color:#910000;}
+h2 {color: #910;font: bold 15px Arial, Helvetica, sans-serif;}
+h3 {color: #666;font: bold 14px Arial, Helvetica, sans-serif; margin:10px 0 10px 0}
+h4, h5 {color: #910000;font: bold 11px Arial, Helvetica, sans-serif;}
+h6 {color: #005CA4;font: bold 11px Arial, Helvetica, sans-serif;}
+input, textarea, select {outline: medium none !important;font:11px Arial, Helvetica, sans-serif;background: #fff;-webkit-box-shadow: inset 0px 1px 3px 0px #d4d4d4;-moz-box-shadow: inset 0px 1px 3px 0px #d4d4d4;box-shadow: inset 0px 1px 1px 0px #d4d4d4;border: 1px solid #c4c3c3 !important;padding:6px; color:#686868; margin:0;}
+textarea {-webkit-border-radius: 3px;font-size:12px;-moz-border-radius: 3px;border-radius: 3px;}
+p {color: #202020;font:12px/20px Arial, Helvetica, sans-serif;}
+b {font-family:Arial, Helvetica, sans-serif !important;}
+ul, li, ol {list-style: none outside none;}
+img {border: medium none;display:inline-block;}
+a img {border: medium none;}
+a {color: #910000;font: 12px Arial, Helvetica, sans-serif;outline: medium none;text-decoration: none; text-transform:capitalize;}
+a:hover {cursor:pointer;color: #900;}
+.cssClassClear {clear: both;height: 1px;line-height: 1px;}
+.sfLogo {margin: 20px 0 3px;}
+.sfFloatLeft{ float:left;}
+.sfFloatRight{ float:right;  margin:0 !important}
+
+#sfAspxcommercemenu .sfWrapper {margin: 0 20px 20px 0px;}
+.cssClassLeftSideBox{ margin:0 0 20px 0; background-color: #FFFFFF;  overflow:hidden;
+border: 1px solid #ccc;}
+html, body, .sfFluid, form, .narrow{ height:100%}
+/*Top links*/
+.cssWelcome h2{ font:14px/22px Arial, Helvetica, sans-serif; color:#fff}
+#sfToplinks{ background:#1c1c1c; border-bottom:3px solid #920101; padding:5px 0 0 0; min-width: 960px;
+width: 100%;}
+.cssClassLoginStatusWrapper {float:right; margin:20px 10px 20px 0;}
+.cssClassLoginStatusInfo ul {overflow: hidden;padding:0px;}
+.cssClassLoginStatusInfo ul li {float: left;padding: 0 4px 0 0;}
+.cssClassLoginStatusInfo ul li a {color: #ccc; font:12px Arial, Helvetica, sans-serif; padding-left:10px}
+.cssClassTotalCount {font-family:Arial, Helvetica, sans-serif;}
+.cssClassLoginStatusInfo ul li a:hover {color: #fff; text-decoration:underline;}
+#sfAspxlogo .sfModule{ margin:0}
+.sfHeaderDropdown{ float:right; width:104px; position:relative; margin:15px 0 0 0 }
+.sfHeaderDropdown dt a{ color:#535353}
+.sfHeaderDropdown dt{
+color: #fff;
+width: 75px;
+padding:5px 20px 5px 5px;position: absolute;
+font: 11px Arial, Helvetica, sans-serif;
+background: #dfdfdf url(../images/select_arrow.png) no-repeat 90% center;}
+#divPopularTag{ background:none; border:none;}
+
+#sfToplinks .sfModule{ margin-bottom:0; margin-right:0px;}
+.FlagButtonWrapper{ min-width:auto!important }
+/*Shopping cart popup*/
+.cssClassShoppingCart {float: right;position: relative; text-align:right;margin-top:8px; width:100%}
+.cssClassShoppingCart img{ cursor:pointer; margin-top:-5px;}
+#ShoppingCartPopUp .cssClassCommonSideBoxTable a {font:normal 12px Arial, Helvetica, sans-serif;padding: 0 10px; color:#000}
+#ShoppingCartPopUp .cssClassCommonSideBoxTable a:hover{ color:#910000; text-decoration:underline;}
+#ShoppingCartPopUp .cssClassCommonSideBoxTable>a {background:url(../images/black-btn.png) repeat-x; padding:5px 10px 5px 10px; border:1px solid #545454; color:#fff; margin:0 0 10px 0 !important}
+#ShoppingCartPopUp .cssClassCommonSideBoxTable>a:hover{background:#232222}
+
+.cssClassCommonSideBoxTable img:hover{ cursor:pointer}
+#ShoppingCartPopUp h2 {padding:5px 10px;color: #910000;font:bold 14px Arial, Helvetica, sans-serif;background:#DEDEDE;}
+#ShoppingCartPopUp table {margin-bottom: 10px;}
+#ShoppingCartPopUp table td {padding: 5px 0;}
+#ShoppingCartPopUp {position: absolute;right: 1px;margin-top:55px;width: 534px;background: white;z-index: 9999;padding:10px;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);}
+#ShoppingCartPopUp table tr {background: none repeat scroll 0 0 #f6f6f6;}
+#ShoppingCartPopUp table tr:nth-child(2n+1) {background: none repeat scroll 0 0 #fff !important;}
+.cssClassShoppingCart p {color: #dad9d9;display: block;	font:  11px/33px Arial, Helvetica, sans-serif; /*padding-top:6px;*/}
+.cssClassShoppingCart p span, .cssClassShoppingCart p span b {color: #dad9d9; font:normal 11px Arial, Helvetica, sans-serif; margin-right:9px;}
+.cssClassShoppingCart p a {	color: #dad9d9;	font:11px Arial, Helvetica, sans-serif}
+/*Currency dropdown*/
+.cssClassCurrencySelect {color: white;font-size: 13px;}
+.cssClassCurrencySelect span{ font:12px Arial, Helvetica, sans-serif; float:left; margin:3px 10px 0 0px; padding:2px 0 0 0;}
+.cssClassCurrencySelect .selectBox span{ font:11px Arial, Helvetica, sans-serif;}
+.cssClassCurrencySelect .selectBox img{ float:left; margin:7px 7px 0 0;}
+
+.dropDown li span{ display:block}
+.tzSelect {height: 24px; width:145px !important;color:#fff; font: 11px Arial, Helvetica, sans-serif;background: #fff url(../images/select_arrow.png) no-repeat 98% center; float:left; border:1px solid #ccc;}
+.cssClassCurrencySelect select {border: 1px solid #ddd ;font-size: 12px;background-color: transparent;margin-left:5px;}
+.tzSelect .selectBox {position: absolute;line-height: 25px;padding-left: 5px;cursor: pointer; text-shadow:none;color:#878787; width:135px;}
+.tzSelect .dropDown {position: absolute;top:26px;height: auto;z-index: 9999;border: 1px solid #ccc;list-style: none; width:144px;}
+.tzSelect .dropDown li {background:#fff; clear:both; overflow:hidden; padding:0px 0px 0px 0px; border-bottom:1px dotted #ccc;}
+.tzSelect .dropDown li:hover{ background:#F4F3F3; cursor:pointer;}
+.tzSelect .dropDown li img{ float: left;margin:7px 5px;}
+.tzSelect .dropDown li span{ font:11px Arial, Helvetica, sans-serif;}
+.tzSelect .dropDown li span:hover{ text-decoration:underline;}
+.dropDown li {   
+    float: none;
+   
+}
+/*Product box*/
+#sfBodyContent{ margin:20px 0 0 0; padding:0 0 190px 0}
+.cssClassProductsBox, .compareProduct{ background:#e9e9e9; padding:10px 10px 45px 10px;width:210px;float:left; margin:0px 10px 10px 0px;-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);  border:1px solid #b3b3b3;  text-align:center; position:relative;-webkit-transition: 0.5s; -moz-transition: transform  0.5s; -o-transition: 0.5s;}
+.cssGiftCardContainer .cssClassProductsBox{ width:21%; margin:0 22px 0 0}
+.cssClassProductsBox:hover{ background:#fff; cursor:pointer;}
+.cssClassgdvRewardPointsSettings_grid .cssClassSearchPanel .sfButtonwrapper button{ float:none;}
+.cssClassgdvRewardPointsSettings_grid .cssClassSearchPanel td{    float: left !important;
+    width: 230px;}
+.cssClassSearchPanel td { vertical-align:top;}
+.compareProduct{ padding:10px}
+.cssClassProductPicture{  margin:0 0 10px 0; display:block}
+.cssClassProductPriceBox{  margin:0 0 20px 0}
+.cssClassProductPicture img{ max-width:100%; }
+.cssClassProducts .cssClassProductsBoxInfo h2, .cssClassProductsBox h2{ font:16px Arial, Helvetica, sans-serif; color:#910000; margin:0px;text-transform:capitalize; margin:0 0 5px 0;vertical-align:baseline;}
+cssClassProducts .cssClassProductsBoxInfo h2:hover, .cssClassProductsBox h2:hover{ text-decoration:underline;}
+.cssClassProductRealPrice {font:bold 16px "Century Gothic"; color:#920101}
+.cssClassProductDetail{ margin-top:10px;}
+.cssClassProductDetail a{ font: 15px Arial, Helvetica, sans-serif; color:#626262; }
+.cssClassProductDetail a:hover{ color: #900}
+.cssClassFooterWrapper{ background:url(../images/footer-bg.jpg) repeat;}
+.cssClassDisplayResult .cssClassProductsBox{ margin: 0 10px 10px 0;width: 21.4%;min-height: 261px;}
+/*Alert btn*/
+#alert-Buttons .cssClassSubmitBtn, #alert-Buttons input{ padding:10px; color:#fff; font:bold 14px Arial, Helvetica, sans-serif;
+width:auto !important; border: solid 1px #750a0a !important; background: -webkit-linear-gradient(bottom, #900300, #bc120e); background: -moz-linear-gradient(bottom, #900300, #bc120e); background-image: -o-linear-gradient(bottom, #900300, #bc120e); background-image: -ms-linear-gradient(bottom, #900300, #bc120e); background: linear-gradient(to top, #900300, #bc120e); font: bold 
+12px Arial, Helvetica, sans-serif; background:#900300}
+#alert-Buttons .cssClassSubmitBtn:hover,  #alert-Buttons input:hover{ background:#903; cursor:pointer}
+/*Cart & wishlist*/
+.cssClassCartInformationDetails .cssClassHeadeTitle, .estimate_shipping table .cssClassHeadeTitle td, .cssClassCommonCenterBox table tr.cssClassCommonCenterBoxTableHeading, tr.cssClassHeading, .cssClassShippingMethodInfo  .cssClassHeadeTitle    {
+background: url(../images/table-head.jpg) repeat-x #1c1c1c!important ; color:#fff; font:bold 13px Arial, Helvetica, sans-serif !important; border-bottom:none!important }
+.cssClassBlueBtnWrapper{ clear:both}
+tr.cssClassHeading th{ padding:12px 5px 12px 5px !important; font: bold 11px Arial, Helvetica, sans-serif ; text-shadow:none; text-align:left}
+#gdvItems tr.cssClassHeading th{ text-align:center;}
+.cssClassCommonCenterBox table tr.cssClassCommonCenterBoxTableHeading td, .cssClassCommonCenterBoxTable td{ padding:12px;}
+.cssClassCommonCenterBox h2{ margin:10px 0 10px 0;} 
+.cssClassImage img, .cssClassCartPicture img{ background:#fff; border:1px solid #cacaca;}
+.cssClassCartInformationDetails td{ padding:15px;}
+.cssClassCommonSideBoxTable .cssClassWishItemDetails a, .cssClassCartPictureInformation a{ color:#101010; font:14px Arial, Helvetica, sans-serif}
+.popupbox .cssClassCommonCenterBoxTable{box-shadow:none; border:none}
+.cssClassCommonSideBoxTable .cssClassWishItemDetails a:hover, .cssClassCartPictureInformation a:hover{ text-decoration:underline; color:#910000}
+/*.sfListmenu{ background:#fff; border:1px solid #ddd; padding:2px}*/
+#wishitemBottom  Button, .cssClassBlueBtnWrapper .sfButtonwrapper .sfBtn, .cssClassdvRPBalance button, #dvEstimateRate button, .toogleSwitch, .classPromoList .classViewItems{ background:#1f1e1e url(../images/black-btn.png) repeat-x; border:1px solid #545454;padding:7px 6px;  color:#fff; font:14px Arial, Helvetica, sans-serif !important; color:#fff; border-radius:0; box-shadow:none; float:left; margin:0 10px 0 0; cursor:pointer;}
+.toogleSwitch { clear:both;}
+.toogleSwitch a{ color:#fff}
+.toogleSwitch:hover,  .classPromoList .classViewItems:hover{ background:#000;}
+.toogleWrapper{ margin:25px 0 0 0}
+.cssClassBlueBtnWrapper .sfButtonwrapper .sfBtn Button{ background:none; border:none; color:#fff}
+.cssClassSubTotalAmountWidth, .cssClassGrandTotalAmountWidth{ background:#bab9b9; }
+#divMyCart .cssClassSubTotalAmountWidth strong, #divMyCart .cssClassGrandTotalAmountWidth input{color:#930101 !important}
+#wishitemBottom{ margin:20px 0 20px 0; overflow:hidden; float:right;}
+.cssClassWishListDash h2{ font-size:18px;}
+.cssClassBlueBtnWrapper .sfButtonwrapper{ float:right; margin:9px 5px 0 0}
+#wishitemBottom  Button:hover, .cssClassBlueBtnWrapper .sfButtonwrapper .sfBtn:hover, .cssClassdvRPBalance button:hover{ background:url(../images/red-btn.jpg) repeat-x #A32829; border:1px solid #860101; cursor:pointer;}
+#wishitemBottom button span, .cssClassBlueBtnWrapper button span, .cssClassBlueBtn a{ font: 14px/20px Arial, Helvetica, sans-serif;text-shadow:none;float:left}
+.cssClassBlueBtn a{ background:url(../images/red-btn.jpg) repeat-x; border:1px solid #860101; padding:10px 15px 9px 15px; color:#fff; font:16px Arial, Helvetica, sans-serif;}
+.cssClassBlueBtn a:hover{ background: #940101}
+.cssClassHeader h2{ background:none;}
+.cssClassBlueBtn a{ margin:0px 0 0 0}
+.cssClassHeadeTitle td{ color:#fff;/* padding:15px 15px 15px 0px;*/ font:bold 13px Arial, Helvetica, sans-serif; border-bottom:none !important; }
+.cssClassMasterCenter input.cssClassFormatCurrency, .cssClassMasterCenter .cssClassPreviewQTY input {
+color: #069;border: none !important;background: none !important;box-shadow: none;width: 111px;margin: 0px !important;padding-left: 0px!important;padding-right: 0px !important;border-radius: 0px;}
+.cssClassQTYInput input{ width:25px; text-align:center; background:none; box-shadow:none}
+.cssClassBlueBtn a span{ font: 14px Arial, Helvetica, sans-serif; color:#fff}
+.cssClassBlueBtnWrapper a{ float:right; margin:9px 0 10px 2px}
+.cssClassCouponHelp {position: absolute;left: 275px;color: #000;white-space: normal;}
+.cssClasscarttotal{ position:relative}.cssClassCouponHelp h3 {width: 210px;text-align: left;color: #000;font: normal 11px/1.2 Arial, Helvetica, sans-serif !important;}
+.cssClassapplycoupon{ position:relative; margin:10px 0 0 0}
+.cssClasscarttotal .sfButtonwrapper .sfBtn{ position:absolute;top: 0px;
+right: -3px;-webkit-border-radius: 5px!important;-webkit-border-top-left-radius: 0px!important;-webkit-border-bottom-left-radius: 0px!important;-moz-border-radius: 5px!important;-moz-border-radius-topleft: 0px!important;
+-moz-border-radius-bottomleft: 0px!important;border-radius: 5px!important;padding:5px;border-top-left-radius: 0px!important;background: #1f1e1e url(../images/black-btn.png) repeat-x; color:#fff !important; box-shadow:none;border-bottom-left-radius: 0px!important;}
+.cssClasscarttotal .sfButtonwrapper .sfBtn:hover{ background:#222121}
+.cssClasscarttotal .sfButtonwrapper .sfBtn span{ color:#fff; text-shadow:none}
+.cssClassapplycoupon input{width: 232px; height:12px}
+.cssClassCartInformationDetails .cssClassCommonCenterBoxTable, .sfGridWrapperContent table{ background:#e9e9e9; border:1px solid #b3b3b3; border-bottom:none;-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow:    0px 0px 10px rgba(0, 0, 0, 0.2);box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); margin:0 0 10px 0}
+.cssClassCartInformationDetails td, .cssClasMyAccountInformation .sfEven td{ border-bottom:1px solid #b3b3b3;}
+.estimate_shipping tr td{ padding:10px;}
+.sfGridWrapperContent{ margin:0 0 10px 0;}
+.sfGridWrapperContent  td{ padding:10px;}
+.cssClassCartInformationDetails .sfOdd, .cssClassCartInformationDetails .sfEven, .cssClassCommonCenterBoxTable .sfOdd, .cssClassCommonCenterBoxTable .sfEven, .estimate_shipping .cssClassCommonBox  tr td, .cssClasMyAccountInformation .sfGridwrapper tr, .cssClasMyAccountInformation .sfEven, .cssClasMyAccountInformation .sfOdd {background:#e9e9e9 url(../images/td-bg.jpg) repeat-x bottom;}
+.cssClassSubTotalAmount {float:right; background:#e9e9e9;border:1px solid #b3b3b3 !important; width:42%; -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);border-top: none !important;box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);}
+.cssClasMyAccountInformation .sfGridwrapper td{ padding:15px 10px; text-align:left!Important;}
+.cssClassSubTotalAmount tr{ border-bottom:2px dotted #8b8989}
+.estimate_shipping .cssClassCommonBox {background: #e9e9e9;border: 1px solid #b3b3b3;
+border-bottom: none;-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);}
+.cssClassSubTotalAmount tr{ font:16px Arial, Helvetica, sans-serif}
+.cssClassSubTotalAmount td{ text-align:right;}
+.toogleWrapper .sfFormwrapper table{ border:1px solid #686868;}
+.toogleWrapper .sfFormwrapper .cssClassHeadeTitle{ background:#686868; color:#fff;}
+.toogleWrapper table td span{ font-weight:bold;}
+.toogleWrapper #result{ margin:10px 0 0 0}
+
+.toogleWrapper table{ position:relative;}
+.cssClassLeftRightBtn{ float:left}
+#divMyCart .cssClassSubTotalAmount input, input.cssClassFormatCurrency { text-align:right; font:bold 18px Arial, Helvetica, sans-serif; border:none !important; box-shadow:none !important; background:none !important; width:120px; color:#910000; }
+#divMyCart .cssClassSubTotalAmount strong{ font:bold 16px Arial, Helvetica, sans-serif; color:#030303}
+/*My account*/
+.cssClassMyDashBoard .cssClassCommonSideBox {float: left;width: 25%;margin-top: 5px;}
+.cssClassMyDashBoard .cssClassCommonSideBox h2 {background:  #910000 !important;color: #fff !important;font: 16px Arial,Helvetica,sans-serif;font-style: normal;margin-bottom: 0;padding: 8px 15px;border: 1px #ccc solid;border-bottom: none;text-transform:uppercase}
+.cssClassMyDashBoard .cssClassCommonSideBox h2 span{ background:none;color: #fff !important;}
+.cssClasMyAccount ul li a {display: block;color: #000;background: #fff;padding: 9px 38px 12px 11px;text-transform: capitalize;text-decoration: none;border: 1px solid #ccc;border-bottom: none;font:12px Arial, Helvetica, sans-serif ;-moz-transition: all 0.3s ease-out;}
+.cssClasMyAccount ul li a:hover,.cssClasMyAccount ul li a.cssClassmyAccountActive {background-color:#4f4e4e;text-decoration:none;color: #fff;}
+.cssClasMyAccountInformation {float: right;width: 73%;}
+.cssClassHeading td{ color:#fff;text-shadow:none; font:bold 13px Arial, Helvetica, sans-serif}
+
+.cssClasMyAccountInformation tr td input{ margin:0 0 10px 0}
+.sfGridWrapperTable .itemsHeaderChkbox{ margin-left:5px;}
+.sfFormwrapper td{ padding:7px;}
+.sfGridwrapper td a{ color:#686868}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+background: #E9E8E8 !important; border:1px solid #ccc !important}
+.ui-accordion .ui-state-active{ background:#3b5998 !important; border-radius:0px !important; }
+.ui-accordion .ui-state-active h2{ color:#fff !important}
+.ui-accordion .ui-state-default .ui-icon, .ui-accordion .ui-state-active .ui-icon{ display:none}
+.cssClassFooterWrapper a{ color:#fff}
+.cssClassAccordionWrapper .cssClassQTY input, .cssClassAccordionWrapper .cssClassPreviewQTY input{ width:15px !important}
+.cssClassAccordionWrapper .cssClassSubTotalAmount td{ text-align:right;}
+.cssClassAccordionWrapper td{ vertical-align:middle}
+.cssClasMyAccountInformation .cssClassCommonBox{ margin:10px 0 10px 0}
+.cssClassAddressBook {
+padding: 8px 0 0;
+}.cssClassAddressBook ol li { float:left; margin-bottom:20px
+
+}
+.cssClassCol1 {
+float: left;
+background-color: #FFFFFF;
+border: 1px solid #ccc;
+padding: 10px; 
+width: 46.5%;
+}
+.cssClassCol2 {
+float: right;
+background-color: #FFFFFF;
+border: 1px solid #ccc;
+padding: 10px; 
+width: 46.5%;
+}
+.cssClassChange a, .cssClassBack, .cssClassbtnGoBack, .cssClassbtnProceedReturn, .cssClassButtonSubmit, .cssClassHeaderRight .sfButtonwrapper button{font: 14px Arial, Helvetica, sans-serif;
+color: #fff;
+float:left;
+font:12px Arial, Helvetica, sans-serif;
+background: url(../images/black-btn.png) repeat-x #1d1c1c;
+padding: 7px 10px;
+border:1px solid #000; margin:10px 5px 5px 0}
+.cssClassChange a:hover, .cssClassBack:hover, .cssClassbtnGoBack:hover, .cssClassbtnProceedReturn:hover, .cssClassButtonSubmit:hover, .cssClassHeaderRight .sfButtonwrapper button:hover{background: url(../images/red-btn.jpg) repeat-x; color:#fff; border:1px solid #910000;}
+.cssClassButtonSubmit{ float:none!important;}
+.cssClassBack{ margin:10px 0 20px 0}
+#btnUnSubscribe{ margin:0!important;}
+
+
+/*Detail page*/
+.cssClassProductPictureDetails a b u span{background:url(../images/red-btn.jpg) repeat-x; border:1px solid #860101; padding:10px 10px 12px 10px; color:#fff; font:14px Arial, Helvetica, sans-serif;}
+.cssClassProductPictureDetails a b u span:hover{ background:#910000;}
+.cssClassProductImage {float: left;width: 47%;}
+.cssClassProductPictureDetails {float: right;color: #555; width:48%; padding:0 10px 10px 10px; margin:0 0 10px 0}
+.cssClassProductPictureDetails .cssClassItemRating {float: left;}
+/*.cssClassToolTip {position: relative;width: 150px;}*/
+/*.cssClassToolTip .cssClassToolTipInfo {display: none;position: absolute;z-index: 9999;left: 0;top: 20px;}*/
+.cssClassRatingStar {float: left;}
+/*span.cssClassRatingTitle {left: 90px;position: absolute;top: 6px;}*/
+.cssClassTabPanelTable {margin-top: 30px;}
+.cssClassYouMayAlsoLike, .cssClassItemQuickOverview {height: 1%;margin-top:50px; margin-bottom:50px;}
+cssClassProductDetailInformation {margin: 40px 0 0;}
+li span.cssClssQTY input{ width:20px;}
+.cssClassLeftSide li{ float:left; margin:0 10px 0 0}
+.cssClassLeftSide  label input{ margin:0 5px 0 5px}
+.cssClassProductImage .cssClassItemRating{ margin:15px 0 10px 0; background:#FFF; padding:10px 8px;  border: 1px solid #B3B3B3; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); float:left;}
+.cssClassBulkDiscount { margin:0 0 0 10px}
+.popupbox .cssClassLeftSide h2{ margin-left:0 !important}	
+.cssClassRightSide li{ padding:0 0 10px 0}
+.cssClassLeftSide .cssClssQTY{ margin:10px 20px 0 0; float:left; font:14px Arial, Helvetica, sans-serif; color:#686868;  width:82px}
+.cssClassRightSide .cssClassProductRealPrice{ color:#900}
+#spanSaving{ font:18px Arial, Helvetica, sans-serif}
+#spanAvailability{ color:#3b5998; font:18px Arial, Helvetica, sans-serif}
+.cssClassItemRating a{ color:#900; font:bold 12px Arial, Helvetica, sans-serif;}
+.cssClassLinkShare{ float:right;}
+.jcarousel-skin-pika{margin:15px 0 0 0 !important}
+.cssClassRightSide .sfButtonwrapper button span{ font:12px Arial, Helvetica, sans-serif;}
+#ItemDetails_TabContainer h2{padding:7px !important; }
+#ItemDetails_TabContainer h2.ui-state-active span {color:#fff !important;}
+#ItemDetails_TabContainer.ui-icon-triangle-1-s {background: url(../images/minus-icon.png) no-repeat !important;   
+display: inline-block !important; vertical-align:text-top;height: 20px; margin-right:15px;width: 20px; }
+#divReturnInfo td{ vertical-align:top}
+#divProductInfo .sfGridWrapperTable .cssClasschkSelectAll{ margin-left:12px;}
+
+#ItemDetails_TabContainer .ui-icon-triangle-1-e {background: url(../images/plus-icon.png) no-repeat  !important;     display: inline-block !important; height: 20px;vertical-align:text-top;margin-right:15px;width: 20px;}
+#ItemDetails_TabContainer .ui-widget-content{ background:#fff; height:auto !important; border: 1px solid #B3B3B3; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); clear:both; overflow:hidden;}
+.cssClassPopularTagBox{ background:#fff; border:1px solid #ccc;}
+.cssClassPopularItemTags {padding: 10px;}
+.tag_content {float:left;margin-right:15px;}
+.cssClassCross {margin-left: 5px;text-indent: -9999px;width: 20px;border:none;background:url(../images/btn-delete2.png) no-repeat;vertical-align: text-top;}
+.cssClassPopularItemTags strong {color: #910000;font: bold 14px Arial, Helvetica, sans-serif;}
+.cssClassPopular-Itemstags {border-bottom: 2px dotted #910000;color: #6F6F6F;font: 11px/18px Arial, Helvetica, sans-serif; margin:0 0 25px 0; padding-bottom:10px;}
+.cssClassPopular-Itemstags a {color: #6F6F6F;font: 11px/18px Arial, Helvetica, sans-serif;text-decoration: none;}
+.cssClassPopular-Itemstags a:hover, .cssClassMyTags a:hover {color: #3C92CF;}
+.cssClassPopularItemTags button.cssClassIncrease span, .cssClassPopularItemTags button.cssClassDecrease span {background: none repeat scroll 0 0 transparent;color: #fff;float: none;font: bold 18px Arial, Helvetica, sans-serif;padding: 0; text-align:center;}
+.cssClassMyTags {overflow: hidden;}
+.cssClassMyTags a {color: #6F6F6F;float: left;font: 11px/18px Arial, Helvetica, sans-serif;}
+.cssClassWishToCart span{ font:bold 12px Arial, Helvetica, sans-serif;}
+/*Sucess page*/
+.LabelColInfo1R, .LabelColInfo2R { font:bold 14px Arial, Helvetica, sans-serif !important; padding:10px 0 10px 0; width:285px;}
+
+.cssClassCheckOutMethodLeft{ float:left; width:75%; margin:60px 0 0 0}
+.cssClassAccordionWrapper .sfFormwrapper td { margin:0 !important}
+.cssClassForgetPass{ padding-bottom:10px;}
+/*you may also like*/
+.cssClassYouMayAlsoLikeWrapper{ margin:10px 0 0 0}
+.cssClassYouMayAlsoLikeBox {background: #fff;padding: 20px;float: left;text-align:center;margin: 0px 16px 20px 0px;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);}
+.cssClassMyAccountInformation{ overflow:hidden; clear:both; margin:10px 0 0 0}
+.popupbox .cssClassYouSave{}
+
+/*Pagination*/
+.Pagination {float:left !important;margin: 0 0 0 20px;}
+.pagination{ float:left; margin:5px 0 0 10px;}
+.pagination span { background-color:#fff; border:1px #ccc solid;font: 12px/26px segoe, Arial, Helvetica, sans-serif;padding: 1px 5px;text-align:center;text-decoration: none;margin: 0 2px;}
+ .pagination a:hover, .pagination span.current, .cssClassPaginationActive {background:url("../images/page_bg.gif") repeat-x; color:#fff; font: 12px/26px segoe, Arial, Helvetica, sans-serif;padding:0px 5px;text-align:center;text-decoration: none;margin: 0 2px; cursor:default; border:1px solid #000;}
+.pagination a:hover{ cursor:pointer}
+.pagination a {color: #131313;font: 12px/26px Arial, Helvetica;margin: 0 2px;padding: 0px 5px;text-align: center;text-decoration: none; background:#fffdfd; border:1px solid #adacac}
+.cssClassPages{ float:left; margin-top:5px;}
+.cssClassViewPerPage {float: right;position: relative;top: 0;right:0px;font:10px Arial, Helvetica, sans-serif; color:#000;}
+.cssClassPageNumberLeftBg{ display:block}
+#Pagination{ float:left}
+.cssClassPageNumber .cssClassPages input{ width:20px;}
+.cssClassViewPerPage span{ background:none !important; color:#222121; border:none !important;}
+/*List view*/
+.cssClassProductListView{background: #fff;padding: 20px;margin: 0px 0px 20px 0px;-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); border:1px #b3b3b3 solid;}
+.cssClassProductListViewLeft{ float:left}
+.cssClassProductListViewRight{ margin-left:160px}
+.cssClassProductListViewRight .cssClassListViewProductPrice span b{ color:#686868 !important; text-decoration:line-through; font:18px !important;}
+.cssClassProductListViewLeft .cssClassProductPicture img{background: #fff;border: 4px solid #fff;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);margin: 0px auto; margin-right:30px;}
+.cssClassViewPerPage h4{ float: left; color: #fff; font:12px/25px Arial, Helvetica, sans-serif;}
+.cssClassViewDetailsAddtoCart a{ float:left; margin-right:10px}
+a.cssClassGrid, a.cssClassList {background: url("../images/viewAs.png") no-repeat scroll 0 0 transparent;display: inline-block; height: 14px;margin: 6px 0 5px 10px;text-indent: -999em; width: 16px;}
+a.cssClassList {background-position: -27px 0;width: 16px;}
+a.cssClassList.sfactive,a.cssClassList:hover  { background-position: -27px -19px;}
+a.cssClassGrid.sfactive, a.cssClassGrid:hover {background-position: 0 -19px;}
+.cssClassFeaturedBg span:hover {background: url("../images/featured-bg-hover.jpg") no-repeat scroll 0 0 transparent;}
+.cssClassFeaturedBg span {background: url("../images/featured-bg.jpg") no-repeat scroll 0 0 transparent;color: #FFFFFF;display: block; font: bold 11px/17px Arial, Helvetica, sans-serif;
+height: 17px;margin: 6px 0 0;text-align: center;width: 136px;}
+.view select{ margin-right:20px;}
+/*Top login control css*/
+.cssClassSageSearchWrapper li { float:left; }
+.cssClassSageSearchWrapper{padding:10px;margin:14px 0 0px 35px; float:left;  background: none repeat scroll 0 0 #333333; border: 1px solid #1C1C1C; box-shadow: 0 0 1px rgba(255, 255, 255, 0.5) inset;}
+.sfModuleSimpleSearch{ float:left}
+#sfSearch .sfModule{ margin-bottom:0 }
+#sfAspxloginstatusbar .sfModule{ margin:10px 0 0 0;}
+.cssClassTopSearch{clear: both; font:11px Arial, Helvetica, sans-serif; width:70%; margin-top:10px; float:left;}
+#sfHeadertop{background:url(../images/bg-top.jpg) repeat;  padding:0px 0 0 0; min-width: 960px;width: 100%; }
+#sfFooterbtn{background:url(../images/bg-top.jpg) repeat; margin:-190px 0 0 0; padding:20px 0 20px 0; min-width: 960px;width: 100%;}
+.cssClassTopSearch span, .cssClassTopSearch ul li { float:left; color:#686868; font:bold 13px Arial, Helvetica, sans-serif;}
+.cssClassTopSearch ul li a{ float:left; color:#fff;}
+#sfCategorybar{background:url("../images/nava_bg.gif") repeat-x #161616; min-width: 960px;width: 100%;}
+#sfBanner{ background:#fff;}
+.sfModuleHeaderControl{ float:left; margin:0; width:70%;}
+.AspxCurrencyConverter{ float:right; margin: -20px 0 10px;}
+.sfModuleLanguageSwitch{ float:left; margin:0 0 0 2px !important; width:34%;}
+.sfLogininfo ul li a{ color:#ccc; font:12px Arial, Helvetica, sans-serif;}
+.sfLogininfo ul li a:hover{ color:#fff}
+.sfLogininfo ul li{ float:left; padding: 4px 8px 0 10px;}
+.sfLogininfo ul li:last-child{ padding-right:0 !important}
+.sfLogininfo{ float:left;}
+.sfHeaderDropdown dt:hover{ cursor:pointer}
+.sfHeaderDropdown dd {position: absolute;top: 25px;background:#DFDFDF;height: auto;z-index: 9999;min-width:100px;list-style: none;}
+.sfHeaderDropdown dd ul li{padding:5px !important; border-bottom:1px solid #ccc; border-top:none !important; }
+.sfHeaderDropdown dd ul li:hover{ background:#fff; text-decoration:underline;}
+.sfHeaderDropdown dd ul li a{ color:#535353}
+.sfModuleShoppingBagHeader{float:right; width:30%}
+.cssClassAccount{padding-left:10px!important;}
+.cssClassWishList{padding-left: 10px!important;}
+.cssClassCart{padding-left: 10px!important;}
+.sfModuleLoginStatus{  float:left; width:44%;}
+.sfModule{ margin:0}
+.cssClassCheckOut{padding-left: 10px!important;}
+.sfLogout{padding-left: 25px!important;}
+.sfRegister{padding-left:5px!important;}
+.sfModuleCurrencyConverter{ float:right; margin:0 0px 0 0}
+#sfAspxloginstatusbar{ float:right }
+.Grabnow h1{ font:36px Gautami; color:#fff; padding:9px 0 0 185px; }
+#sfBanner1{background:url(../images/bg1.png) repeat-x;  height:67px; margin:0 0 0px 0; min-width: 960px;
+width: 100%;}
+#sfBanner .sfModule, #sfBanner1 .sfModule { margin:0px  !important}
+.cssClassSageSearchWrapper input.cssClassSageSearchBox{background: #fff;padding:7px 0 7px 5px; margin:0;width:315px;color:#686868;font:11px Arial, Helvetica, sans-serif; border: 1px solid #000 !important; border-left:none !important; box-shadow: 0 0 1px rgba(255, 255, 255, 0.5) inset}
+.Grabnow p.Grab{ background:url(../images/grabnowbg.png) no-repeat 0 center !important; height:64px; width:214px; float:left; position:absolute; top: -12px; right:30px}
+.cssClassAdvanceSearchLink{display:block; color:#fff;font: 12px arial;}
+.cssClassAdvanceSearchLink:hover{ text-decoration:underline; color:#c1c0c0;}
+.cssClassAdvanceSearchLink { float:right; margin-top:10px;}
+.cssClassTopSearch ul li{ float:left; margin:0 10px 0 0}
+.cssClassTopSearch ul li a{ padding:0px 0px 0 5px; font:11px Arial, Helvetica, sans-serif}
+.cssClassSageSearchWrapper input.cssClassSageSearchButton{ overflow:hidden; border:1px solid  #910000!important;  background :#910000; font:14px Arial, Helvetica, sans-serif; color: #fff; float:left; height:28px;margin: 1px 0 0 -1px; padding:0 12px; box-shadow:none;}
+.cssClassSageSearchWrapper input.cssClassSageSearchButton:hover{cursor:pointer; background: #c40202}
+.cssClassTopSearch ul li a span{ margin:0px; font:12px Arial, Helvetica, sans-serif; color:#686868; text-decoration:underline}
+.cssClassTopSearch ul li a span:hover{ color:#fff; text-decoration:none;}
+.Grabnow p.Grab a{ color:#000; font:24px/63px Gautami;padding-left: 32px; text-shadow:0px 1px 0px #f27058}
+.cssClassProducts h1 span{ font:24px Arial, Helvetica, sans-serif; color:#fff; }
+.sfBannerslide{ height:309px !important; color:#990000; overflow:hidden}
+.cssClassAddtoCard .sfButtonwrapper { position:absolute; right:-1px}
+.cssClassProductsGridBox .cssClassAddtoCard .sfButtonwrapper{ position:relative !important; right:auto}
+.cssClassProductsGridBox {ackground: #e9e9e9;padding: 10px ;width: 200px;height:250px;margin: 0px 0px 10px 0px;-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+border: 1px solid #b3b3b3;text-align: center;-webkit-transition: 0.5s;-moz-transition: transform 0.5s;-o-transition: 0.5s;}
+.cssClassCompareAttributeClass{ padding:10px !important}
+.cssClassCompareAttributeClass .cssClassLabel, .cssClassCompareBox .cssClassFormatCurrency .cssClassLabel{ font:bold 14px Arial, Helvetica, sans-serif !important; color:#900 !important}
+.cssClassAddtoCard .cssClassOutOfStock, .cssClassOutOfStock .sfButtonwrapper a { position:relative; text-align:center; background:none !important}
+.cssClassAddtoCard .cssClassOutOfStock button, .cssClassProductPictureDetails .cssClassLeftSide .detailButtonWrapper .cssClassOutOfStock, .cssClassProductListView .cssClassViewDetailsAddtoCart .cssClassOutOfStock  .sfButtonwrapper a span, .cssClassProductsBox .cssClassProductsBoxInfo .cssClassOutOfStock  .sfButtonwrapper a span, .itemList .itemInfoClass .cssClassOutOfStock button, .cssClassProductPictureDetails .cssClassLeftSide .cssClassOutOfStock button, .cssClassProductsGridBox  .cssClassOutOfStock a, .cssClassOutOfStock .sfButtonwrapper a{ background:none !important; font:14px Arial, Helvetica, sans-serif; text-align:center; color: #F00 !important; text-shadow:none !important; border:none; cursor:default; text-transform:uppercase; padding:15px 10px 0px 0; margin:0}
+.cssClassQuickView .cssClassLeftSide .detailButtonWrapper .cssClassOutOfStock{ padding:15px 0 0px 0}
+.cssClassProductListView .cssClassViewDetailsAddtoCart .cssClassOutOfStock  .sfButtonwrapper a{ background:none !important; cursor:default;}
+.cssClassAddtoCard .cssClassOutOfStock button:hover, .cssClassAddtoCard .cssClassOutOfStock button:hover span{ cursor:default; color:#F00  !important}
+.cssClassAddtoCard .sfButtonwrapper { color:#414141; border-left:none; background:url(../images/btnbg.png) no-repeat;  height:36px;  border:none; padding:0 11px 0 25px; -webkit-transition: 0.5s; -moz-transition: transform  0.5s; -o-transition: 0.5s; margin:0px 0 0 0; cursor:pointer;}
+.cssClassAddtoCard .sfButtonwrapper a, .cssClassAddtoCard .sfButtonwrapper button {   font:14px Arial, Helvetica, sans-serif;  line-height: 33px;text-shadow:0px 1px 0px #d2d0d0;  text-transform:uppercase;background:none; box-shadow:none; border:none; color:#414141}
+.cssClassAddtoCard .sfButtonwrapper button:hover span, .cssClassAddtoCard .sfButtonwrapper  a:hover span{ color:#fff; text-shadow:none;}
+.cssClassAddtoCard .sfButtonwrapper:hover, .cssClassAddtoCard .sfButtonwrapper:hover{background: url(../images/hover-btn.png) no-repeat;}
+.cssClassDelete img:hover{cursor:pointer}
+
+/*Recntly compared*/
+.cssClassCompareItemInfo a{ color:#6e6d6d; margin:0 0 10px 0; display:block; background:url(../images/bullet1.png) no-repeat left; padding-left:20px}
+.cssClassCommonSideBoxTable .sfButtonwrapper button{background:url(../images/black-btn.png) repeat-x; padding:5px 10px 5px 10px; border:1px solid #545454; color:#fff; }
+.cssClassCommonSideBoxTable .sfButtonwrapper button:hover{ background:#232222}
+.cssClassCompareItemInfo a:hover{ color:#333;}
+.cssClassCommonSideBoxTable .sfButtonwrapper button{}
+/*Display none css*/
+.cssClassProductsBox .cssClassWishListButton button, .cssClassProductsBox .cssClassCompareButton button, .cssClassProductsGridBox .cssClassWishListButton button{
+background:none; border:none; float:left; padding:0; font:bold 12px Arial, Helvetica, sans-serif; color:#000;} 
+.cssClassWishListButton button span{ vertical-align:baseline;}
+ .cssClassProductsGridBox .cssClassWishListButton button{ float:none; margin:0 0 10px 0}
+.cssClassProductsBox .cssClassWishListButton button:hover, .cssClassProductsBox .cssClassCompareButton button:hover, .cssClassProductsGridBox .cssClassWishListButton button:hover{ color:#910000; text-decoration:underline}
+ .cssClassProductsBox .cssClassProductDetail, .cssClassProductsBoxInfo h3, #tblHeavyDiscountItems .cssClassProductsBox .cssClassWishListButton, #tblHeavyDiscountItems  .cssClassProductsBox .cssClassCompareButton{ display:none;}
+.cssClassCompareButton span{ font:12px/22px Arial, Helvetica, sans-serif; margin:0 0 0 5px}
+.cssClassCompareButton span:hover{ cursor:pointer}
+.cssClassCompareButton label{ margin:0 0 0 75px;}
+/*Footer Menu*/
+.sfCustomerService ul li, .sfModuleCopyrightHtml ul li, .sfModuleHelpHtml ul li{  padding:0 0 10px 0;}
+.sfCustomerService  ul li a, .sfModuleCopyrightHtml ul li a, .sfModuleHelpHtml ul li a, .sfModuleSocialHtml ul li a{ color:#6f6f6f;}
+.sfModuleServiceHtml  h2, .sfModuleCopyrightHtml h2, .sfModuleHelpHtml h2, .sfpayment h2, .sfSocial h2, .cssClassBrowseByCategory h2{ font:18px Arial, Helvetica, sans-serif; color:#aaaaaa;	margin:0 0 10px 0}
+.sfModuleServiceHtml ul li a:hover, .sfModuleCopyrightHtml ul li a:hover, .sfModuleHelpHtml ul li a:hover, .sfModuleSocialHtml ul li a:hover{ color:#fff;}
+.sfModuleCopyrightHtml h3, .sfModuleHelpHtml h3{ font:18px Arial, Helvetica, sans-serif; color:#aaaaaa;	}
+.sfSocial { margin-top:10px;}
+.sfpayment{ margin-right:25px;}
+.sfSocial p, .sfpayment p{ margin:8px 0 0 0}
+.sfSocial ul li a{ margin:0px 15px 0 0}
+.sffacebook, .sftwitter, .sfpintrest, .sfyoutube{ background:url(../images/facebook.png)no-repeat; height:32px; width:32px; text-indent:-9999px;float: left;opacity:0.9}
+.sftwitter{ background:url(../images/twitter.png)}
+.sfpintrest{ background:url(../images/pintrest.png)}
+.sfyoutube{ background:url(../images/youtube.png)}
+.sffacebook:hover, .sftwitter:hover, .sfpintrest:hover, .sfyoutube:hover{opacity:1; cursor:pointer}
+/* special item front view*/
+.cssClassSpecial span {color: #920101; margin: 0 0px 0 0; color:#000;text-shadow:0px 1px 0px #DADADA}
+.cssClassSpecialBox ul li:last-child{ margin-right:0}	
+.cssClassViewMore a, .cssClassReadMore, .cssViewMore a { color: #686868;font: bold 11px Arial,Helvetica,sans-serif; padding-right:10px; float:right; background:url(../images/view-morearrow.png) no-repeat right; margin:0px 5px 0 0 !important; }
+.cssClassViewMore{ margin:10px 0 0 0 !important; float:right}
+.cssClassViewMore a:hover, .cssClassCommonSideBox a.cssClassReadMore:hover, .cssViewMore a:hover{ text-decoration:underline; color:#910000}
+.cssClassTestimonialList a:hover{ text-decoration:underline; color:#686868; }
+.cssClassSpecialBoxInfo a:hover{ text-decoration:underline;}
+/*best seller items front view*/
+.cssClassBestSellerBox ul li, .cssClassrecentlyviewed ul li, .cssClassSpecialBox ul li{  background: none repeat scroll 0 0 #E9E9E9; border: 1px solid #B3B3B3;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);float: left;margin: 10px 20px 0px 0;padding: 10px 10px 10px;text-align: center;transition: transform 0.5s ease 0s;width:39%; min-height:135px;}
+.cssClassBestSellerBox ul li:hover, .cssClassrecentlyviewed ul li:hover, .cssClassSpecialBox ul li:hover{ background:#fff}
+.cssClassBestSellerBox ul li:last-child,  .cssClassrecentlyviewed ul li:last-child{ margin-left:0 !important}
+.cssClassBestSellerBoxInfo ul li a, .cssClassrecentlyviewed ul li a, .cssClassSpecialBoxInfo a{ color:#686868; font:12px Arial, Helvetica, sans-serif; text-transform:capitalize}
+.cssClassBestSellerBoxInfo ul li a:hover, .cssClassrecentlyviewed ul li a:hover{ text-decoration:underline;}
+.cssClassItemHeader .sort select{ position:absolute; top:40px; left:50px;}
+.cssClassItemHeader .sort h4{ margin-top:27px;}
+.classInfo .cssClassWishListButton{ float:right; }
+.classViewDetails span{ font:bold 13px  Arial, Helvetica, sans-serif; margin-top:10px; text-decoration:underline;}
+/*Best seller detail view list*/
+.divDetailsItemList table {	width:100%;}
+.divDetailsItemList .classInfo {background: #e9e9e9;padding:15px;
+margin:0px 0px 20px 0px;-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);border: 1px #b3b3b3 solid;}
+.divDetailsItemList .itemImageClass {float:left;background:#fff;padding:10px;margin-right:20px;}
+.divDetailsItemList .itemImageClass img {width:150px;}
+.divDetailsItemList .cssClassHalfColtwo {margin:34px 0 0 20px;float:left}
+.divDetailsItemList .itemInfoClass {float:left}
+.divDetailsItemList .itemInfoClass .sfButtonwrapper {margin:0px 10px 0px 0px;padding:0; float:left;}
+.divDetailsItemList .cssClassHalfColumn {float:left;margin-left:20px;}
+.divDetailsItemList .classQuantity {float:left;}
+.divDetailsItemList .classQuantity span {font:bold 12px Arial, Helvetica, sans-serif}
+.divDetailsItemList .classQuantity input {width:20px}
+.itemInfoClass ul li {color: #202020;font: 18px Arial, Helvetica, sans-serif;color: #101010;text-transform: capitalize;	text-shadow: 0 1px 1px white; margin-bottom:10px;}
+.itemInfoClass  .cssClassAddToCart .sfButtonwrapper  button, .classInfo .sfButtonwrapper  button{font:14px Arial, Helvetica, sans-serif; color:#fff; background:url(../images/red-btn.jpg) repeat-x;  text-transform:capitalize;padding:0 10px; border:none; margin:0 0 10px 0;}
+.itemInfoClass .classButtons{ float:left;}
+.itemInfoClass .cssClassAddtoCard .sfButtonwrapper  button span, .classInfo .sfButtonwrapper  button span{ line-height:36px; color:#fff; text-shadow:none}
+.itemInfoClass .cssClassAddtoCard .sfButtonwrapper  button:hover, .classInfo .sfButtonwrapper  button:hover{ background:#910000;}
+.classButtons .classWishlist .cssClassWishListButton button, #divlatestItemsList td .classInfo .cssClassAddToCart button{ background: url("../images/black-btn.png") repeat-x scroll 0 0 #1D1C1C;border: 1px solid #000000;color: #FFFFFF;font: 14px Arial,Helvetica,sans-serif;padding:8px 10px;}
+.classButtons .classWishlist .cssClassWishListButton button:hover, #divlatestItemsList td .classInfo .cssClassAddToCart button:hover, #dvEstimateRate button:hover{ background:#000;}
+.itemInfoClass .cssClassOutOfStock button span{ color:#FF0000;}
+.itemInfoClass .classViewDetails{ float:left; clear:both}
+/* Popular Tags*/
+.cssClassPopularTags{color:#000;}
+.cssClassPopularTags ul li{ margin:10px; float:left;  border-top-left-radius:20px;  border-bottom-left-radius:20px; border-top-right-radius:3px;  border-top-right-radius:3px; border-bottom-right-radius:3px; border:1px #b1b0b0 solid; padding:5px 6px;}
+.cssClassPopularTags ul li a{background:url(../images/tag_bg.png) no-repeat 0 8px; padding:2px 0 0 15px; text-transform:none; color:#686868}
+.cssClassPopularTags ul li:hover{ background:#e4e3e3}
+.cssClassPopularTags ul li:hover a{ color:#000;}
+.cssClassPopularTags .cssClassViewMore{ margin-right:5px;}
+.poll-box{ background:#fff; padding:10px; overflow:hidden}
+.tagcloud h2 span,  #sfAspxcommercemenu h2 span{ background:none; color:#fff}
+/*services module*/
+.cssClassService li, #divHeavyDiscount .cssClassProductsBox, .cssClassAllService li, .seasonalContainer .cssClassProductsBox{ background:#E9E9E9;border: 1px solid #B3B3B3;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);float: left;margin: 0px 17px 10px 0px; min-height: 200px;text-align: center;transition: transform 0.5s ease 0s;width: 21.4%}
+#divLatestItemTemp {height: 232px !important;}
+.cssClassAllService li{ min-height:240px;}
+.cssClassAllService li .cssClassImgWrapper img{ width:100%}
+.cssClassAllService li .cssClassImgWrapper{ margin:0 0 10px 0}
+.cssClassService li h3{ color:#910000; padding:12px 0 0 0; font-weight:normal;}
+.cssClassService .cssClassImgWrapper img {width: 80%;margin-bottom: 8px;}
+.cssClassService p{ font:12px Arial, Helvetica, sans-serif; color:#686868; text-transform:capitalize;}
+.cssImageWrapper{ background: #fff;border: 4px solid #fff;-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);margin-right: 30px;float:left}
+#cssServiceDetail .cssClassItems h3, #cssServiceDetail .cssClassItems h3 a {color: #910000;font: bold 14px Arial, Helvetica, sans-serif;}
+.cssClassItems h3 a span{ color:#910000;}
+.cssClassItems span.cssClassFormatCurrency {font: bold 14px Arial, Helvetica, sans-serif;color: #900;}
+.cssClassItems .sfButtonwrapper a, .cssServiceItemDetails .sfButtonwrapper a {font: 14px Arial, Helvetica, sans-serif;color: #fff;
+float:right;background: url(../images/red-btn.jpg) repeat-x;text-transform: capitalize;padding: 5px 10px !important;border: none;margin: 0 0 10px 0;}
+.cssClassItems .sfButtonwrapper a:hover, .cssServiceItemDetails .sfButtonwrapper a:hover{background: #910000;}
+.cssServiceItemDetails .sfButtonwrapper a { float:left; margin-top:15px;}
+#divServiceDetails .cssClassItems {margin: 30px 15px 0px 0;float: left;background-color: #FFFFFF;border: 1px solid #ccc;font-size: 12px;padding:10px;width: 44%;}
+.cssServiceName h2{ margin-bottom:10px;}
+/* Services Appointment*/
+.cssClassAppointmentBody{ font:13px Arial, Helvetica, sans-serif; color:#686868;}
+.cssClassAppointmentHeading h2{background:url(../images/h2-bg.png) repeat-x right; margin-bottom:40px;}
+.cssClassAppointmentBody tr td{ padding:7px 0 7px 15px;}
+.cssClassAppointmentBody td span{ width:25%}
+.cssClassAppointmentBody .sfListmenu{ min-width:210px;}
+.cssClassAppointmentBody tr td label input{ margin-right:5px;}
+.cssClassAppointmentBody tr td label{ margin:10px;}
+.cssClassServiceInfo, .cssClassPersonalInfo{ background:#b3b3b3;}
+.cssClassServiceInfo span, .cssClassPersonalInfo span{ color:#910000; font:14px Arial, Helvetica, sans-serif;}
+.cssClassPaymentList{ margin-top:30px;}
+.cssClassPaymentList span{background:#b3b3b3; display:block; color:#910000; font:14px Arial, Helvetica, sans-serif ; padding:7px 0 7px 15px; margin-bottom:10px;}
+.ssClassPaymentList b label{ font:normal 14px Arial, Helvetica, sans-serif;}
+.cssServiceDesc p{ text-transform:lowercase;}
+.cssServiceDesc{ float:left; width:75%;}
+/*Advanced Search*/
+.cssClassAdvenceSearch .cssClassHeader{ background:none}
+.cssClassAdvenceSearch .searchForTextBox {background: #fff; -webkit-box-shadow: inset 0px 1px 3px 0px #d4d4d4;-moz-box-shadow: inset 0px 1px 3px 0px #d4d4d4;box-shadow: inset 0px 1px 3px 0px #d4d4d4;border: 1px solid #c4c3c3 !important;padding: 5px;width: 250px;}
+.cssClassAdvenceSearch .cssClassLabel{ font: 14px Arial, Helvetica, sans-serif; margin:0  10px 10px 0; float:left; line-height:30px; color:#990000;}
+.cssClassAdvenceSearch li{ float:left; margin: 6px 10px 0 0;}
+.cssClassAdvenceSearch .sfFormwrapper{ background:#e9e9e9;border: 1px solid #b3b3b3;padding:10px; margin:10px 0 10px 0}
+.cssClassAdvenceSearch .sfButtonwrapper  button{ background:url(../images/red-btn.jpg) repeat-x #930102; border:1px solid #860101; padding:10px 15px 10px 15px; color:#fff; font:16px Arial, Helvetica, sans-serif; }
+.cssClassAdvenceSearch .sfButtonwrapper  button:hover{ background:#900}
+#divPriceFrom, #divPriceTo {margin-left: 10px;float: left;}#divPriceFrom span, #divPriceTo span {font: 11px/22px Arial, Helvetica,sans-serif;margin-right: 5px}
+.pricebox span{ line-height:22px !important}
+/*Brand detail view*/
+.cssClassMiddleHeader, .cssClassCompareBox .cssClassHeader h2 { background: url(../images/h2-bg.png) repeat-x scroll right center transparent; box-shadow:none; border:none; margin:0 0 10px 0 !important }
+.cssClassMiddleHeader span, .cssClassCompareBox .cssClassHeader h2 span{background:#DADADA;color: #920101;font: 16px Arial,Helvetica,sans-serif; padding: 0 10px 1px 10px;text-transform: uppercase;}
+.estimate_shipping .sfBtn{ margin:0px; box-shadow:none}
+.sfModuleAspxLatestItemsDisplay{ margin:0 0 40px 0}
+/*Detail testimonials*/
+.cssClassTestDetail h1{ margin-bottom:20px;}
+.cssClassTestDetail	ul li a{color:#0180F4; font-size:10px; text-decoration:underline;}
+.cssClassTestDetail	ul li a:hover{ text-decoration:none;}
+.cssClassTestimonial li { padding:5px 5px 5px 5px; font: 12px Arial, Helvetica, sans-serif; display:block; border-bottom: 1px solid #bfbfbf; box-shadow:0px 1px 0px #f2f0f0; overflow:hidden; margin:10px 0;}
+.cssClassTestimonial li:last-child{border-bottom:none; box-shadow:none}
+.cssClassTestimonial li p{ color: #6e6d6d; font:12px Arial, Helvetica, sans-serif; color:#6e6d6d; margin-bottom:20px;}
+.cssClassImageHolder{float:left; overflow:hidden;border:1px solid #999;  background:#fff; margin:0 10px 10px 0; }
+.cssClassImageHolder img{width:50px; }
+.cssClassDate{ display:block; font-style:italic;}
+cssClassTestmonialDetails span{float:right; color:#920101}
+.cssClassAuthorDate { float:right; color:#920101}
+.cssClassUser em{  font:normal 12px Arial, Helvetica, sans-serif; color:#910000; font-style:italic; text-transform:capitalize;}
+.cssClassTestimonial .cssClassDate {width:auto !important; margin-bottom:10px; color:#910000; font-style:italic;}
+#ulTestimonialDetails li{border: 1px solid #bcbcbc; display:block; overflow:hidden; padding:10px;
+margin-bottom:10px;}
+/*Cart page*/
+.ClassDeleteCartItems{ cursor:pointer}
+/*List view*/
+.cssClassProductListViewRight h2{ font:18px Arial, Helvetica, sans-serif; color:#910000; text-transform:capitalize; margin:0 0 10px 0}
+.cssClassProductListViewRight p{ color:#585858; font:12px Arial, Helvetica, sans-serif;}
+.cssClassListViewProductPrice span{ font:20px Arial, Helvetica, sans-serif; color:#910000; margin:15px 0;}
+.viewWrapper .sort{  margin-left:20px; float:right;}
+.viewWrapper{ overflow:hidden; margin:10px 0 10px 0}
+.viewWrapper .view{ float:left}
+.viewWrapper .view h4, .viewWrapper .sort h4, .sort span{ float:left; line-height: 31px !important; margin:0 5px 0 0;color:#910000; font:bold 12px Arial, Helvetica, sans-serif}
+/* product list view*/
+.cssClassProductListView .cssClassAddtoCard .sfButtonwrapper { position:relative; right:0}
+.cssClassProductListView  .cssClassAddtoCard .sfButtonwrapper , .cssClassViewDetailsAddtoCart .sfButtonwrapper { font:16px Arial, Helvetica, sans-serif; text-shadow:0px 1px 0px #d2d0d0; color:#414141; background:url(../images/btnbg1.png) no-repeat !important;  height:36px;  text-transform:uppercase;padding:0; float:left;}
+.cssClassProductListView  .cssClassOutOfStock .sfButtonwrapper, .cssClassViewDetailsAddtoCart .cssClassOutOfStock .sfButtonwrapper  { background:none !important; padding:0; margin:10px 0 0 0}
+.cssClassProductListView  .cssClassOutOfStock .sfButtonwrapper a, .cssClassViewDetailsAddtoCart .cssClassOutOfStock .sfButtonwrapper a { padding:0 !important}
+.cssClassProductListView  .cssClassOutOfStock .sfButtonwrapper:hover, .cssClassViewDetailsAddtoCart .cssClassOutOfStock .sfButtonwrapper:hover { background:none !important; padding:0 !important}
+.cssClassProductListView .cssClassAddtoCard .sfButtonwrapper a, .cssClassViewDetailsAddtoCart .sfButtonwrapper  a{ padding:0px 56px 0px 15px !important; border-radius:0 !important; margin-right:40px; text-transform:uppercase}
+.cssClassProductListView .cssClassAddtoCard .sfButtonwrapper  a span, .cssClassViewDetailsAddtoCart .sfButtonwrapper  a span{ line-height:36px; color:#414141; text-transform:uppercase; font-size:14px;}
+.cssClassProductListView .cssClassAddtoCard .sfButtonwrapper:hover span, .cssClassViewDetailsAddtoCart .sfButtonwrapper:hover span{ color:#fff; text-shadow:none;}
+.cssClassProductListView .cssClassAddtoCard .sfButtonwrapper:hover, .cssClassViewDetailsAddtoCart .sfButtonwrapper:hover{background: url(../images/hover-btn1.png) no-repeat !important; }
+.cssClassProductListView  p{ color:#585858; font:12px Arial, Helvetica, sans-serif;margin:0 0 10px 0}
+.cssClassViewDetailsAddtoCart{ overflow:hidden; margin:10px 0 10px 0}
+#divShowCategoryItemsList .cssClassProductsBox{ margin:0 10px 10px 0;  width: 28.8%;}
+/* Detail view */
+.cssClassLeftSide .cssClassHalfColumn{ margin:5px 0;}
+.cssClassLeftSide .cssClassHalfColumn span b{ font-weight:normal; text-transform:capitalize; font:14px Arial, Helvetica, sans-serif; color:#686868;}
+.cssClassViewPerPage h4{ font:10px Arial, Helvetica, sans-serif; color:#000; line-height:30px; margin-right:5px;}
+.cssClassProductPictureDetails h2 span, .cssClassYouMayAlsoLike h2{ font:18px Arial, Helvetica, sans-serif; color:#910000; text-transform:capitalize;}
+.cssClssQTY input{ width:35px;}
+.cssClassProductOffPrice span.cssClassFormatCurrency{font:18px Arial, Helvetica, sans-serif; color:#686868; text-decoration:line-through; }
+.cssClassProductRealPrice span{ font:22px Arial, Helvetica, sans-serif; color:#910000;}
+.cssClassYouSave{margin:5px 20px 10px 0; float: left; font:14px Arial, Helvetica, sans-serif; color:#686868; text-transform:capitalize;}
+.cssClassYouSave, .cssClassDiscountPrice span { background:#e37c03; border:1px #bf6700 solid; padding:2px 12px 2px 12px; color:#fff; border-top-right-radius:15px; border-bottom-right-radius:15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
+.cssClassYouSave #spanSaving b{ background:none; box-shadow:none; border:none; padding:0}
+.cssClassProducts .cssClassYouSave{ float:left; margin-bottom:20px;  margin-left: -11px;}
+a.sfAnchor{ font:12px Arial, Helvetica, sans-serif; color:#686868;}
+a.sfAnchor:hover{ color:#910000;}
+.cssClassItemQuickOverview{background:#fff; padding:12px; border: 1px solid #B3B3B3; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top:15px; width:401px;}
+.cssClassItemQuickOverview h2{ font:16px Arial, Helvetica, sans-serif; color:#910000;}
+.detailButtonWrapper{ border-top:3px #910000 dotted; border-bottom:3px #910000 dotted; overflow: hidden; clear:both; margin:0px 0 20px 0; padding:13px 0 10px 0;}
+.cssClassLeftSide .sfButtonwrapper .sfBtn1, .cssClassPopularItemTags .sfButtonwrapper button, .popupbox .sfFormwrapper .sfButtonwrapper button, #divClickAway .sfButtonwrapper  a, #divClickAway .sfButtonwrapper button, .sfGridwrapper .sfButtonwrapper button,  .cssClassContactWrapper .sfButtonwrapper input.sfBtn, .cssClassLeftSide .sfButtonwrapper .cssClassCompareButton input{ background:url(../images/black-btn.png) repeat-x #1d1c1c; padding:10px; color:#fff; border:1px #000 solid; font: 14px Arial,Helvetica,sans-serif; margin:0 0 10px 0; box-shadow:none}
+.cssClassLeftSide .sfButtonwrapper .cssClassCompareButton input{ border:1px solid #000!Important; margin:0 0 0 5px;}
+ .popupbox .sfButtonwrapper{ float:left}
+/*#divClickAway{ margin:10px 0 10px 0}*/
+.cssClassLeftSide .sfButtonwrapper .sfBtn1{ float:none;}
+.cssClassPopularItemTags .sfButtonwrapper button{ margin:15px 0 0 0  ;}
+.cssClassLeftSide .sfButtonwrapper .sfBtn1:hover, .popupbox .sfFormwrapper .sfButtonwrapper button:hover, #divClickAway .sfButtonwrapper a:hover, #divClickAway .sfButtonwrapper button:hover, .sfGridwrapper .sfButtonwrapper button:hover,  .cssClassContactWrapper .sfButtonwrapper input.sfBtn:hover, .cssClassLeftSide .sfButtonwrapper .cssClassCompareButton input:hover{ background:#1D1C1C; cursor:pointer}
+.cssClassLeftSide .sfButtonwrapper .sfBtn, #Notify .sfButtonwrapper button{ background: url("../images/red-btn.jpg") repeat-x scroll 0 0 transparent;border: 1px solid #860101;color: #FFFFFF;font: normal 14px Arial,Helvetica,sans-serif;padding: 10px 15px;margin:0 5px 0 10px; box-shadow:none; border-radius:0; text-shadow:none}
+#Notify .sfButtonwrapper button{ padding:2px 15px 4px 15px!important;}
+
+#Notify .sfButtonwrapper button{ margin:0 0 0 0}
+/*#Notify .sfButtonwrapper button{ padding:3px 15px 3px 15px}*/
+.cssClassLeftSide .sfButtonwrapper .sfBtn, .cssClassLeftSide .sfButtonwrapper .sfBtn1{float:left; cursor:pointer;} 
+.cssClassLeftSide .sfButtonwrapper .sfBtn:hover, #Notify .sfButtonwrapper button:hover{ background:#910000; font-style:normal}
+.cssClassAvailiability{ margin-bottom:10px;}
+.cssClassAvailiability b{ color:#910000; font-size:14px;}
+.cssClassAvailiability span{ font:14px Arial, Helvetica, sans-serif; color:#686868;}
+.cssClassRatingStar{ margin:5px 0 0 0;}
+.cssClassRatingTitle{ margin-top:0px;}
+.cssClassTotalReviews, .cssClassAddYourReview{ font:10px Arial, Helvetica, sans-serif;}
+.cssClassAddYourReview:hover, .itemBrand a:hover{ text-decoration:underline;}
+.cssClassProductDetailInformation .ui-widget-header, #slider-range .ui-widget-header{ background:none; }
+.cssClassProductDetailInformation .cssClassTabpanelContent{ border:none;}
+.cssClassProductDetailInformation .ajax__tab_default, .cssClassProductDetailInformation .ui-widget-content{ background:none;}
+.ui-widget-content a{ color:#333}
+.cssClassProductDetailInformation .ajax__tab_default, .cssClassProductDetailInformation .ui-widget-content{ border-radius:0 0 0 0;}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{ color:#910000;}
+.cssClassProductDetailInformation  .ui-tabs .ui-tabs-nav li{ background:#CCC}
+.ui-state-default span{color:#686868}
+.ui-tabs .ui-tabs-panel{ margin-top:-1px;}
+.cssClassTableLeftCol .cssClassLabel{ font:bold 14px Arial, Helvetica, sans-serif;/* padding:25px 10px;*/}
+.cssClassTableLeftCol .cssClassLabe table{ border:1px #093 solid;}
+.cssClassPopularItemTags .sfButtonwrapper button{background:url(../images/black-btn.png) repeat-x #000; padding:5px; color:#fff; border:1px #000 solid; font: 16px Arial,Helvetica,sans-serif; margin-left:0px;}
+.cssClassDecrease, .cssClassIncrease {background: url("../images/page_bg.gif") repeat-x scroll 0 0 transparent;color: #FFFFFF !important;cursor: default;font: 12px/26px segoe,Arial,Helvetica,sans-serif; margin: 0 2px 0 5px;padding: 0px 7px;text-align: center;text-decoration: none;border:none;}
+.cssClassDecrease button span, .cssClassIncrease span{ color:#fff;}
+.cssClassRateReview .cssClassItemRatingBox{ background:none; margin:0 0 0 0;}
+.cssClassItemRatingBox{ margin:10px 0 5px 0;}
+.cssClassRatingInfo p span, .cssClassRatingReviewDate{ color:#686868;}
+.cssClassRatingInfo p span strong{ color:#910000; text-transform:capitalize; font:14px Arial, Helvetica, sans-serif;}
+.cssClassRatingReviewDate strong{ font-weight:bold;}
+.cssClassRatingdesc p{ color:#686868}
+.cssClassYouMayAlsoLikeBoxFourth{ margin-right:0px;}
+.cssClassCategoryWrapper{ margin:0 0 20px 0}
+.cssClassCategoryWrapper h2, .cssClassLeftHeader{ background:  #910000 !important;color: #fff !important;font: 16px Arial,Helvetica,sans-serif !important;font-style:normal; margin-bottom: 0 !important;padding: 8px 10px !important;border:1px solid #930;border-bottom:none;text-transform:uppercase !important; margin-top:0px !important;}
+.cssClassCategoryWrapper h2:hover, .cssClassLeftHeader:hover{ cursor:pointer}
+.divCategoryVertical .mega-menu{ margin-top:50px; }
+.cssClassYouMayAlsoLikeBox p span{ font-size:18px;}
+.cssClassYouMayAlsoLikeBox .sfButtonwrapper a{background: url("../images/red-btn.jpg") repeat-x scroll 0 0 transparent;border: 1px solid #860101;color: #FFFFFF;font: 14px Arial,Helvetica,sans-serif;padding: 10px 15px;	}
+.cssClassYouMayAlsoLikeBox .sfButtonwrapper{ margin-top:18px;}
+.cssClassYouMayAlsoLikeBox .sfButtonwrapper a:hover{ background:#910000; text-decoration:none;}
+.cssClassProductPictureDetails ul li p{ font: bold 13px Arial, Helvetica, sans-serif; color:#910000; margin:20px 0 5px 0;}
+.cssClassQtyDiscount th{ background:#E9E8E8; padding:6px;  border:1px solid #B3B3B3;}
+.cssClassQtyDiscount td{ border:1px solid #B3B3B3; padding:6px; text-align:center; width:65%;}
+/*Back to top*/
+.back-top { -moz-transition: bottom 250ms ease-in-out 0s; top:35%; padding: 10px 10px 20px; right:1%; width: 110px;}
+.back-top.Button.Indicator { border-width: 0; box-shadow: 0 0 #FFFFFF, 0 1px 3px rgba(34, 25, 25, 0.5);display: block; position: fixed; text-align: center; z-index: 4;}
+.back-top.Button.WhiteButton { /*background-color: #F0EDED;background-image: -moz-linear-gradient(center top , #c4c3c3, #7e7e7e 50%, #7e7e7e 50%, #434343); border-color: #BBBBBB;*/ background:url("../images/arrow.png") repeat-x scroll 0 0 #1D1C1C; color: #524D4D;text-shadow: 0 1px rgba(255, 255, 255, 0.9); height:51px; width:51px; border:1px solid #000!important; border-radius:10px;}
+.back-top.Button.WhiteButton:hover{ opacity:0.5; -moz-transition: all 0.8s ease-out;}
+.back-top.Button {cursor: pointer; font-family: "helvetica neue",arial,sans-serif; font-weight: bold;line-height: 1em; margin: 0;}
+/*category dropdown*/
+dl.sfCategoryDropdown {width:84px;position:relative;height: 16px;padding:6px 30px 6px 3px;background:url("../images/search_bg.gif") repeat-x scroll 0 0 #1D1C1C;border: 1px solid #000; border-right:none !important;box-shadow: 0 0 1px rgba(255, 255, 255, 0.5) inset}
+.sfCategoryDropdown dd ul li {width: 130px; display:block;padding:6px 10px 6px 10px; border-bottom:1px dotted #ccc;}
+.sfCategoryDropdown dd ul li:hover, .sfCategoryDropdown dd ul li.sfSelected{ background:#900; color:#fff; cursor:pointer}
+.sfCategoryDropdown dd ul li:hover a, .sfCategoryDropdown dd ul li.sfSelected a{ color:#fff}
+.sfCategoryDropdown a, .sfCategoryDropdown a:visited {color: #838383;text-decoration: none;outline: none;}
+.sfCategoryDropdown dt a span {cursor: pointer;display: block;font:11px Arial, Helvetica, sans-serif;background:url(../images/search_dropdown.png) no-repeat right;padding:1px 5px; width:95px;}
+.sfCategoryDropdown dd ul {background: #fff;border: 1px solid #ddd;border-top: none;color: #C5C0B0;left: 0;z-index:1;position: absolute;top:28px;width: auto;min-width: 150px;list-style: none;padding: 5px 0;}
+.sfQuickLook{   top: 66px;left: 70px;position: absolute;}
+/*Brand detail view*/
+.cssBrandHeader {background-color: #e9e9e9;	font-size: 20px;padding:5px;text-align: center;	border:1px #d4d3d3 solid;color:#990000;font-weight:normal;}
+.cssBrandHeader h1{ color:#f70169;}
+.brandTopHeader {border-bottom: 1px solid #D6D6D6;margin-bottom: 0;padding-bottom: 10px;}
+.slider1 li, .sfFeaturedBrands li {float: left;border:1px solid #CCC;padding:5px;text-align:center;background:#fff;margin-right:10px;  width:120px; height:100px;}
+.slider1 li h3 {line-height:30px; margin:0}
+.slider1, .sfFeaturedBrands {margin:30px 0;clear:both;overflow:hidden}
+/*Filter */
+.cssClassFilter{ float:left; width:25%;   margin-right: 20px; background:#fff}
+.cssCategoryWrapper{ float:left; width:72%;}
+.cssClasscategorgy ul li{ padding:10px 0 0 0}
+.cssClasscategorgy ul li input{ margin:0 5px 0 0}
+.cssClasscategorgy, .cssClassbrowseprice{  padding:10px;margin:0 0 0px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-bottom:1px solid #ccc}
+.filter .divTitle b label,  .cssClasscategorgy  .divTitle b label{ font:bold 13px Arial, Helvetica, sans-serif; color:#920101 !important;   text-align:left; }
+.filter  .divTitle, .cssClasscategorgy  .divTitle { display:block; margin:0 0 10px 0;border-bottom:1px dotted #333; padding:0 0 5px 0}
+.cssClassFilter h2{ font:bold 16px Arial, Helvetica, sans-serif; color: #900; text-transform: uppercase}
+.cssClassbrowseprice ul li{ padding:10px 0 0 0}
+.cssClassbrowseprice ul li a{ color:#585858 !important;  font:12px Arial, Helvetica, sans-serif}
+.divRange .ui-slider-horizontal{ height:1px !important; padding:0 !important; margin:10px 00 0 0; background:#a93f3f; border:1px solid #a93f3f}
+#slider-range .ui-slider{ height:1px !important}
+#slider-range .ui-slider-handle{ background:#900 !important; padding:0px !important; width:5px; margin:0 !important; border:none !important;top:-6px}
+.divRange p{ font:14px Arial, Helvetica, sans-serif; margin:10px 0 10px 0}
+.divRange p b{ color:#6e6e6e !important}
+/*For Latest Item Quick View/Quick Look */
+.cssClassQuickView .cssClassProductPictureDetails{padding-left: 0px;}
+.cssClassQuickView .sfButtonwrapper{ float: left;}
+.cssClassQuickView .cssClassProductPictureDetails{ padding-top:0px;}
+.cssClassQuickView{width: 850px; padding:10px;/*border: 22px groove #FFFFFF;*/}
+.cssClassQuickView .cssClassProductPictureDetails .cssClassRightSide .sfButtonwrapper{ width: 187px;}
+.cssClassQuickView .cssClassProductPictureDetails li{width: auto;}
+.cssClassQuickView #pikame{width: 322px;}
+.cssClassQuickView .jcarousel-skin-pika{background-color:#FFFFFF; border-radius: 5px 5px 5px 5px; margin: 27px 0}
+.cssClassQuickView .jcarousel-skin-pika .jcarousel-clip-horizontal {margin-right: 10px;margin-bottom: 10px;width:100px;margin-top: 0px!important;overflow:hidden; float:left} 
+/* Cost varient css*/
+.cssClassRadio {overflow:auto;position:relative;}
+.cssClassRadio label{ display:inline-block;    width:5.0em;}
+.cssClassRadio span {text-align:center;padding:2px;display:block;margin:5px 5px 5px 0;text-shadow:none;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;text-transform:capitalize;background:url(../images/type_bg.gif) repeat-x;border:1px solid #b3b3b3;cursor:pointer;color:#000; font:12px Arial, Helvetica, sans-serif;}
+.cssClassRadio span:hover, .cssClassRadio input.cssRadioChecked + span { background:url(../images/type_bg_hover.gif) repeat-x;border:1px solid #910000;color:#fff;}
+.cssClassRadio  input {background:none;position:absolute;top:-20px; opacity:0}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{ background: none repeat scroll 0 0 #FFFFFF !important;}	
+.cssClassLeftSide .imgDelete{ margin:0 10px 0 0}
+/*Newsletter Subscribe*/
+a.sfSubscribeButton, .cssClassOrderReview button, .sfButtonwrapper .cssClassButtonSubmit, .cssClasMyAddressInformation .sfButtonwrapper a, 
+.cssClasMyAccountInformation .sfButtonwrapper button, #sfAspxcommercemenu .sfBtn input, #sfAspxcommercemenu .cssClassSubmitBtn, .Shopingcartpopup .sfBtn,.Shopingcartpopup  .sfBtn1, .cssClassCompareBox  .cssClassHeaderRight  .sfButtonwrapper button, .sfButtonwrapper p button, .cssClassFrontStoreButton button, .cropBox .sfButtonwrapper button{font: 14px Arial, Helvetica, sans-serif;color: #fff;background: url(../images/black-btn.png) repeat-x #1d1c1c;text-transform: uppercase;padding: 7px 10px;box-shadow:none;margin: 10px 0 10px 29px;float: left; border:none; border:1px solid #000;}
+#sfAspxcommercemenu .sfBtn input, #sfAspxcommercemenu .cssClassSubmitBtn { margin:5px 0 0 0px;}
+a.sfSubscribeButton:hover, .cssClassOrderReview button:hover, .sfButtonwrapper .cssClassButtonSubmit:hover, .cssClasMyAccountInformation .sfButtonwrapper button:hover, #sfAspxcommercemenu .sfBtn input:hover, #sfAspxcommercemenu .cssClassSubmitBtn:hover, .cssClassCompareBox  .cssClassHeaderRight  .sfButtonwrapper button:hover, .sfButtonwrapper p button:hover,  .cssClassFrontStoreButton button:hover{background: url(../images/red-btn.jpg) repeat-x; cursor:pointer; border:1px solid #910000;}
+/*.sfButtonwrapper .cssClassButtonSubmit, .cssClasMyAddressInformation .sfButtonwrapper a, .cssClasMyAccountInformation .sfButtonwrapper button{ margin:0 10px 10px 0; text-transform:capitalize}*/
+
+#divRecentlyViewedItems a:hover{ color:#686868}
+#divMyCart td{ vertical-align:middle;}
+
+.cssClassQuickView .popbox{ margin-left:0px;}
+.cssClassQuickView .pika-imgnav a { margin:0px;}
+.cssClassQuickView #viewMore{ margin:10px 0 0 0}
+.cssClassOrderReview button{ margin:0px 0 0 0px; }
+#divEmailSubsCribe{ overflow:hidden}
+#divbUnsubscribe{ clear:both}
+#divSubscribe #header{  margin:0 0 10px 0}
+.telephone{ float:right; font:20px Arial, Helvetica, sans-serif; color:#fff;}
+.cssClassCompareItem h2 span{ color:#910000;}
+.cssClassSlider ul li{ border:1px solid #ccc; background:#fff; margin-bottom:25px;}
+.cssRegularPrice .cssClassFormatCurrency span b{ color:#686868;}
+.sfMainFeaturedBrands h2{ font:18px Arial, Helvetica, sans-serif; color:#910000}
+/*Gift Card*/
+.cssClassLeftSide table td{ padding:7px 10px 7px 0px;}
+.cssClassLeftSide table td span{font:bold 13px Arial, Helvetica, sans-serif; color:#686868;}
+/*.cssClassDownload{ margin:15px 0 0 13px;}*/
+
+.cssClassGrandTotalAmountWidth .cssClassFormatCurrency.input{ font:bold 16px Arial, Helvetica, sans-serif;}
+.breadCrumb{ background:#ccc; padding:5px 0 5px 15px; margin-top:15px; overflow:hidden}
+#sfBreadcrumb .sfInnerwrapper{ padding-bottom:0 !important}
+.cssServiceItemDetails .cssItemName h2 span{ color:#910000 !important; font:16px Arial, Helvetica, sans-serif;}
+.cssDesc{ margin-top:15px;}
+.cssServiceItemDetails span{ font:18px Arial, Helvetica, sans-serif; color:#000}
+.cssItemImage img{ border:4px solid #fff;}
+.cssClassRequired{ color:#F00}
+/*Checkout page*/
+.cssClassAccordionWrapper .ui-state-default{-webkit-transition: all .5s ease-in-out;-moz-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.cssClassAccordionWrapper .ui-tabs .ui-tabs-panel, .PageOuter{padding: 30px 20px;border: 1px solid #fff;box-shadow: 2px 1px 3px 0 #a68a27;box-shadow: 2px 1px 3px 0 rgba(0,0,0,.2);-webkit-box-shadow: 2px 1px 3px 0 rgba(0,0,0,.2);-moz-box-shadow: 2px 1px 3px #a68a27;z-index: 3;margin:15px 0  0 0;background-color: #f7f8f8;border: 0;text-align: left; overflow:hidden; width: 90%;}
+.cssClassRightAccordainMenu{ float:left;  width: 25%;}
+.cssClassRightAccordainMenuInfo, .cssClassRightAccordainMenuInfoSelected{ background:#fff; border:1px solid #ccc; margin:0 0 10px 0; text-align:left;  padding:15px;}
+.cssClassRightAccordainMenuInfo h2, .cssClassRightAccordainMenuInfoSelected h2{ margin:0; color:#686868}
+.cssClassAccordionWrapper .ui-widget-content{ border:none; background:none}
+.cssClassRightAccordainTab ul{ background:#fff;}
+.sfSignlecheckoutleft{ float:left}
+.cssClassAccordionWrapper .ui-tabs ul.ui-tabs-nav li a{ padding:0; font:18px Arial, Helvetica, sans-serif; color: #686868}
+.cssClassAccordionWrapper  .ui-tabs .ui-tabs-nav{position: absolute;top: -78px;overflow: hidden;height: 78px!important;}
+.cssClassAccordionWrapper  .ui-tabs .ui-tabs-nav li { background:none !important; border:none !important; border-radius:0}
+.cssClassAccordionWrapper  .ui-tabs .ui-tabs-nav li a{background-color: #666 !important;
+border-radius: 56px;color: #fff !important;display: block; font:12px Arial, Helvetica, sans-serif ;height: 56px !important;line-height: 56px !important;margin: 0 auto;text-align: center;width: 56px !important;}
+.cssClassAccordionWrapper  .ui-tabs .ui-tabs-nav li.ui-tabs-selected{ background-color: #f7f8f8 !important; 
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f5f5f5),color-stop(100%,#f7f8f8)) !important;border: 1px solid #fff !important;border-bottom: 0; padding:15px;-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;box-shadow: 0 1px 3px #c3c4c5 !important;box-shadow: 0 0px 1px rgba(0,0,0,.25) !important;}
+.cssClassAccordionWrapper  .ui-tabs .ui-tabs-nav li.ui-tabs-selected a{ background:#900 !important; color:#fff !important}
+.cssClassAccordionWrapper .ui-tabs ul.ui-tabs-nav li.ui-tabs-selected a, .cssClassAccordionWrapper .ui-tabs ul.ui-tabs-nav li.ui-state-active a,.cssClassAccordionWrapper  .ui-tabs ul.ui-tabs-nav li.ui-state-default a:hover{font:18px Arial, Helvetica, sans-serif; color: #900}
+.cssClassAccordionWrapper .sfButtonwrapper  button, .cssClassAccordionWrapper .sfButtonwrapper input{font: 14px Arial, Helvetica, sans-serif;color: #fff;background: url(../images/black-btn.png) repeat-x #1d1c1c;padding: 7px 10px;border: none !important;box-shadow: none !important; margin:10px 10px 10px 0; cursor:pointer;}
+.cssClassAccordionWrapper .sfButtonwrapper  button:hover, .cssClassAccordionWrapper .sfButtonwrapper input:hover{background: url(../images/red-btn.jpg) repeat-x;}
+.cssClassLoginLeftBox{ background:#fff; margin:0 0 10px 0; padding:15px; border:1px solid #ccc}
+.cssClassGrandTotalAmountWidth{padding: 0!important; width:150px;}
+.cssClassSubTotalAmountWidth { text-align:right}
+.cssClassSubTotalAmountWidth strong{ font:bold 16px Arial, Helvetica, sans-serif; color:#900; text-align:right}
+.cssClassCheckoutLeftBox input{ margin:0 0 10px 0}
+.cssClassCheckOutMethodRight{ float:right}
+.cssClassCheckOutMethodRight .cssClassTextBox{ margin:0 0 10px 0}
+.cssClassAccordionWrapper .ui-widget-content a{ color:#900}
+.cssClassAccordionWrapper  .ui-widget select{ width:84%}
+.cssClassCheckBox input{ margin:0 10px 0 0; width:auto}
+.cssClassRadioBtn{ width:auto}
+.accordionHeading h2, .cssClassadminloginHeading h1, .cssClassLoginRighttBox h2{ color:#900; text-transform:uppercase;}
+.cssClassShippingMethodInfo table{ border:1px solid #ccc;}
+.cssClassShippingMethodInfo table td{ padding:5px;}
+.cssClassShippingMethodInfo table td input{ float:left; margin:0 5px 0 0}
+.cssClassShippingMethodInfo table tr.sfEven td b{ color:#900}
+.cssClassCartPictureInformation b{ color:#000}
+.cssClassPaymentMethods label input, .cssClassAIMChildContent  input, .cssClassAIMChildContent  select{ margin:0 10px 10px 0}
+.cssClassPaymentMethods .sfGiftWrapperTable td{ padding:10px!Important;}
+.cssClassAIMChildContent, #TPSLPaymentMethod{ background:#fff; padding:10px; border:1px solid #ccc; margin:10px 0 10px 0}
+.cssClassAIMChildContent b label{ float:left; min-width:120px;}
+.sfBtnChange button{ background:url(../images/change.png) no-repeat;height: 16px;margin: 0 0 0 15px;text-indent: -9999px;width: 16px; border:none;  }
+.cssClassAIMChildContent select{ width:auto !important}
+.cssClassAccordionWrapper .cssClassSubTotalAmount{ float:none; font:16px Arial, Helvetica, sans-serif;}
+.classDetailTaxRateValue { text-align:left; font:16px Arial, Helvetica, sans-serif;color: #000; margin:0 0 0 11px;}
+/*.cssClassAccordionWrapper .row-total input, .cssClassAccordionWrapper  .cssClassSubTotalAmount input{ float:right;}
+*/p.cssClassActionImg a {background: url("../images/action.png") no-repeat scroll 0 0 transparent;display: block;margin: 0 0 0 15px;outline: medium none;text-indent: -9999px;width: 16px;height: 16px;}
+.cssClassTextarea{ margin:10px 0 0 0; width:90%;}
+.cssClassActionOnClickShowInfo p a {color: #FFFFFF;font: bold 12px/18px Arial,Helvetica,sans-serif;padding: 5px 10px 0;}
+.cssClassActionOnClickShowInfo a {display: block; height: 22px;}
+.cssClassShippingMethodInfo .cssClassCartPictureInformation { float:left; width:97%;}
+.cssClassShippingMethodInfo .cssClassCartPictureInformation h3{ float:left; margin:0 10px 0 0}
+.cssClassNotFound, #compareErrorText{ border:1px solid  #930; background: #fff; display:block; padding:10px; color:#000; margin:0px 0 0px 0; text-shadow:0px 1px 0px #DADADA}
+/*Reward points*/
+.cssClasspBalance, .cssClasspExchangeRate, .cssClasspBalanceLimitations{width:29%; float:left;background: #fff;margin-right: 10px;padding: 10px;border:1px solid #ccc;}
+.cssClasspBalance span b, .cssClasspExchangeRate span b, .cssClasspBalanceLimitations span b{ font:bold 14px Arial, Helvetica, sans-serif; color:#900; margin:0 0 10px 0}
+.cssClasspBalanceLimitations{ margin-right:0}
+/*Compare popup css*/
+.compareProductsBoxTitle{ background: none repeat scroll 0 0 #910000;color: #fff;font: 12px Arial,Helvetica,sans-serif;font-style: normal;margin-bottom: 0;padding: 5px 15px;border: 1px #ccc solid;border-bottom: none;position:relative;text-transform: uppercase}
+.compareProductsBoxTitle h2{ color:#fff; margin:0; font-size:12px;}
+.compareProduct{ border: 1px solid #F0F0F0;
+    float: left;
+    height: 67px;
+    padding: 2px;
+    width: 175px;
+	box-shadow:none;
+	background:#fff;
+	}
+.compareProduct .productImage{  border: 1px solid #F0F0F0;
+    float: left;
+    height: 65px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    width: 50px;}
+.compareProduct .productImage img{ background: none repeat scroll 0 0 #FFFFFF;
+    height: 65px;
+    width: 50px;}
+.cssCompareProductsBox .sfButtonwrapper, .sfButtonwrapperclear{ float:left; margin:20px 0 0 0}
+.compareClose{text-indent: -9999px;width: 24px;border:none;background:url(../images/Close_Icon.png) no-repeat;position:absolute;right: 10px;top:4px;height:24px;}
+.compareClose:hover{ cursor:pointer}
+.compareProductClose{margin-left: 5px;text-indent: -9999px;width: 20px;border:none;background:url(../images/btndelete1.png) no-repeat;vertical-align: text-top; right:-15px; top:-6px; position:absolute}
+.sfButtonwrapperclear input.sfBtn{background:url(../images/red-btn.jpg) repeat-x; border:1px solid #860101 !important; border-radius:0; box-shadow:none; color:#fff; text-shadow:none !important; cursor:pointer;}
+.cssCompareBtnWrapper a{ background:url("../images/black-btn.png") repeat-x scroll 0 0 #000000; border:1px solid #000; padding:7px 15px 15px 15px;  font-size:16px; color:#fff;}
+.cssCompareBtnWrapper a:hover{ background:#000;}
+
+.cssCompareProductsBox .sfButtonwrapper input.sfBtn{ background:url(../images/black-btn.png) repeat-x; border:1px solid #545454 !important; color:#fff; border-radius:0; box-shadow:none; color:#fff; text-shadow:none; margin:0 10px 0 0;text-shadow:none !important; cursor:pointer;}
+.cssCompareProductsBox .sfButtonwrapper input.sfBtn:hover{ background:#000;}
+.sfButtonwrapperclear input.sfBtn:hover{ background:#910000}
+.compareProductClose:hover{ cursor:pointer;background:url(../images/btn-delete2.png) no-repeat;}
+.cssCompareProductsBox{ background:#fff; padding:10px; border:1px solid #ccc}
+.fixed {position: fixed;bottom:3px;z-index:999999;width:980px;}
+.productName{font: 10px Verdana,Geneva,sans-serif;
+    text-align: left;}
+.productImage img{width: 90%;}
+.cssProductPrice { color:#686868 !important; text-shadow:none}
+:disabled{ text-shadow:none; color:#333}
+
+
+.cssClassCommonSideBox .sfBannerslide sfHorizontalbx-wrapper a{ font:11px Arial, Helvetica, sans-serif;}
+.sfWelcomeMsg h2{ color:#fff; font:13px Arial, Helvetica, sans-serif; margin:0 0 10px 0}
+.cssClassAdvanceSearch { float:right; margin-top:10px;}
+.sfTelTitle h2{ font:16px Arial, Helvetica, sans-serif; color:#e5e4e3;}
+.sfTelTitle h2 span{ font:18px Arial, Helvetica, sans-serif; color:#fff;}
+.sfTelTitle h3.sfSupportEmail{ background:url(../images/email.png) no-repeat 0 2px; padding:4px 0px 0 0px; height:13px;}
+.sfSupportEmail a{ font:12px Arial, Helvetica, sans-serif; color:#ccc; padding:0px 0 0 40px;}
+.sfSupportEmail a:hover{ text-decoration:underline;}
+.sfLanguageContainer span{ font:12px Arial, Helvetica, sans-serif; color:#fff; float:left; margin-top:5px;}
+.sfModuleTelephoneHtml{ float:right;  margin:10px 0 0 0;}
+.search{ float:left;}
+.sfTelTitle h2{ margin:0px; margin-bottom:6px;}
+.sfTelTitle h3{ font-size:15px; margin:0px; color:#dddcdc; background:url(../images/tel.png) no-repeat 0 -2px; padding:0px 0 0 40px; font-weight:normal; 
+height:26px}
+.sfTelTitle h3 span{ font-size:16px; padding:10px 0 0 0;}
+.AspxHeaderControl{ float:left; margin-left:50px; }
+.cssClassService, .sfModuleAspxLatestItemsCarousel, .cssClassBrandWrapper, #divSeasonalItemsContainer{ margin:20px 0; overflow:hidden}
+.sfModuleAspxCommerceMenu{ margin-bottom:35px;}
+.cssRssImage{ float:right; margin:3px 0px 0 0;}
+.cssClassProducts h1{ background:#910000; padding:5px 10px; margin-bottom:10px}
+.cssClassProducts h1 img{ margin-top:7px}
+.sfModuleAspxFrontItemGallery{}
+.cssClassNoMargin{ margin-right:0px !important;}
+.cssClassProductLists ul li{border-bottom:1px solid #ccc; padding:10px;}
+.cssClassProductLists ul a{ text-transform:capitalize; color:#000}
+.cssClassProductLists ul a:hover{ color:#910000;text-decoration: underline;}
+.sfOdd{ background:#f7f7f7;}
+.cssClassMyWishItemTable{ background:#fff; border:1px solid #ccc;}
+.cssClasscategorgy .sfBtn{ margin-left:145px;}
+.cssClassWishItemDetails span {font:bold 14px Arial, Helvetica, sans-serif; color:#910000;}
+.gowishlist{ float:left; margin:0 !important;}
+.cssClassMyWishItemTable td{ border-bottom:1px solid #ccc; padding:10px}
+.cssClassCommonSideBoxCartTable a, .cssClassProducts ul a, .cssClassCommonSideBoxTable a{ color:#000}
+.gowishlist:hover, .sfUnSubscribeButton:hover, .cssClassCommonSideBoxCartTable a:hover, .cssClassProducts ul a:hover, #tblShoppingOptionsByPrice td a:hover, .cssClassCommonSideBoxTable a:hover{ color:#910000; text-decoration:underline;}
+.cssClassMyShoppingCart img{ margin:0px 5px 5px 5px}
+.overview a span{ padding:5px 0;}
+.cssClassCommonSideBoxCartTable table td{ border-bottom:1px solid #ccc;  padding:10px}
+.cssClassCommonSideBoxCartTable{ background:#fff; }
+.cssClassCommonSideBoxCartTable .cssClassTotalPrice{font-size:16px; color:#910000}
+#Product_total .cssClassFormatCurrency{float:right; font-size:16px; color:#910000}
+.poll-box input.cssClassSubmitBtn { margin:10px 0 0 4px !important;}
+.poll-box input.cssClassSubmitBtn{}
+.poll-box p input.cssClassSubmitBtn{float:right !important}
+.overview  td{ padding:7px; text-decoration:underline; color:#000;}
+.overview  td a{ color:#000;}
+.overview .sfOdd{ background:none;}
+.cssShoppingCartLink { padding:10px 0px 10px 78px;}
+.cssShoppingCartLink a{ margin-right:10px;}
+.cssClassWishLink { float:right; background:#fff; padding:10px 17px 10px 117px; border-top:none;}
+.cssClassWishLink a{ color:#101010}
+.cssClassWishLink a:hover{ color:#910000}
+.cssClassRecentlycompared{ background:#fff;}
+.cssClassRecentlycompared td{padding:8px 10px; border-bottom:1px solid #ccc}
+.cssClassCommonSideBoxCartTable .cssClassQty, .cssClassCommonSideBoxCartTable .cssClassFormatCurrency{ color:#000;}
+.cssClassCommonSideBox .cssClassProductName h2 a span{ background:none; color:#000; text-transform:capitalize;}
+.cssClassBestSellerMargin, .cssClassrecentlyviewed{ margin:0 20px 20px 0}
+.cssCompareProductsBox .empty{background: url("../images/noimg.jpg") no-repeat scroll center center transparent;
+    border: 1px solid #F0F0F0;
+    float: left;
+    height: 67px;
+    margin-right: 20px;
+    padding: 2px;
+    width: 175px;}
+.cssCompareProductsBox .compareProduct{ margin:0 20px 0 0;}
+/*.cssClassCategoryNavHor ul > li{ float:left; height:42px}
+.cssClassCategoryNavHor ul li a{ color:#fff; font:14px Arial, Helvetica, sans-serif;  padding:8px;}
+/*.cssClassCategoryNavHor ul li a:hover, .cssClassCategoryNavHor ul li a.active{ background:url(../images/nava_bg_hover.gif) repeat-x #383737;}.cssClassCategoryNavHor ul li ul li{ background:#000; height:auto !important}.cssClassCategoryNavHor ul li a span{ color:#fff;}*/
+.Shopingcartpopup .cssClassCommonSideBoxTable .sfBtn a, .Shopingcartpopup  .cssClassCommonSideBoxTable .sfBtn1 a, #lnkMiniCheckOut{ color:#fff !important;}
+.Shopingcartpopup .cssClassCommonSideBoxTable .sfBtn1{margin: 10px 0 0 275px !important;} 
+/*.Shopingcartpopup .cssClassCommonSideBoxTable .sfBtn{ float:right; margin: 0px!important;}*/
+.Shopingcartpopup .cssClassCommonSideBoxTable .sfBtn:hover, .Shopingcartpopup  .cssClassCommonSideBoxTable .sfBtn1:hover{ background:#000; text-decoration:underline; cursor:pointer;}
+.Shopingcartpopup h2{ font-weight:bold; background:#ccc; padding:5px 0px 5px 5px;}
+.cssClassProductsBoxNoMargin, .cssClassProductsBoxNoMargin{ margin-right:0 !important}
+.cssClassimgwrapper{ margin:0 0 10px 0}
+.CssClassLanguageWrapper{ margin:0 0 0 10px !important; float:left}
+.cssClassBrowseByCategory ul li{ line-height:22px;float: left; width:40%; margin:0 10px  0 0}
+.cssClassBrowseByCategory ul li a{  color:#6f6f6f}
+.cssClassBrowseByCategory ul li a:hover{ color:#fff}
+.cssClassImageWrapper{ margin:0 0 10px 0}
+.cssClassBrowseByCategory{  margin-right:20px}
+.sfBenefits .sfHeader{ float:left; margin:0 20px 0 0px}
+.sfAlsoAvailable{ background:#fff;
+ border:1px solid #ccc;  margin:0 0 20px 0}
+.sfAlsoAvailable .sfHeader{ margin: 10px 0 10px 0; text-align:center}
+.sfAlsoAvailable .windowsphone{ width:200px; height:57px; background: url(../images/windowsphoneapp.png)no-repeat; display:block; margin-left:11px;}
+.sfAlsoAvailable .windowsphone:hover{ width:200px; height:57px; background: url(../images/windowsphoneapp_hover.png)no-repeat;}
+.sfAlsoAvailable .andriod{ width:200px; height:57px; background: url(../images/andriod.png)no-repeat; display:block; margin-left:11px;}
+.sfAlsoAvailable .andriod:hover{ width:200px; height:57px; background: url(../images/andriod_hover.png)no-repeat;}
+.sfAlsoAvailable a { text-indent:-999em;}
+
+.cssCategoryBlock {clear: both;margin: 0 0 10px;overflow: hidden;position: relative;}
+.classCategoryName  h2{font-size: 20px;padding: 5px;text-align: center;color: #990000;font-weight: normal;}
+.cssCategoryBlock .cssClassProductsBox{ width:21.7%; float:left; margin:0 10px 10px 0; min-height:300px;}
+.cssCategoryBlock .cssClassProductsBox img{ width:53%}
+.cssClassBestSeller { margin:0 20px 20px 0}
+#divBestSellersCarousel{ margin:20px 0 0 0 }
+.nivo-caption p a{ color:#fff; text-shadow:none}
+.cssProductWrapper .cssClassViewMore, .cssClassPopularTagWrapper .cssClassViewMore{ margin:10px 0 10px 0 !important}
+.cssViewer{font:bold 12px Arial, Helvetica, sans-serif; margin:10px 0;}
+.cssViewer span{ margin-right:8px}
+.cssViewAllPromos ul li{ float:left; border:1px solid #fff; margin:0 20px 20px 0; background:#fff;   text-align:center; width:20%}
+.cssViewAllPromos ul li img{ width: 97%;
+padding: 3px 3px 0px 3px;}
+.cssClassItemBrands{ margin-top:10px}
+.cssClassItemBrands h2 span{  font: 14px Arial, Helvetica, sans-serif;
+color: #686868 !important;}
+.cssClassItemBrands a{ font:bold 12px Arial, Helvetica, sans-serif; margin-left:5px;}
+.cssClassLeftSide .cssClassProductOffPrice { margin-top:5px;}
+.classPriceHistoryList th{text-align:left; color:#910}
+.cssViewer span.cssClassView {background: url(../images/view.png) left no-repeat;padding: 10px 5px 10px 28px;color: #404040;}
+.cssClassToolTip {position: relative;width: 150px;}
+.cssClassToolTip img { cursor: pointer;}
+.cssClassToolTip .cssClassToolTipInfo {display: none;left: 0; position: absolute;top: 20px;z-index: 9999;}
+.cssClassToolTip:hover .cssClassToolTipInfo {background-color: #FFFFFF;border: 1px solid #999999;display: block;padding: 10px  10px  5px  10px;}
+.cssClassCriteriaTitle {color: #555555;float: left;padding: 2px 10px;}
+.cssClassToolTip:hover .cssClassToolTipInfo img {cursor: default;}
+.cssClassToolTipDetailInfo {width: 153px;}
+.cssClassRatingdesc {float: left; width: 65%;}
+.cssClassItemRating {float: left;}
+#itemQtyDiscount{ background:#fff; border:1px solid #ccc}
+#itemQtyDiscount thead{ background:#910; color:#fff}
+#itemQtyDiscount td, #itemQtyDiscount th{ padding:5px}
+.sfBrandLogo{ float:left; margin:0 10px 10px 0}
+.sfBrandDescription{ margin:0 0 10px 0; font:12px/18px Arial, Helvetica, sans-serif;}
+.cssClassCartInformationDetails{ border:1px solid #ccc}
+.cssClassCompareBox  .cssClassHeaderRight  .sfButtonwrapper{ float:right}
+.cssClassCompareBox table{ border:1px solid #686868}
+.cssClassCompareBox td{ width:200px;}
+.fb_iframe_widget{ background:#fff}
+.sfSectionwrap { min-height:100%;}
+.sfFullbottomspan { padding:0 0 20px 0}
+.itemBrand p a img{ float:left; margin:0 10px 0 0}
+.itemBrand h3{ color:#910000;}
+.cssClassActionOnClickShowInfo{background-color: #910000}
+.cssClassActionOnClickShowInfo p a {
+color: #FFFFFF;
+text-align:left;
+font: bold 12px/18px Arial, Helvetica, sans-serif;
+padding: 5px 10px 0;}
+.cssClassActionOnClickShow {
+padding: 0;
+position: absolute;
+right: 40px;
+top: 0;
+z-index: 10;}
+.cssClassActionOnClick {
+position: relative;
+}
+.cssServiceName{ display:block; clear:both; overflow:hidden}
+.cssClassHeavyDiscountHeader{ margin-top:20px;}
+@media print { 
+#sfHeadertop, #sfCategorybar, #sfFooterbtn, #sfBreadcrumb, #sfToplinks, .cssClassCompareBox .cssClassHeaderRight .sfButtonwrapper, .back-top{ display: none !important; }
+body{ font:12px Arial, Helvetica, sans-serif; color:#000}}
+
+.uiBoxLightblue{ background-color:none !important;}
+.sfHtmlview .fblike span{ width:223px !important;}
+.Shopingcartpopup .cssClassCommonSideBoxTable table tbody tr{ padding:10px 0px;}
+.Shopingcartpopup table tr td{ border-bottom:1px solid #ccc; padding:5px 0 !important;}
+.feedback-panel{ height:320px !important;}
+#ddlLatestSort h4{ margin:0px !important;}
+#ddlLatestSort{ float:right;}
+#latestItemHeader{ float:left;}
+#divLatestItemsHeader{ padding-bottom:50px;}
+.cssClassLatestItemWrapper table{ width:100%;}
+.cssClassLatestItemWrapper .classInfo{ border:1px solid #ccc; margin-bottom:20px; position:relative; background:#fff;}
+.cssClassLatestItemWrapper .classInfo .itemImageClass{ border:1px solid #ccc; margin:10px; width:18%; float:left;}
+.cssClassLatestItemWrapper .classInfo .itemInfoClass{ margin-top:10px;}
+.cssClassLatestItemWrapper .classInfo .cssClassAddToCart{ position:absolute; right:150px;}
+.cssClassLatestItemWrapper .classInfo .classButtons{ position:absolute; right:15px;}
+.cssClassLatestItemWrapper .classInfo .classViewDetails{ margin:0 0 20px 152px;}
+.cssClassLatestItemWrapper .classInfo .classViewDetails span:hover{ text-decoration:none;}
+.cssClassLatestItemWrapper .classInfo .classQuantity input{ width:30px;}
+.cssClassLatestItemWrapper .classInfo .cssClassOutOfStock{  float: left;}
+.cssClassLatestItemWrapper .classInfo .cssClassOutOfStock button{ padding:0px !important;}
+
+.featured-products-footer-ads {    float: left;
+    margin: 0 0 0 33px;
+    padding: 15px 0;
+}
+.fst{ margin-left:0}
+.featured-products-footer-ads {
+
+}
+.featured-products-footer-ads h1 {
+    color: #FF8A00;
+    font-size: 19px;
+    padding-right: 50px;
+}
+.featured-products-footer-ads a {
+    float: left;
+    height: 40px;
+    overflow: hidden;
+}
+.featured-products-footer-ads img {
+    border: medium none;
+    margin: 0;
+    transition: all 0.2s ease-in-out 0s;
+}
+.featured-products-footer-ads a:hover img {
+    margin-top: -40px;
+}
+.sfBenefits img{ opacity:0.8}
+.sfBenefits img:hover{ opacity:1}
+
+td.cssClassMyAccQuantity{ width:25px;}
+select.cssClassddlReturnReason{ width:75px;}
+select.cssClassddlShipping{ width:100px; word-wrap: break-word;}
+
+
+.cssClassItemCategoriesHeading { float:left;}
+
+.cssClassCategoriesName a:hover{ text-decoration:underline;}
+.magnifyarea { position:absolute;top:300px !important; z-index:1 !important; width:656px !important; height:320px!important; box-shadow:none !important; border:1px solid #b3b3b3!important;}
+#dvEstimateRate{ position:relative; border-top:1px solid #910000; margin:15px 0 0 0; padding:10px 0 0 0 ; }
+#dvEstimateRate td{ width:100px;}
+#dvEstimateRate #addmore{ position: absolute; top:10px;}
+#dvEstimateRate #addmore span{ font-weight:bold;}
+#dvEstimateRate td#addmore span{ padding:0 0 0 10px;}
+#dvEstimateRate button{ margin-top:10px;}
+.cssClassTDPGList img{ width:100px; height:90px;}
+#divClickAway .sfButtonwrapper button{ padding:8px 9px 9px 9px !important}
+#hrOrderDetails{ margin: 0 0 20px 0!important;}
+.cssClassAlignRight{ text-align:right;}
+.sfGridWrapperContent .cssClassHeadeTitle td{ color:#757575}
+#slide .sfBannerslide ul li{ border:1px solid #ccc; margin:0 14px; width:120px!important; height:80px!Important; overflow:hidden; background:#fff; text-align:center}
+#slide .sfBannerslide ul li a{ margin:0}
+.cssClassBrandSlider{ border:1px solid #ccc; padding:10px; margin-top:10px;}
+.cssClassBrandSlider h1{ margin-bottom:10px;}
+/*--------------reward point--------------*/
+.cssClassdvRewardPointsMain{ width:530px; margin:20px 0 0 0}
+.cssClassdvRPMainHeading b{ font-size:16px;}
+.cssClassdvRPBalance table, .cssClassdvRPCurrent table{ border:1px solid #ccc; background:#fff}
+.cssClassdvRPBalance table td, .cssClassdvRPCurrent table td{ padding:5px;}
+/*--------------reward point--------------*/
+.popupbox .star-rating{ width:26px;}
+.popupbox span.star-rating-control{ width:138px;}
+.cmxform .popupbox .sfFormwrapper td{ width:100px;}
+.Page #divThankYou{ font-size:16px; font-weight:bold; text-transform:capitalize; color:#910000;}
+.Page .SectionBar { margin:10px 0 0 0; font:bold 16px Arial, Helvetica, sans-serif; padding:0px; border-bottom:1px solid #ccc;}
+.cssClassTimeList{ background:#fff!important; border:1px solid #ccc; width:200px!Important; padding:5px;}
+.cssServiceTime{ font-weight:bold; margin:0 0 5px 0}
+.cssClassTimeFrom span, .cssClassServiceDuration ul li span{ margin:0 0 0 5px;}
+.cssClassServiceDuration{ margin:0 0 0 15px;}
+.cssClassServiceDuration ul li{ margin:5px 0;}
+.cssClassCompareBox .sfFormwrapper table{ border:none;} 
+.cssClassContactWrapper td{ vertical-align:middle;}
+.sfGridWrapperTable tbody{ background:#fff; border:1px solid #ccc;}
+.cssClassMyDashBoard td{ vertical-align:middle;}
+.cssClassMyDashBoard #divProductInfo .sfGridWrapperTable td input{ width:30px;}
+.cssClassMyDashBoard #divTrackMyOrder td{ width:150px;}
+.cssClassMyDashBoard #divReturnDetails .cssClassLabel{ font-weight:bold;}
+.sfMessage{ padding:0px;}
+.classPromoList{ border:1px solid #ccc; padding:10px; background:#fff}
+.classPromoList span{ font-weight:bold}
+.classPromoList h2 label{ font-size:20px; color:#C00;}
+.cssClassStoreDetail{ float:left; margin-right:50px;}
+.cssClassBillingAddress { padding:12px 0 0 0;}
+.cssClassBillingAddress li h4{ font-size:14px;}
+.cssClassTableLeftCol #CategoryTree_Container{ width:120px;}
+.nomargin{ margin:0px!important;}
+
+td.cssClassTableLeftCol{    vertical-align: top;
+    width: 20%;}
+/*.cssClassCommonBox .cssClassHeader{ margin-bottom:50px;}*/
+.cssClassTabPanelTable .sfButtonwrapper p {float:left;}
+
+
+.cssCatImage{ position:relative;}
+.cssCatDesc{ background:#000; position:absolute; top:0px; opacity:0.7; padding:10px}
+.cssCatDesc span{ font-size:16px; font-weight:bold;}
+.cssCatDesc span, .cssCatDesc p{ color:#fff;}
+.cropBox .cssClassHeader{ margin-bottom:20px;}
+.cssClassFrontStoreButton button{ margin:10px 20px 10px 0px;}
+#sidebarstore{ margin:0 50px 0 0;}
+#sidebarstore .sidebar{ background:#fff; border:1px solid #ccc; padding:5px; margin:10px}
+#sidebarstore .sidebar:hover{ background:#f0f0f0;}
+#divMap label b{ font-size:16px; color:#686868}
+ #ajaxBusy, .sfLoadingdiv {
+	bottom: 0;
+	display: block;
+	font:bold 15px/30px Arial, Helvetica, sans-serif;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index:9999;
+	color:#fff;
+	padding:5px 0;
+	letter-spacing:1px;
+	background:rgba(0, 0, 0, 0.8);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8000000, endColorstr=#80000000);
+	zoom: 1;
+}
+
+.uiBoxLightblue{ background:none!important;}
+.pluginSkinLight{ border:none!important;}
+.fb_ltr{ width:224px!Important;}
+input.email{ padding:7px; border-radius:0px; background:#fff;}
+@media print { 
+.cssClassAddtoCard, .fixed, #sfBreadcrumb, #compareAddToWishlist, .sfTopbar { display: none !important; }
+body{ font:14px Arial, Helvetica, sans-serif; color:#000}}
+.cssClassProductsBoxWrapper { width:228px !important;}
+.cssClassProductsBoxWrapper .cssClassProductsBox{ width:186px; min-height:280px; padding-bottom:0}
+#divBestSellersCarousel .bx-window{width:892px; margin-left:45px; position:relative}
+#divBestSellersCarousel .sfBannerslide  .bx-prev{ top:30%; left:0; margin:0; background:url("../images/arrow-prev.png") no-repeat scroll 0 0 transparent}
+#divBestSellersCarousel .sfBannerslide{ height:320px;}
+.cssClassProductsBoxWrapper .cssClassProductsBox h2{ font:14px Arial, Helvetica, sans-serif}
+
+ #divBestSellersCarousel .sfBannerslide  .bx-next{top:35%; right:0; margin:0;background:url("../images/arrow-next.png") no-repeat scroll 0 0 transparent}
+ 
+ /* Uploader */
+ #divCenterContent {
+	overflow:hidden;
+}
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+}
+div.uploader {
+	background-position: 0px -297px;
+	height: 28px;
+}
+div.uploader span.action {
+	background-position: right -409px;
+	height: 24px;
+	line-height: 24px;
+}
+div.uploader span.filename {
+	height: 24px;
+	margin: 2px 0px 2px 2px;
+	line-height: 24px;
+}
+div.uploader.focus, div.uploader.hover, div.uploader:hover {
+	background-position: 0px -353px;
+}
+div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hover span.action {
+	background-position: right -437px;
+}
+div.uploader.active span.action, div.uploader:active span.action {
+	background-position: right -465px;
+}
+div.uploader.focus.active span.action, div.uploader:focus.active span.action, div.uploader.focus:active span.action, div.uploader:focus:active span.action {
+	background-position: right -493px;
+}
+div.uploader.disabled {
+	background-position: 0px -325px;
+}
+div.uploader.disabled span.action {
+	background-position: right -381px;
+}
+div.button {
+	background-position: 0px -523px;
+}
+div.button span {
+	background-position: right -643px;
+}
+div.uploader {
+	width: 190px;
+	cursor: pointer;
+}
+div.uploader span.action {
+	width: 85px;
+	text-align: center;
+	text-shadow: #fff 0px 1px 0px;
+	background-color: #f2f2f2;
+	font-size: 11px;
+	font-weight: bold;
+}
+.cssClassTabPanelTable div.uploader span.action{ background-color:#fff}
+div.uploader span.filename {
+	color: #777;
+	width: 82px;
+	border-right: solid 1px #bbb;
+	font-size: 11px;
+}
+div.uploader input {
+	width: 190px;
+}
+div.uploader.disabled span.action {
+	color: #aaa;
+}
+div.uploader.disabled span.filename {
+	border-color: #ddd;
+	color: #aaa;
+}
+div.uploader {
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+div.uploader span.action {
+	float: left;
+	display: inline;
+	padding: 2px 0px;
+	overflow: hidden;
+	cursor: pointer;
+}
+div.uploader span.filename {
+	padding: 0px 10px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+cursor:
+default;
+}
+div.uploader input {
+	opacity: 0;
+filter: alpha(opacity:0);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	float: right;
+	height: 25px;
+	border: none;
+	cursor: default;
+}
+.cssClassNegative{ float:left; margin:0 0 0 10px;font:18px Arial, Helvetica, sans-serif; color:#910000; line-height:30px;}
+.cssClassAccordionWrapper .cssClassCheckoutLeftBox td select{ width:46%}
+.cropBox .sfButtonwrapper{ float:none !important}
+.cropBox .sfGridWrapperContent {
+float: left; margin:0 0 10px 20px;
+}
+.cssItemCategories .cssClassCategoriesName li{ margin:0px;}
+.chart-wrapper{ width:50% !important}
+.cssClassDwnWrapper{ float:left;}
+.cssClassMyDashBoard .cssClassRight a#lnkNewAddress, .cssClassMyDashBoard .sfButtonwrapper button.cssClassButtonSubmit, .cssClassMyDashBoard .cssClassHeaderRight button#btnDeleteSelected, button#btnDeleteCustDownloadableItem, button#btnDeleteItems, button#btnDeleteMyViewed, button#btnBalanceCheck{ margin-left:0px;}
+.cssClassHeaderRight .sfButtonwrapper p button.cssClassAddCategory{ margin-bottom:10px;}
+.cssClassTabPanelTable .sfButtonwrapper p button, .cssClassTabPanelTable .sfButtonwrapper p input, #gdvItems_form .sfButtonwrapper button{ margin-left:10px;}
+#gdvItems_form .sfFormwrapper table{ background:#fff; border:1px solid #ccc; margin:10px 0;}
+#gdvItems_form .sfFormwrapper table td{ width:30px}
+#gdvItems_form  h2{ color:#686868}
+.cssClassTableRightCol select.sfListmenu{ width:150px!important;}
+.cssClassTabPanelTable .sfButtonwrapper p input{ border:1px solid #000!important;}
+.cssClassTabPanelTable .sfButtonwrapper p input:hover{ border:1px solid #910000!important;}
+.star-rating-control span{ font:10px Arial, Helvetica, sans-serif !important;}
+.cssCropValueWrapper{ margin:10px 0 0 0}
+.cssCropValueWrapper input{ width:auto !important;box-shadow:none; margin-left:5px}
+.cropBox .cssClassCommonBox { width:450px !important}
+#btnSearchItems{ margin:5px;}
+
+/*-------------my addeditems-------------*/
+.cssClassAccordionWrapper{ padding:0px;}
+div.st_vertical div.st_view_container{ width:770px;}
+div.st_vertical ul.st_tabs a.st_tab_active{  background:#ccc;
+    color: #910000;
+    padding-right: 1px;
+    position: relative;
+    z-index: 10;}
+.st_view_container h3 a{ color: #910000;
+    font: 14px Arial,Helvetica,sans-serif;}
+div.st_vertical div.st_view_container{ border:1px solid #ccc;}
+.st_vertical .st_view_container table{border: 1px solid #CCCCCC;
+    margin-top: 5px;}
+.field input{ margin-right:5px !important}	
+.st_view label{ font-weight:bold;}
+#multipleUpload .sfGridWrapperContent td input{ width:47px;}
+#multipleUpload .sfGridWrapperContent td .uploadImage{ width:50px}
+.iferror{ color: #FF0000;
+    display: none;
+    margin: 0;}
+.sidebar:hover, #sidebarstore .selected{  background:#ccc !important; cursor:pointer}
+.cssClassImgwrapper{ float:left; margin-right:20px;}
+.cssClassImgwrapper img{ width:200px; height:150px;}
+.sfShoppingBagButton{ float:right;}
+.cssClassProductName{ height:42px;}
+.cssClassProductPrice{ height:35px;}

@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<SageFrameMessage>
+  <UserManagement>
+    <RoleSavedSuccessfully>角色已经成功保存。</RoleSavedSuccessfully>
+    <ThisRoleAlreadyExists>请输入一个新的角色。这个角色已经存在！</ThisRoleAlreadyExists>
+    <ThisIsSystemRoleAndCannotBeDeleted>系统的作用不能被删除。</ThisIsSystemRoleAndCannotBeDeleted>
+    <RoleIsDeletedSuccessfully>已成功删除角色。</RoleIsDeletedSuccessfully>
+    <RoleCannnotBeDeleted>角色不能删除！请再试. </RoleCannnotBeDeleted>
+    <DuplicateEmailAddress>电子邮件地址已存在!</DuplicateEmailAddress>
+    <NameAlreadyExists>请输入一个新的用户名。这个用户名已经存在!</NameAlreadyExists>
+    <InvalidAnswer>请输入一个有效的答案.</InvalidAnswer>
+    <InvalidEmailAddress>请输入其他电子邮件地址。这个电子邮件地址已经被使用！</InvalidEmailAddress>
+    <InvalidPassword>请输入一个有效的密码.</InvalidPassword>
+    <InvalidQuestion>请输入一个有效的问题。</InvalidQuestion>
+    <NameIsInvalid>请输入一个有效的名称。</NameIsInvalid>
+    <NameIsRejected>对不起！这个名字已经已遭拒绝受理了！</NameIsRejected>
+    <PleaseEnterAllRequiredFields>请输入所需的所有领域。</PleaseEnterAllRequiredFields>
+    <UserAlreadyExists>请输入一个新的用户名。这个用户名已经存在!</UserAlreadyExists>
+    <PleaseEnterAllRequiredField>请输入所需的所有领域。</PleaseEnterAllRequiredField>
+    <UserAlreadyExist>请输入一个新的用户名。这个用户名已经存在!</UserAlreadyExist>
+    <SelectEditButtonOnceAgain>请选择“编辑”按钮，再次!</SelectEditButtonOnceAgain>
+    <UserDeletedSuccessfully>用户已成功删除。</UserDeletedSuccessfully>
+    <SelectDeleteButtonOnceAgain>请再次选择“删除”按钮! </SelectDeleteButtonOnceAgain>
+    <UserInformationSaveSuccessfully>用户信息已经成功保存。</UserInformationSaveSuccessfully>
+    <PleaseEnterTheRequiredFields>请输入所需的所有字段
+.</PleaseEnterTheRequiredFields>
+    <UserRolesUpdatedSuccessfully>User roles has been updated successfully.</UserRolesUpdatedSuccessfully>
+    <UnknownErrorOccur>发生未知错误：请再试一次. </UnknownErrorOccur>
+    <UserPasswordChangedSuccessfully>表示用户密码已成功地的改变.</UserPasswordChangedSuccessfully>
+    <PleaseEnterTheRequiredField>请输入所需的所有字段.</PleaseEnterTheRequiredField>
+    <SelectedUsersAreDeletedSuccessfully>成功选定的用户已被删除.</SelectedUsersAreDeletedSuccessfully>
+    <SelectedChangesAreSavedSuccessfully>您所做的更改已保存成功.</SelectedChangesAreSavedSuccessfully>
+    <PleaseFill>请填写以下信息.</PleaseFill>
+    <PropertyValue>属性值</PropertyValue>
+    <PleaseFil>请填写</PleaseFil>
+    <Caption>标题</Caption>
+    <PleaseFillAgain>请重新填写.</PleaseFillAgain>
+    <AgainCaption>标题</AgainCaption>
+    <PropertyValueAgain>属性值</PropertyValueAgain>
+    <DataTypeMustBeString>必须是字符串数据类型!</DataTypeMustBeString>
+    <ProfileUpdatedSuccessfully>个人资料已成功更新.</ProfileUpdatedSuccessfully>
+    <ProfileAddedSuccessfully>个人资料已成功添加.</ProfileAddedSuccessfully>
+    <ChangesSavedSuccessfully>更改已被保存成功</ChangesSavedSuccessfully>
+    <UserProfileSavedSuccessfully>个人资料已成功保存.</UserProfileSavedSuccessfully>
+    <ProfileDeletedSuccessfully>个人资料已被删除成功.</ProfileDeletedSuccessfully>
+    <PleaseProvideActualDateOfBirth>请输入一个有效的出生日期.</PleaseProvideActualDateOfBirth>
+    <ProvideActualDateOfBirth>请提供真实的出生日期! </ProvideActualDateOfBirth>
+    <AreYouSureToDelete>你确定要删除? </AreYouSureToDelete>
+    <AreYouSureYouWantToDelete>你确定要删除? </AreYouSureYouWantToDelete>
+    <WantToDelete>你确定要删除?</WantToDelete>
+    <SureToDelete>你确定要删除?</SureToDelete>
+    <NoUsersSelected>请选择至少一个用户.</NoUsersSelected>
+    <AreYouSureToSaveChanges>你确定你要保存更改?</AreYouSureToSaveChanges>
+    <InvalidImageFile>请上传的图片.</InvalidImageFile>
+    <InvalidImageFileSize>请上传的图片.</InvalidImageFileSize>
+    <EmailAddressAlreadyIsInUse>电子邮件地址已在使用中!</EmailAddressAlreadyIsInUse>
+    <UserCreatedSuccessfully>用户已成功创建.</UserCreatedSuccessfully>
+    <SettingSavedSuccessfully>设置已成功保存.</SettingSavedSuccessfully>
+    <PleaseSelectRole>请选择一个角色.</PleaseSelectRole>
+    <FromIsLowerThanTo>结束日期不能小于开始日期.</FromIsLowerThanTo>
+    <PasswordLength>密码必须至少4个字符长</PasswordLength>
+    <SecureConnection>您已经注册，但问题发生在发送电子邮件，这可能是因为服务器不支持安全连接。请联系管理员</SecureConnection>
+    <UserDoesNotExist>用户不存在.</UserDoesNotExist>
+    <ImageTooLarge>图片大小必须是高达3 MB。</ImageTooLarge>
+    <InvalidImageFormat>无效的图像备考t</InvalidImageFormat>
+  </UserManagement>
+  <UserLogin>
+    <Youarenotauthenticatedtothisportal>您无权访问此门户!</Youarenotauthenticatedtothisportal>
+    <UsernameandPasswordcombinationdoesntmatched>用户名和密码组合不匹配!</UsernameandPasswordcombinationdoesntmatched>
+    <UserDoesnotExist>用户不存在!</UserDoesnotExist>
+  </UserLogin>
+  <LoginStatus>
+    <MyProfile>我的个人资料</MyProfile>
+    <Logout>登出</Logout>
+    <Login>注册</Login>
+    <Register>注册</Register>
+  </LoginStatus>
+  <WebAnalytics>
+    <GoogleAnalyticsUpdatedSuccessfully>谷歌分析已成功更新.</GoogleAnalyticsUpdatedSuccessfully>
+    <PleaseFillJSCodeProvidedByGoogle>请填写由谷歌提供的JS代码.</PleaseFillJSCodeProvidedByGoogle>
+  </WebAnalytics>
+  <SQL>
+    <TheQueryCompletedSuccessfully>查询已成功完成.</TheQueryCompletedSuccessfully>
+    <ThereIsAnErrorInYourQuery>在查询中有一个错误! </ThereIsAnErrorInYourQuery>
+  </SQL>
+  <PAGES>
+    <NameAlreadyExist>名称已经存在! </NameAlreadyExist>
+    <NameAlreadyExists>名称已经存在! </NameAlreadyExists>
+    <UsernameDoesnotExist>用户名不存在! </UsernameDoesnotExist>
+    <UsernameAlreadyExist>用户名不存在t!</UsernameAlreadyExist>
+    <CannotBeUploadedAsItExceedsTheSizelimit>因为它超过了1 MB的大小限制，无法上传图像您试图上传. </CannotBeUploadedAsItExceedsTheSizelimit>
+    <FileTypeNotValid>无效的文件类型。有效文件类型包括：JPG，JPEG，JPE，GIF，BMP，PNG，SWF，ICO</FileTypeNotValid>
+    <CreatedBy>创建者</CreatedBy>
+    <LastUpdatedBy>最后更新者</LastUpdatedBy>
+    <Location>地点：（输入链接地址)</Location>
+    <Http>http:// </Http>
+    <YourFile>您的文件: </YourFile>
+    <File>文件: </File>
+    <PageAddedSuccessfully>已成功添加页面.</PageAddedSuccessfully>
+    <PageModuleAddedSuccessfully>已成功添加网页模块.</PageModuleAddedSuccessfully>
+    <PageUpdatedSuccessfully>已成功更新页.</PageUpdatedSuccessfully>
+    <UploadedFileError>您上传的文件损坏!</UploadedFileError>
+    <AreYouSureToSaveChanges>你确定你要保存更改?</AreYouSureToSaveChanges>
+    <SelectedChangesAreSavedSuccessfully>选择更改已保存成功.</SelectedChangesAreSavedSuccessfully>
+    <ParentNotSame>对不起，你不能让本身母公司页面。</ParentNotSame>
+    <ModulePermissionSaveSuccessfully>模块权限已经成功保存：.</ModulePermissionSaveSuccessfully>
+    <UserModuleTableEditMode>用户模块表处于编辑模式!</UserModuleTableEditMode>
+    <AreYouSureToDelete>您确定您要删除?</AreYouSureToDelete>
+    <DeletePageConfirm>它会删除所有的页面，其内容！您确定要删除?</DeletePageConfirm>
+  </PAGES>
+  <MessageManagement>
+    <MessageTemplateIsUpdatedSuccessfully>已成功更新消息模板.</MessageTemplateIsUpdatedSuccessfully>
+    <MessageTemplateCouldnotBeUpdated>错误：无法更新消息模板！请再试! </MessageTemplateCouldnotBeUpdated>
+    <MessageTemplateCouldnotBeAdded>错误：无法添加消息模板！请再试! </MessageTemplateCouldnotBeAdded>
+    <PleaseFill>请填写以下信息. </PleaseFill>
+    <MessageTemplateSubject>消息模板主题 </MessageTemplateSubject>
+    <MessageTemplateBody>消息模板正文</MessageTemplateBody>
+    <FromEmailAddressIsRequired>请输入电子邮件地址.</FromEmailAddressIsRequired>
+    <MessageTemplateIsDeletedSuccessfully>消息模板已成功删除.</MessageTemplateIsDeletedSuccessfully>
+    <MessageTemplateIsAddedSuccessfully>已成功添加消息模板类型.</MessageTemplateIsAddedSuccessfully>
+    <PleaseSaveMessageTemplateTypeAgain>未知错误：请再次保存邮件模板类型. </PleaseSaveMessageTemplateTypeAgain>
+    <MessageTemplateTypeIsRequiredField>消息模板类型是必填字段! </MessageTemplateTypeIsRequiredField>
+    <AreYouSureYouWantToDelete>您确定您要删除? </AreYouSureYouWantToDelete>
+    <UniqueMessageTemplateTypeIsRequired>唯一消息模板类型名称是必需的</UniqueMessageTemplateTypeIsRequired>
+    <MessageTemplateTokenIsRequiredField>消息模板令牌是必填字段!</MessageTemplateTokenIsRequiredField>
+    <PleaseSaveMessageTemplateTokenAgain>未知错误：请保存邮件模板，再次令牌. </PleaseSaveMessageTemplateTokenAgain>
+    <MessageTemplateTokenIsAddedSuccessfully>消息模板令牌已成功添加.</MessageTemplateTokenIsAddedSuccessfully>
+    <UniqueMessageTemplateTokenIsRequired>唯一的邮件模板类型令牌是必需的</UniqueMessageTemplateTokenIsRequired>
+  </MessageManagement>
+  <ListSettings>
+    <ListIsDeletedSuccessfully>已成功删除列表.</ListIsDeletedSuccessfully>
+    <ListItemIsDeletedSuccessfully>已成功删除列表项.</ListItemIsDeletedSuccessfully>
+    <TheListIsShiftedUpSuccessfully>名单已经成功移.</TheListIsShiftedUpSuccessfully>
+    <TheListIsShiftedDownSuccessfully>名单已经成功下移.</TheListIsShiftedDownSuccessfully>
+    <ListIsEditedSuccessfully>名单已成功编辑.</ListIsEditedSuccessfully>
+    <ListIsAddedSuccessfully>已成功添加名单.</ListIsAddedSuccessfully>
+    <WantToDelete>您确定您要删除? </WantToDelete>
+    <Entries>文章</Entries>
+    <ListAlreadyExists>请输入一个唯一的列表名称.</ListAlreadyExists>
+  </ListSettings>
+  <PortalSettings>
+    <SettingUpdatedSuccessfully>设置已成功更新.</SettingUpdatedSuccessfully>
+    <SMTPServerIsWorking>SMTP服务器的工作...</SMTPServerIsWorking>
+    <PleaseFillServerAddress>Please enter the server address.</PleaseFillServerAddress>
+    <PortalSavedAndEmailSendSuccessfully>成功创建门户和电子邮件已经发送到您提供的电子邮件地址，登录凭据。</PortalSavedAndEmailSendSuccessfully>
+    <PortalAlreadyExist>这个门户网站的名字已经存在或不能加入这个时候！</PortalAlreadyExist>
+    <StoreSaveSuccessfully>你的店成功创建邮件已发送到您提供的电子邮件地址的登录凭据。</StoreSaveSuccessfully>
+    <StoreAlreadyExist>这个店铺名称已经存在或不能加入这个时候!</StoreAlreadyExist>
+    <EmailSendProblem>您的店铺已经创建，但出现的问题，同时发送电子邮件！请联系我们info@aspxcommerce.com获得</EmailSendProblem>
+    <PortalAddEmailSendProblem>门户网站已经建立，但发送邮件时出现问题!</PortalAddEmailSendProblem>
+    <PortalAlreadyExists>门户网站具有相同的名称已经存在.</PortalAlreadyExists>
+    <PortalSettingIsSavedSuccessfully>门户网站的设置已经成功保存：.</PortalSettingIsSavedSuccessfully>
+    <PortalDeleteSuccessfully>门户网站已成功删除.</PortalDeleteSuccessfully>
+    <PortalSaveSuccessfully>门户网站已经成功保存：.</PortalSaveSuccessfully>
+    <DuplicateTemplate>Tempalte已经存在具有相同的名称.</DuplicateTemplate>
+  </PortalSettings>
+  <Extensions>
+    <ModuleControlAlreadyExists>您已经指定的控件类型包含在此模块中。</ModuleControlAlreadyExists>
+    <ModuleControlIsAddedSuccessfully>已成功添加模块控制.</ModuleControlIsAddedSuccessfully>
+    <ModuleControlIsDeletedSuccessfully>控制模块已成功删除.</ModuleControlIsDeletedSuccessfully>
+    <ModuleControlIsUpdatedSuccessfully>控制模块已成功更新.</ModuleControlIsUpdatedSuccessfully>
+    <ModuleDefinitionIsUpdatedSuccessfully>已成功更新模块定义
+</ModuleDefinitionIsUpdatedSuccessfully>
+    <ModuleExtensionIsAddedSuccessfully>已成功添加模块扩展.</ModuleExtensionIsAddedSuccessfully>
+    <ModuleExtensionIsUpdatedSuccessfully>已成功更新模块扩展.</ModuleExtensionIsUpdatedSuccessfully>
+    <ModuleIsDeletedSuccessfully>模块已成功删除。</ModuleIsDeletedSuccessfully>
+    <TheModuleIsInstalledSuccessfully>模块已经安装成功</TheModuleIsInstalledSuccessfully>
+    <LastUpdatedBy>最后更新者</LastUpdatedBy>
+    <WarningMessageWillDeleteAllFiles>修复以前安装的模块，将覆盖所有的数据库和文件内容。</WarningMessageWillDeleteAllFiles>
+    <YouNeedToSelectAFileToUploadFirst>您需要选择先上传一个文件 - 点击“浏览”按钮，找到你的本地文件系统上的文件。</YouNeedToSelectAFileToUploadFirst>
+    <InvalidFileExtension>无效的文件扩展名- </InvalidFileExtension>
+    <ThisPackageIsNotValid>这个软件包没有似乎是一个有效的SageFrame扩展的，因为它不会有一个清单. </ThisPackageIsNotValid>
+    <ThisPackageDoesNotAppearToBeValid>这个软件包没有出现一个有效的SageFrame扩展，因为它不具有有效的清单。</ThisPackageDoesNotAppearToBeValid>
+    <ThisPackageDoesNotAppearToHaveManifestFile>这个包不会出现有一个有效的清单。它内置在系统模块中，不能被卸载。</ThisPackageDoesNotAppearToHaveManifestFile>
+    <ThereIsErrorWhileInstallingThisModule>安装该模块时发生错误!</ThereIsErrorWhileInstallingThisModule>
+    <AcceptThePackageLicenseAgreementFirst>请接受一揽子许可协议.</AcceptThePackageLicenseAgreementFirst>
+    <CreatedBy>创建者 </CreatedBy>
+    <ThereIsErrorWhileInstalling>在安装过程中发生的错误!</ThereIsErrorWhileInstalling>
+    <ModuleInstalledSuccessfully>模块已经安装成功.</ModuleInstalledSuccessfully>
+    <ErrorWhileInstalling>在安装过程中发生的错误!</ErrorWhileInstalling>
+    <ConfirmUninstallExtension>你确定你想卸载此扩展?</ConfirmUninstallExtension>
+    <ModuleFolderDoesnotExist>冲突发生在数据库中不存在指定的文件夹名称，你需要手动进行配置！</ModuleFolderDoesnotExist>
+    <ThisModuleSeemsToBeCorrupted>此模块扩展包已损坏!</ThisModuleSeemsToBeCorrupted>
+    <ModuleExtensionIsUninstallError>载过程中发生的错误!</ModuleExtensionIsUninstallError>
+    <ModuleExtensionIsUninstalledSuccessfully>已成功卸载模块扩展.</ModuleExtensionIsUninstalledSuccessfully>
+    <AreYouSureToSaveChanges>你一定要保存更改?</AreYouSureToSaveChanges>
+    <AreYouSureToDelete>您确定您要删除?</AreYouSureToDelete>
+    <SelectedChangesAreSavedSuccessfully>您所做的更改已保存成功.</SelectedChangesAreSavedSuccessfully>
+    <ModuleExtensionSourceIsEmpty>请选择模块的源代码控制.</ModuleExtensionSourceIsEmpty>
+  </Extensions>
+  <EventViewer>
+    <AreYouSureToClearLogs>你确定你想清除所有的日志?</AreYouSureToClearLogs>
+    <AreYouSureToDeleteLogs>你确定你要删除选定的日志?</AreYouSureToDeleteLogs>
+    <AreYouSureToDeleteLog>你确定你要删除选定的日志?</AreYouSureToDeleteLog>
+    <LogDeletedSuccessfully>已成功删除日志.</LogDeletedSuccessfully>
+    <LogClearedSuccessfully>日志已经被成功清除.</LogClearedSuccessfully>
+    <MailSentSuccessfully>已成功发送电子邮件.</MailSentSuccessfully>
+    <CheckCheckBoxAlert>检查至少有一个日志删除.</CheckCheckBoxAlert>
+  </EventViewer>
+  <ControlPanel>
+    <ModuleAddedSuccessfully>已成功添加模块.</ModuleAddedSuccessfully>
+    <ModuleDeletedSuccessfully>模块已成功删除.</ModuleDeletedSuccessfully>
+    <ModuleAgainDeletedSuccessfully>模块已成功删除.</ModuleAgainDeletedSuccessfully>
+    <ModuleUpdatedSuccessfully>模块已成功更新. </ModuleUpdatedSuccessfully>
+    <Pane>窗格“中:  </Pane>
+    <Module>模: </Module>
+    <Title>标题: </Title>
+    <Insert>插入: </Insert>
+    <Visibility>能见度: </Visibility>
+    <UserModule>用户模块: </UserModule>
+    <AddSelectedModuleToPage>用户模块，请选择模块页面.</AddSelectedModuleToPage>
+    <ModuleIsNotSelected>请选择模块.</ModuleIsNotSelected>
+  </ControlPanel>
+  <Adsense>
+    <AreYouSureToDelete>您确定您要删除此AdSense广告?</AreYouSureToDelete>
+    <AdsenseSavedSuccessfully>广告已经成功保存：.</AdsenseSavedSuccessfully>
+    <AdsenseDeletedSuccessfully>广告已成功删除。</AdsenseDeletedSuccessfully>
+  </Adsense>
+  <Banner>
+    <LimitForCategory>限制类</LimitForCategory>
+    <CategoryAddedSuccessfully>类别已成功添加.</CategoryAddedSuccessfully>
+    <CategoryUpdatedSuccessfully>类别已成功更新.</CategoryUpdatedSuccessfully>
+    <InvalidImageFileOrFileLength>无效的图片文件/文件长度. </InvalidImageFileOrFileLength>
+    <CategoryAgainAddedSuccessfully>类别已成功添加. </CategoryAgainAddedSuccessfully>
+    <CategoryAgainUpdatedSuccessfully>类别已成功更新.</CategoryAgainUpdatedSuccessfully>
+    <CategoryDeletedSuccessfully>类别已成功删除.</CategoryDeletedSuccessfully>
+    <TheLimitForArticle>文章的限制</TheLimitForArticle>
+    <ArticleAddedSuccessfully>文章已成功添加.</ArticleAddedSuccessfully>
+    <ArticleUpdatedSuccessfully>文章已成功更新.</ArticleUpdatedSuccessfully>
+    <InvalidFileOrFileLength>无效的文件/文件长度.</InvalidFileOrFileLength>
+    <ArticleAgainAddedSuccessfully>文章已成功添加.</ArticleAgainAddedSuccessfully>
+    <ArticleAgainUpdatedSuccessfully>文章已成功更新.</ArticleAgainUpdatedSuccessfully>
+    <ArticleDeletedSuccessfully>文章已被删除成功.</ArticleDeletedSuccessfully>
+    <TheLimitForScreenShotsImage>截图图像的限制</TheLimitForScreenShotsImage>
+    <ScreenShotsAddedSuccessfully>截图已成功添加.</ScreenShotsAddedSuccessfully>
+    <ScreenShotsUpdatedSuccessfully>截图已成功更新.</ScreenShotsUpdatedSuccessfully>
+    <InvalidFileAndFileLength>无效的文件/文件长度. </InvalidFileAndFileLength>
+    <ScreenShotsAgainUpdatedSuccessfully>截图已成功更新.</ScreenShotsAgainUpdatedSuccessfully>
+    <ImageIsRequired>请上传图片.</ImageIsRequired>
+    <ScreenShotDeletedSuccessfully>截图已成功删除.</ScreenShotDeletedSuccessfully>
+    <CategorySettingSavedSuccessfully>类别设置已经成功保存：.</CategorySettingSavedSuccessfully>
+    <ArticleSettingSavedSuccessfully>第二十设置已经成功保存：.</ArticleSettingSavedSuccessfully>
+    <InvalidFileOrFileSize>无效的文件/文件大小</InvalidFileOrFileSize>
+    <PleaseEnterSomeContent>请输入一些内容.</PleaseEnterSomeContent>
+    <PleaseEnterContent>请输入一些内容</PleaseEnterContent>
+    <ReadMore>阅读更多</ReadMore>
+    <AreYouSureToDelete>你确定要删除这面旗帜?</AreYouSureToDelete>
+    <TheBannerContentIsShiftedUpSuccessfully>上移成功地</TheBannerContentIsShiftedUpSuccessfully>
+    <TheBannerContentIsShiftedDownSuccessfully>下移成功</TheBannerContentIsShiftedDownSuccessfully>
+  </Banner>
+  <PasswordRecovery>
+    <UsernameOrEmailAddressDoesnotMatched>用户名或电子邮件地址不匹配!</UsernameOrEmailAddressDoesnotMatched>
+    <UsernameOrEmailAddressDoesnotMatchedAgain>用户名或电子邮件地址不匹配!</UsernameOrEmailAddressDoesnotMatchedAgain>
+    <PleaseEnterAllTheRequiredFields>请填写所有必填字段.</PleaseEnterAllTheRequiredFields>
+    <InvalidRecoveringCode>请输入一个有效的恢复代码.</InvalidRecoveringCode>
+    <RecoveringCodeIsNotAvailable>恢复代码是不可用!</RecoveringCodeIsNotAvailable>
+    <UnknownErrorPleaseTryAgaing>未知错误：请再试一次!</UnknownErrorPleaseTryAgaing>
+    <UnknownError>未知的错误!</UnknownError>
+    <PleaseEnterAllRequiredFields>请填写所有必填字段.</PleaseEnterAllRequiredFields>
+    <UsernameNotActivated>用户还没有激活!</UsernameNotActivated>
+    <UserNameIsRequired>请输入用户名.</UserNameIsRequired>
+    <UserEmailAddressIsRequired>请输入一个电子邮件地址。</UserEmailAddressIsRequired>
+    <UserEmailAddressIsNotValid>请输入一个有效的电子邮件地址.</UserEmailAddressIsNotValid>
+    <PasswordIsRequired>Please enter a password.</PasswordIsRequired>
+    <RetypePassword>请重新输入密码.</RetypePassword>
+    <PasswordDoesnotMatched>密码和重新输入密码不匹配.</PasswordDoesnotMatched>
+    <PasswordLength>密码必须包含至少4个字符.</PasswordLength>
+    <RecoveryCodeAlreadyActivated>恢复代码不再处于活动状态.</RecoveryCodeAlreadyActivated>
+    <SecureConnectionFPError>发送电子邮件时发生问题，可能是因为服务器不支持安全连接。请联系管理员。</SecureConnectionFPError>
+    <SecureConnectionFPRError>您的的密码已更改successfully.But的问题发生，同时发送电子邮件，这可能是因为服务器不支持安全连接。请联系管理员。</SecureConnectionFPRError>
+  </PasswordRecovery>
+  <UserRegistration>
+    <InvalidActivationCode>无效的激活代码!</InvalidActivationCode>
+    <InvalidActivationCodeAgain>无效的激活代码!</InvalidActivationCodeAgain>
+    <PleaseEnterAllRequiredFields>请填写所有必填字段.</PleaseEnterAllRequiredFields>
+    <EnterTheCorrectCapchaCode>请输入正确的验证码.</EnterTheCorrectCapchaCode>
+    <UserNameIsRequired>请输入用户名。</UserNameIsRequired>
+    <PasswordIsRequired>请输入密码。</PasswordIsRequired>
+    <PasswordConfirmIsRequired>请输入确认密码.</PasswordConfirmIsRequired>
+    <FirstNameIsRequired>请输入名字.</FirstNameIsRequired>
+    <LastNameIsRequired>请输入姓.</LastNameIsRequired>
+    <EmailAddressIsRequired>请输入您的电子邮件地址.</EmailAddressIsRequired>
+    <SecurityQuestionIsRequired>请输入安全问题.</SecurityQuestionIsRequired>
+    <SecurityAnswerIsRequired>请进入安全答案.</SecurityAnswerIsRequired>
+    <PasswordRetypeMatch>密码和重新输入的密码不匹配.</PasswordRetypeMatch>
+    <EmailAddressIsNotValid>请输入一个有效的电子邮件地址.</EmailAddressIsNotValid>
+    <GoToLogin>去登录</GoToLogin>
+    <UserRegistrationSuccessPublic>用户已经注册成功。点击激活链接激活用户的确认电子邮件.</UserRegistrationSuccessPublic>
+    <ActivationCodeAlreadyUsed>激活代码不再处于活动状态.</ActivationCodeAlreadyUsed>
+    <SecureConnectionUAEmailError>你的的帐户已经activated.But问题时出现发送emaiL.It可能是因为服务器不支持安全了连接与管理员联系。</SecureConnectionUAEmailError>
+    <ActivationSuccessfulInfo>您的帐户已成功激活。现在，您可以与您的用户名和密码登录。</ActivationSuccessfulInfo>
+    <PasswordMisMatch>密码不匹配!</PasswordMisMatch>
+  </UserRegistration>
+  <HTML>
+    <AreYouSureToDelete>你确定你要删除? </AreYouSureToDelete>
+    <PleaseEnterSomeContent>请输入一些内容.</PleaseEnterSomeContent>
+    <HTMLContentIsAddedSuccessfully>已成功添加HTML内容.</HTMLContentIsAddedSuccessfully>
+    <HTMLContentIsUpdatedSuccessfully>已成功更新HTML内容.</HTMLContentIsUpdatedSuccessfully>
+    <CommentIsAddedSuccessfully>评论已添加成功.</CommentIsAddedSuccessfully>
+    <CommentWillBeAddedAfterApproved>它已被批准后，将显示您的评论。</CommentWillBeAddedAfterApproved>
+    <CommentIsUpdatedSuccessfully>评论已成功更新。</CommentIsUpdatedSuccessfully>
+    <CommentIsDeletedSuccessfully>评论已成功删除.</CommentIsDeletedSuccessfully>
+    <PleaseWriteComments>请写一些评论.</PleaseWriteComments>
+  </HTML>
+  <ContactUs>
+    <ContactUsIsAddedSuccessfully>谢谢！您已成功加入我们的联系人列表.</ContactUsIsAddedSuccessfully>
+    <ContactUsEmailSubject>电子邮件警报!</ContactUsEmailSubject>
+  </ContactUs>
+  <PortalModules>
+    <SelectedChangesAreSavedSuccessfully>选定的更改已成功保存.</SelectedChangesAreSavedSuccessfully>
+    <AreYouSureToSaveChanges>你确定你要保存的变化?</AreYouSureToSaveChanges>
+    <PortalIsNotSelected>请选择任何门户网站.</PortalIsNotSelected>
+  </PortalModules>
+  <CSSManagement>
+    <CSSIsSavedSuccessfully>CSS已经成功保存：.</CSSIsSavedSuccessfully>
+  </CSSManagement>
+  <TemplateManagement>
+    <UnknownError>未知的错误发生!</UnknownError>
+    <TemplateSavedSuccessfully>模板已经成功保存：.</TemplateSavedSuccessfully>
+    <TemplateDeletedSuccessfully>模板已成功删除.</TemplateDeletedSuccessfully>
+    <TemplateIsInUse>此模板是在使用中。它不能被删除!</TemplateIsInUse>
+    <TemplateInstallSuccessfully>模板已安装成功.</TemplateInstallSuccessfully>
+    <InvalidTemplate>模板是无效的!</InvalidTemplate>
+    <InvalidTemplateZip>请上传一个有效的zip文件模板.</InvalidTemplateZip>
+    <TemplateAlreadyInstall>此模板已经安装!</TemplateAlreadyInstall>
+    <TemplateCannotDeleted>不能删除默认模板.</TemplateCannotDeleted>
+    <AreYouSureToDelete>你确定要删除?</AreYouSureToDelete>
+    <ZipFileIsCorrupt>zip文件已损坏.</ZipFileIsCorrupt>
+  </TemplateManagement>
+  <SageFrameSearch>
+    <BlankValueNotAllowed>请填写所有的设定值.</BlankValueNotAllowed>
+    <SearchSettingSavedSuccessfully>设置已经成功保存：.</SearchSettingSavedSuccessfully>
+    <NoResultFoundForGivenSearchKey>没有找到结果的关键字搜索.</NoResultFoundForGivenSearchKey>
+    <PleaseFillValidTextToSearch>请输入有效的文本搜索.</PleaseFillValidTextToSearch>
+    <AreYouSureToDeletThisExtension>你确定要删除这个扩展?</AreYouSureToDeletThisExtension>
+    <SearchExtensionDeltedSuccessfully>搜索扩展已被成功删除.</SearchExtensionDeltedSuccessfully>
+    <SearchExtensionSavedSuccessfully>搜索扩展已经成功保存：.</SearchExtensionSavedSuccessfully>
+  </SageFrameSearch>
+  <LanguageModule>
+    <LanguageAddedSuccessfully>语言已成功添加.</LanguageAddedSuccessfully>
+    <PackageCreatedSuccessfully>程序包已创建成功.</PackageCreatedSuccessfully>
+    <SelectAFileFirst>请选择一个文件.</SelectAFileFirst>
+    <InvalidFileExtension>文件扩展名是无效的。</InvalidFileExtension>
+    <ThisPackageIsNotValid>包装是无效的.</ThisPackageIsNotValid>
+    <ThisPackageDoesNotAppearToBeValid>包装是无效的.</ThisPackageDoesNotAppearToBeValid>
+    <ThereIsErrorWhileInstallingThisModule>模块安装过程中出现错误.</ThereIsErrorWhileInstallingThisModule>
+    <AcceptThePackageLicenseAgreementFirst>请接受协议，然后再进行.</AcceptThePackageLicenseAgreementFirst>
+    <LanguagePackageInstalledSuccessfully>语言包已经安装成功.</LanguagePackageInstalledSuccessfully>
+    <ResourceFileSavedSuccessfully>资源文件已经成功保存：.</ResourceFileSavedSuccessfully>
+    <ResourceFileDeletedSuccessfully>资源文件已成功删除.</ResourceFileDeletedSuccessfully>
+    <DefaultFileCannotBeDeleted>默认的文件不能被删除.</DefaultFileCannotBeDeleted>
+    <ResourceFileCouldNotBeRead>资源文件无法读取。它可能包含重复键或不一致的行结束符。</ResourceFileCouldNotBeRead>
+    <LanguageDeletedSuccessfully>语言已被成功删除.</LanguageDeletedSuccessfully>
+    <LanguageIsEnabled>Language（语言）已成功启用</LanguageIsEnabled>
+    <LanguageCannotBeEnabled>语言无法启用。对这种语言亘古存在的资源文件.</LanguageCannotBeEnabled>
+    <LanguageIsDisabled>语言是成功禁用.</LanguageIsDisabled>
+    <LanguageIsNotAvailable>语言是不是可以添加</LanguageIsNotAvailable>
+  </LanguageModule>
+  <FileManager>
+    <SettingsAddedSuccessfully>设置已成功更新.</SettingsAddedSuccessfully>
+  </FileManager>
+  <DashboardManager>
+    <LinkDeletedSuccessfully>链接已被删除成功.</LinkDeletedSuccessfully>
+    <LinkAddedSuccessfully>链接已成功添加.</LinkAddedSuccessfully>
+    <ThemeChanged>主题已经修改成功。请刷新页面才能看到效果.</ThemeChanged>
+    <ItemOrderSaved>产品订购成功地保存的</ItemOrderSaved>
+  </DashboardManager>
+  <TemplateManager>
+    <TemplateActivated>模板已成功激活.</TemplateActivated>
+    <TemplateDeleted>模板已成功删除.</TemplateDeleted>
+    <TemplateInstalled>模板已安装成功..</TemplateInstalled>
+    <ThemeDeleted>主题已成功删除</ThemeDeleted>
+    <PresetDeleted>预置已成功删除.</PresetDeleted>
+    <PresetSaved>恭喜！预置已经成功保存：.</PresetSaved>
+    <ApplyToAllForMultiplePresets>对不起！所有页面都可以适用于多种预置！</ApplyToAllForMultiplePresets>
+    <PageAlreadyAppliedToPreset>预设值，已经应用到一些页面。只有那些没有预设救了！</PageAlreadyAppliedToPreset>
+    <PresetAlreadyExists>一个预置相同的名称已经存在！请尝试一个不同的名称.</PresetAlreadyExists>
+    <ActivePresetCannotBeDeleted>有效的预置不能被删除.</ActivePresetCannotBeDeleted>
+    <LayoutDeleted>布局已成功删除.</LayoutDeleted>
+  </TemplateManager>
+  <ModuleManager>
+    <UserModuleDeleted>用户模块已成功删除.</UserModuleDeleted>
+    <UserModuleAdded>用户模块已成功添加.</UserModuleAdded>
+    <UserModuleUpdated>恭喜！用户模块已成功更新.</UserModuleUpdated>
+  </ModuleManager>
+  <PageManager>
+    <PageSavedSuccessful>页面已被成功保存</PageSavedSuccessful>
+    <PageDeletedSuccessful>页面已被成功删除.</PageDeletedSuccessful>
+  </PageManager>
+  <TemplateFileManager>
+    <FileNotFound>文件不能被发现.</FileNotFound>
+  </TemplateFileManager>
+</SageFrameMessage>

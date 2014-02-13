@@ -1,0 +1,83 @@
+﻿<sageframe version="1.0.0.0" type="paymentgateway">
+	<folders>
+		<folder>
+			<name>SFE_GoogleCheckOutGateWay</name>
+			<paymentgatewayname>GoogleWallet</paymentgatewayname>
+			<friendlyname>GoogleWallet</friendlyname>
+			<foldername>AspxCommerce/GoogleCheckOut</foldername>
+			<description>GoogleCheckOut</description>
+			<culturename>en-US</culturename>
+			<version>01.00.00</version>
+			<settings>
+
+				<setting>
+					<key>GoogleMerchantID</key>
+					<value>842857112576526</value>
+				</setting>
+				<setting>
+					<key>GoogleMerchantKey</key>
+					<value>c-bCCOIpYRFJ4itiR2Kpzg</value>
+				</setting>
+				<setting>
+					<key>GoogleEnvironmentType</key>
+					<value>Sandbox</value>
+				</setting>
+				<setting>
+					<key>GoogleAPICallbackUrl</key>
+					<value>http://windowsphone.aspxcommerce.com/Modules/AspxCommerce/GoogleCheckOut/APICallbackUrl.aspx</value>
+				</setting>
+				<setting>
+					<key>GoogleCurrencyType</key>
+					<value>USD</value>
+				</setting>
+
+
+
+			</settings>
+			<modules>
+				<module>
+					<controls>
+						<control>
+							<key>GoogleCheckOutView</key>
+							<title>AspxCommerce Pay through GoogleCheckOut</title>
+							<src>Modules/AspxCommerce/GoogleCheckOut/GoogleCheckOut.ascx</src>
+							<type>View</type>
+							<helpurl>http://www.aspxcommerce.com/default.aspx</helpurl>
+							<supportspartialrendering>false</supportspartialrendering>
+						</control>
+						<control>
+							<key>GoogleCheckOutSetting</key>
+							<title>GoogleCheckOut Setting</title>
+							<src>Modules/AspxCommerce/GoogleCheckOut/GoogleCheckOutSetting.ascx</src>
+							<type>Setting</type>
+							<helpurl>http://www.aspxcommerce.com/default.aspx</helpurl>
+							<supportspartialrendering>false</supportspartialrendering>
+						</control>
+						<control type="Page">
+							<key>GoogleCheckOut-Success</key>
+							<title>GoogleCheckOut Success</title>
+							<src>Modules/AspxCommerce/GoogleCheckOut/GoogleCheckOut-Success.ascx</src>
+							<type>View</type>
+							<helpurl>http://www.aspxcommerce.com/default.aspx</helpurl>
+							<supportspartialrendering>false</supportspartialrendering>
+						</control>
+					</controls>
+				</module>
+			</modules>
+			<files>
+				<file>
+					<name>01.00.00.SqlDataProvider</name>
+				</file>
+				<file>
+					<name>AspxCommerce.GoogleCheckOut.dll</name>					
+				</file>
+				<file>					
+					<name>GCheckout.dll</name>
+				</file>
+				<file>
+					<name>Uninstall.SqlDataProvider</name>
+				</file>
+			</files>
+		</folder>
+	</folders>
+</sageframe>

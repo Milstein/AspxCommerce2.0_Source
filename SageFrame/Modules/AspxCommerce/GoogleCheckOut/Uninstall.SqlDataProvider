@@ -1,0 +1,15 @@
+
+GO
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_GoogleCheckOutSettingsGetAll]    Script Date: 04/30/2013 10:47:33 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_GoogleCheckOutSettingsGetAll]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_GoogleCheckOutSettingsGetAll]
+GO
+
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[usp_Aspx_GoogleSerialNumberExists]    Script Date: 05/06/2013 17:25:28 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[usp_Aspx_GoogleSerialNumberExists]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[usp_Aspx_GoogleSerialNumberExists]
+GO
+

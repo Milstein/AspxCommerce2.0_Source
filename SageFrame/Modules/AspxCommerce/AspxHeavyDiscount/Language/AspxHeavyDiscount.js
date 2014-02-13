@@ -1,0 +1,20 @@
+﻿var AspxHeavyDiscount = {
+    "Heavy discount module setting": "Heavy discount module setting",
+    "Module Name to display": "Module Name to display",
+    "Heavy discount value (% and above)": "Heavy discount value (% and above)",
+    "No of heavy discount item": "No of heavy discount item",
+    "Enable heavy discount": "Enable heavy discount",
+    "Information Alert": "Information Alert",
+    "The selected item already exist in compare list.": "The selected item already exist in compare list.",
+    "Item has been successfully added to compare list.": "Item has been successfully added to compare list.",
+    "Information Message": "Information Message",
+    "The selected item already exist in your wishlist.": "The selected item already exist in your wishlist.",
+    "Wishlist":"Wishlist",
+    "Compare":"Compare",
+    "Out Of Stock":"Out Of Stock",
+    "Add To Cart":"Add To Cart",
+    "View More":"View More",
+    "This store has no items listed yet!":"This store has no items listed yet!",
+    "Off":"Off",
+    "Heavy Discount": "Heavy Discount"
+};

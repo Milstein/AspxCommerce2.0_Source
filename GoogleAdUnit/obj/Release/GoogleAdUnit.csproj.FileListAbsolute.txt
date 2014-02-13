@@ -1,0 +1,5 @@
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\GoogleAdUnit\bin\Release\SFE.GoogleAdUnit.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\GoogleAdUnit\bin\Release\SFE.GoogleAdUnit.pdb
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\GoogleAdUnit\obj\Release\ResolveAssemblyReference.cache
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\GoogleAdUnit\obj\Release\SFE.GoogleAdUnit.dll
+D:\!@AspxCommerce\SageFrame\!@AspxCommerceV2.1FK\GoogleAdUnit\obj\Release\SFE.GoogleAdUnit.pdb

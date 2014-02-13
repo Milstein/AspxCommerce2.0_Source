@@ -1,0 +1,20 @@
+var AspxHeavyDiscount = {
+    "Heavy discount module setting": "重折让模块设置",
+    "Module Name to display": "模块名称显示",
+    "Heavy discount value (% and above)": "重贴现值（％及以上）",
+    "No of heavy discount item": "没有沉重的贴息项目",
+    "Enable heavy discount": "用沉重折扣“",
+    "Information Alert": "信息提示",
+    "The selected item already exist in compare list.": "选定的项目中已经存在比较列表。",
+    "Item has been successfully added to compare list.": "产品已成功添加对比清单。",
+    "Information Message": "信息消息",
+    "The selected item already exist in your wishlist.": "所选的项目已经存在于你的愿望清单。",
+    "Wishlist": "收藏",
+    "Compare": "比较",
+    "Out Of Stock": "缺货",
+    "Add To Cart": "添加到购物车",
+    "View More": "查看更多",
+    "This store has no items listed yet!": "这家店还没有列出的项目！",
+    "Off": "离",
+    "Heavy Discount": "重折扣"
+};

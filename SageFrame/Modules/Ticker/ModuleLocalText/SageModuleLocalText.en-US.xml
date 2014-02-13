@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SageFrameMessage>
+  <TickerSavedSuccessFully>Ticker Saved SuccessFully</TickerSavedSuccessFully>
+  <TickerDeletedSucessfully>Ticker Deleted Sucessfully</TickerDeletedSucessfully>
+  <AreyouSureToDelete>Are You Sure To Delete</AreyouSureToDelete>
+</SageFrameMessage>

@@ -1,0 +1,39 @@
+
+--Web service
+
+ [WebMethod]
+    public double GetCurrencyRate(string from, string to)
+    {
+        try
+        {
+            double result;
+            result=CurrencyConverter.CurrencyConverter.GetRate(from, to);
+            return result;
+        }
+        catch (Exception ex)
+        {
+            return 1;
+            
+        }
+    }
+
+
+
+----Jquery codes
+
+	function GetRate() {
+            var checkparam = { from: "USD", to: $("#ddlCurrency").val() };
+            var checkdata = JSON2.stringify(checkparam);
+            $.ajax({
+                type: "POST",
+                url: aspxservicePath + "ASPXCommerceWebService.asmx/GetCurrencyRate",
+                data: checkdata,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(msg) {
+                    if (msg.d) {
+                        rate = msg.d;
+                    }
+                }
+            });
+        }

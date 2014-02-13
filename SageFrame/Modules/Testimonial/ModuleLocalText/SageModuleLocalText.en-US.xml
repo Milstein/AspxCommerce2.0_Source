@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ <SageFrameMessage>
+   <TestimonialSettingSaveSuccessfully>Setting Save Successfully</TestimonialSettingSaveSuccessfully>
+   <SaveRecordSuccessfully>Testimonial Added Successfully</SaveRecordSuccessfully>
+   <RecordDeletedSuccessfully>Record Deleted Successfully</RecordDeletedSuccessfully>
+</SageFrameMessage>
+

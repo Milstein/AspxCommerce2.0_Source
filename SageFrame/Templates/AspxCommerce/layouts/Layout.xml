@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout name="layout_all">
+  <section name="sfHeader">
+    <placeholder name="toplinks" width="100">toplinks</placeholder>
+    <placeholder name="headertop" width="20,80">aspxlogo,AspxSearch</placeholder>
+    <placeholder name="categorybar" width="100">aspxmenubar</placeholder>
+    <placeholder name="breadcrumb" width="100">aspxbreadcrumb</placeholder>
+  </section>
+  <section name="sfContent">
+    <placeholder name="middlemaincurrent" width="100">innercontent</placeholder>
+    <placeholder name="fullbottomspan">AspxCompareItem</placeholder>
+  </section>
+  <section name="sfFooter">
+    <placeholder name="footerbtn" width="20,20,20">aspxcopyright,aspxservice,aspxhelp,aspxsociallink</placeholder>
+  </section>
+  <wrappers>
+    <wrap type="block">sfHeader,sfContent</wrap>
+  </wrappers>
+</layout>

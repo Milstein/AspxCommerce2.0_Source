@@ -1,0 +1,55 @@
+﻿<sageframe version="1.0.0.0" type="Module">
+  <folders>
+    <folder>
+      <name>SFE_MegaCategory</name>
+      <friendlyname>AspxMegaCategory</friendlyname>
+      <foldername>AspxCommerce/AspxMegaCategory</foldername>
+      <modulename>AspxMegaCategory</modulename>
+      <description>Mega Category Menu.</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass>SageFrame.Modules.AspxMegaCategory.AspxMegaCategoryController, SageFrame.Modules.AspxMegaCategoryDataProvider</businesscontrollerclass>
+      <compatibleversions>^[0]?[4-9]{1}\.[0-9]{1}[7-9]{1}\.[0-9]{1}[0-9]{1}$</compatibleversions>
+      <owner>Sageframe Pvt. Ltd.</owner>
+      <organization>Sageframe Pvt. Ltd.</organization>
+      <url>www.sageframe.com</url>
+      <email>info@sageframe.com</email>
+      <releasenotes>This is  release notes for AspxMegaCategory</releasenotes>
+      <license>This is  license copy for AspxMegaCategory Control Application</license>
+      <modules>
+        <module>
+          <friendlyname>AspxMegaCategory</friendlyname>
+          <cachetime>-1</cachetime>
+          <controls>
+            <control>
+			        <key>AspxMegaCategoryView</key>
+              <title>AspxMegaCategoryView</title>
+              <src>Modules/AspxCommerce/AspxMegaCategory/MegaCategoryView.ascx</src>
+              <type>View</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl>
+              <supportspartialrendering>true</supportspartialrendering>
+            </control>
+            <control>
+              <key>AspxMegaCategorySetting</key>
+              <title>AspxMegaCategorySetting</title>
+              <src>Modules/AspxCommerce/AspxMegaCategory/MegaCategorySetting.ascx</src>
+              <type>Setting</type>
+              <helpurl>http://www.sageframe.com/default.aspx</helpurl> 
+              <supportspartialrendering>true</supportspartialrendering>
+            </control>  			
+          </controls>
+        </module>
+      </modules>
+      <files>
+        <file>
+          <name>01.00.00.SqlDataProvider</name>
+        </file>   
+		    <file>
+          <name>AspxCommerce.MegaCategory.dll</name>		  
+        </file>            
+        <file>
+          <name>Uninstall.SqlDataProvider</name>
+        </file> 
+      </files>
+    </folder>
+  </folders>
+</sageframe>
